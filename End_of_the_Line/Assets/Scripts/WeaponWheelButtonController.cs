@@ -1,7 +1,8 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
-using UnityEngine.UI;
+using UnityEngine.UIElements;
+
 //using TMPro;
 
 public class WeaponWheelButtonController : MonoBehaviour
@@ -10,9 +11,9 @@ public class WeaponWheelButtonController : MonoBehaviour
     private Animator anim;
   //  public string itemName;
    // public TextMeshProGUI itemText;
-    public Image SelectedItem;
+   //public Image SelectedItem;
     private bool selected = false;
-    public Sprite icon;
+   // public Sprite icon;
 
 
 
@@ -29,7 +30,7 @@ public class WeaponWheelButtonController : MonoBehaviour
         
         if (selected)
         {
-            SelectedItem.Sprite = icon;
+           // SelectedItem.Sprite = icon;
            // itemText.text = itemName;
         }
 
