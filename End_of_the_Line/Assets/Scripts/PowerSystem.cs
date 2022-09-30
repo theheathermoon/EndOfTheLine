@@ -1,3 +1,4 @@
+using FlashlightSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,8 +8,13 @@ public class PowerSystem : MonoBehaviour
     bool atControlPanel = false;
     bool powerOn = false;
 
+    public KeyCode PowerOn;
 
+    public static PowerSystem instance;
 
+    [Header("Power Activation Timers")]
+    [SerializeField] private float activatePowerRadial = 1.0f;
+    private float maxActivatePowerRadial = 1.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -29,13 +35,18 @@ public class PowerSystem : MonoBehaviour
         {
             atControlPanel = true;
             Debug.Log("player is in the trigger area");
-
-
-
-
         }
     }
 
+    void ToggleRadialIndicator(bool on)
+    {
+        FLUIManager.instance.ToggleRadialIndicator(on);
+    }
+
+    void UpdateRadialIndicator(float amount)
+    {
+        FLUIManager.instance.UpdateRadialIndicatorUI(amount);
+    }
 
 
     private void OnTriggerExit(Collider other)
@@ -47,6 +58,16 @@ public class PowerSystem : MonoBehaviour
         }
     }
 
+    ///
+    void PowerLine () {
 
+       // if (atControlPanel != true || !Input.GetKey(powerOn))
+        {
+
+        }
+
+
+
+    }
 
 }
