@@ -1,0 +1,607 @@
+fileFormatVersion: 2
+guid: 20ed0851f158dea469f8d73766709717
+timeCreated: 1560768209
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Train02aCupe_1Interior
+    100004: Train02aCupe_1Interiordetail
+    100006: Train02aCupe_1Interiormtl
+    100008: Train02aCupe_1Wheel01
+    100010: Train02aCupe_1Wheel02
+    100012: Train02aCupe_1Wheel03
+    100014: Train02aCupe_1Wheel04
+    100016: Train02aCupe_1Wheels
+    100018: Train02aCupe_Bench02
+    100020: Train02aCupe_Bench02up
+    100022: Train02aCupe_BenchFabric01
+    100024: Train02aCupe_Ceiling1
+    100026: Train02aCupe_Ceiling2
+    100028: Train02aCupe_Chrome
+    100030: Train02aCupe_Chrome1
+    100032: Train02aCupe_Curtain02f
+    100034: Train02aCupe_Curtain03a
+    100036: Train02aCupe_Curtain05k
+    100038: Train02aCupe_Doorcupe1
+    100040: Train02aCupe_Doorcupe10
+    100042: Train02aCupe_Doorcupe2
+    100044: Train02aCupe_Doorcupe3
+    100046: Train02aCupe_Doorcupe4
+    100048: Train02aCupe_Doorcupe5
+    100050: Train02aCupe_Doorcupe6
+    100052: Train02aCupe_Doorcupe7
+    100054: Train02aCupe_Doorcupe8
+    100056: Train02aCupe_Doorcupe9
+    100058: Train02aCupe_Doorglass
+    100060: Train02aCupe_Doorpart
+    100062: Train02aCupe_Fabric02
+    100064: Train02aCupe_Floor
+    100066: Train02aCupe_LampCircle_3
+    100068: Train02aCupe_LampWall05
+    100070: Train02aCupe_Light01
+    100072: Train02aCupe_LightCeiling09b
+    100074: Train02aCupe_Metall01d
+    100076: Train02aCupe_Mirror01
+    100078: Train02aCupe_Sink09
+    100080: Train02aCupe_Stairs
+    100082: Train02aCupe_Table
+    100084: Train02aCupe_Toilet03
+    100086: Train02aCupe_ToiletPaper01c
+    100088: Train02aCupe_Towel02a
+    100090: Train02aCupe_Towelmtl
+    100092: Train02aCupe_Window
+    100094: Train02aCupe_Wood01a
+    100096: Train02aCupe_Wood01a1
+    100098: Train02aCupewindow
+    100100: Train02aCupe_Windows
+    400000: Train02aCupe_1Interior
+    400002: //RootNode
+    400004: Train02aCupe_1Interiordetail
+    400006: Train02aCupe_1Interiormtl
+    400008: Train02aCupe_1Wheel01
+    400010: Train02aCupe_1Wheel02
+    400012: Train02aCupe_1Wheel03
+    400014: Train02aCupe_1Wheel04
+    400016: Train02aCupe_1Wheels
+    400018: Train02aCupe_Bench02
+    400020: Train02aCupe_Bench02up
+    400022: Train02aCupe_BenchFabric01
+    400024: Train02aCupe_Ceiling1
+    400026: Train02aCupe_Ceiling2
+    400028: Train02aCupe_Chrome
+    400030: Train02aCupe_Chrome1
+    400032: Train02aCupe_Curtain02f
+    400034: Train02aCupe_Curtain03a
+    400036: Train02aCupe_Curtain05k
+    400038: Train02aCupe_Doorcupe1
+    400040: Train02aCupe_Doorcupe10
+    400042: Train02aCupe_Doorcupe2
+    400044: Train02aCupe_Doorcupe3
+    400046: Train02aCupe_Doorcupe4
+    400048: Train02aCupe_Doorcupe5
+    400050: Train02aCupe_Doorcupe6
+    400052: Train02aCupe_Doorcupe7
+    400054: Train02aCupe_Doorcupe8
+    400056: Train02aCupe_Doorcupe9
+    400058: Train02aCupe_Doorglass
+    400060: Train02aCupe_Doorpart
+    400062: Train02aCupe_Fabric02
+    400064: Train02aCupe_Floor
+    400066: Train02aCupe_LampCircle_3
+    400068: Train02aCupe_LampWall05
+    400070: Train02aCupe_Light01
+    400072: Train02aCupe_LightCeiling09b
+    400074: Train02aCupe_Metall01d
+    400076: Train02aCupe_Mirror01
+    400078: Train02aCupe_Sink09
+    400080: Train02aCupe_Stairs
+    400082: Train02aCupe_Table
+    400084: Train02aCupe_Toilet03
+    400086: Train02aCupe_ToiletPaper01c
+    400088: Train02aCupe_Towel02a
+    400090: Train02aCupe_Towelmtl
+    400092: Train02aCupe_Window
+    400094: Train02aCupe_Wood01a
+    400096: Train02aCupe_Wood01a1
+    400098: Train02aCupewindow
+    400100: Train02aCupe_Windows
+    2300000: Train02aCupe_1Interior
+    2300002: Train02aCupe_1Interiordetail
+    2300004: Train02aCupe_1Interiormtl
+    2300006: Train02aCupe_1Wheel01
+    2300008: Train02aCupe_1Wheel02
+    2300010: Train02aCupe_1Wheel03
+    2300012: Train02aCupe_1Wheel04
+    2300014: Train02aCupe_1Wheels
+    2300016: Train02aCupe_Bench02
+    2300018: Train02aCupe_Bench02up
+    2300020: Train02aCupe_BenchFabric01
+    2300022: Train02aCupe_Ceiling1
+    2300024: Train02aCupe_Ceiling2
+    2300026: Train02aCupe_Chrome
+    2300028: Train02aCupe_Chrome1
+    2300030: Train02aCupe_Curtain02f
+    2300032: Train02aCupe_Curtain03a
+    2300034: Train02aCupe_Curtain05k
+    2300036: Train02aCupe_Doorcupe1
+    2300038: Train02aCupe_Doorcupe10
+    2300040: Train02aCupe_Doorcupe2
+    2300042: Train02aCupe_Doorcupe3
+    2300044: Train02aCupe_Doorcupe4
+    2300046: Train02aCupe_Doorcupe5
+    2300048: Train02aCupe_Doorcupe6
+    2300050: Train02aCupe_Doorcupe7
+    2300052: Train02aCupe_Doorcupe8
+    2300054: Train02aCupe_Doorcupe9
+    2300056: Train02aCupe_Doorglass
+    2300058: Train02aCupe_Doorpart
+    2300060: Train02aCupe_Fabric02
+    2300062: Train02aCupe_Floor
+    2300064: Train02aCupe_LampCircle_3
+    2300066: Train02aCupe_LampWall05
+    2300068: Train02aCupe_Light01
+    2300070: Train02aCupe_LightCeiling09b
+    2300072: Train02aCupe_Metall01d
+    2300074: Train02aCupe_Mirror01
+    2300076: Train02aCupe_Sink09
+    2300078: Train02aCupe_Stairs
+    2300080: Train02aCupe_Table
+    2300082: Train02aCupe_Toilet03
+    2300084: Train02aCupe_ToiletPaper01c
+    2300086: Train02aCupe_Towel02a
+    2300088: Train02aCupe_Towelmtl
+    2300090: Train02aCupe_Window
+    2300092: Train02aCupe_Wood01a
+    2300094: Train02aCupe_Wood01a1
+    2300096: Train02aCupewindow
+    2300098: Train02aCupe_Windows
+    3300000: Train02aCupe_1Interior
+    3300002: Train02aCupe_1Interiordetail
+    3300004: Train02aCupe_1Interiormtl
+    3300006: Train02aCupe_1Wheel01
+    3300008: Train02aCupe_1Wheel02
+    3300010: Train02aCupe_1Wheel03
+    3300012: Train02aCupe_1Wheel04
+    3300014: Train02aCupe_1Wheels
+    3300016: Train02aCupe_Bench02
+    3300018: Train02aCupe_Bench02up
+    3300020: Train02aCupe_BenchFabric01
+    3300022: Train02aCupe_Ceiling1
+    3300024: Train02aCupe_Ceiling2
+    3300026: Train02aCupe_Chrome
+    3300028: Train02aCupe_Chrome1
+    3300030: Train02aCupe_Curtain02f
+    3300032: Train02aCupe_Curtain03a
+    3300034: Train02aCupe_Curtain05k
+    3300036: Train02aCupe_Doorcupe1
+    3300038: Train02aCupe_Doorcupe10
+    3300040: Train02aCupe_Doorcupe2
+    3300042: Train02aCupe_Doorcupe3
+    3300044: Train02aCupe_Doorcupe4
+    3300046: Train02aCupe_Doorcupe5
+    3300048: Train02aCupe_Doorcupe6
+    3300050: Train02aCupe_Doorcupe7
+    3300052: Train02aCupe_Doorcupe8
+    3300054: Train02aCupe_Doorcupe9
+    3300056: Train02aCupe_Doorglass
+    3300058: Train02aCupe_Doorpart
+    3300060: Train02aCupe_Fabric02
+    3300062: Train02aCupe_Floor
+    3300064: Train02aCupe_LampCircle_3
+    3300066: Train02aCupe_LampWall05
+    3300068: Train02aCupe_Light01
+    3300070: Train02aCupe_LightCeiling09b
+    3300072: Train02aCupe_Metall01d
+    3300074: Train02aCupe_Mirror01
+    3300076: Train02aCupe_Sink09
+    3300078: Train02aCupe_Stairs
+    3300080: Train02aCupe_Table
+    3300082: Train02aCupe_Toilet03
+    3300084: Train02aCupe_ToiletPaper01c
+    3300086: Train02aCupe_Towel02a
+    3300088: Train02aCupe_Towelmtl
+    3300090: Train02aCupe_Window
+    3300092: Train02aCupe_Wood01a
+    3300094: Train02aCupe_Wood01a1
+    3300096: Train02aCupewindow
+    3300098: Train02aCupe_Windows
+    4300000: Train02aCupe_1Interiormtl
+    4300002: Train02aCupe_1Interiordetail
+    4300004: Train02aCupe_1Interior
+    4300006: Train02aCupe_Stairs
+    4300008: Train02aCupewindow
+    4300010: Train02aCupe_Window
+    4300012: Train02aCupe_Doorglass
+    4300014: Train02aCupe_Doorpart
+    4300016: Train02aCupe_Chrome1
+    4300018: Train02aCupe_Table
+    4300020: Train02aCupe_Chrome
+    4300022: Train02aCupe_Wood01a1
+    4300024: Train02aCupe_Fabric02
+    4300026: Train02aCupe_Wood01a
+    4300028: Train02aCupe_Ceiling2
+    4300030: Train02aCupe_Ceiling1
+    4300032: Train02aCupe_Doorcupe1
+    4300034: Train02aCupe_Doorcupe10
+    4300036: Train02aCupe_Doorcupe9
+    4300038: Train02aCupe_Doorcupe2
+    4300040: Train02aCupe_Doorcupe3
+    4300042: Train02aCupe_Doorcupe4
+    4300044: Train02aCupe_Doorcupe5
+    4300046: Train02aCupe_Doorcupe8
+    4300048: Train02aCupe_Doorcupe7
+    4300050: Train02aCupe_Doorcupe6
+    4300052: Train02aCupe_Floor
+    4300054: Train02aCupe_Curtain05k
+    4300056: Train02aCupe_Curtain03a
+    4300058: Train02aCupe_Metall01d
+    4300060: Train02aCupe_BenchFabric01
+    4300062: Train02aCupe_Bench02up
+    4300064: Train02aCupe_Bench02
+    4300066: Train02aCupe_Mirror01
+    4300068: Train02aCupe_ToiletPaper01c
+    4300070: Train02aCupe_Sink09
+    4300072: Train02aCupe_Toilet03
+    4300074: Train02aCupe_LightCeiling09b
+    4300076: Train02aCupe_Light01
+    4300078: Train02aCupe_LampCircle_3
+    4300080: Train02aCupe_Towel02a
+    4300082: Train02aCupe_Towelmtl
+    4300084: Train02aCupe_LampWall05
+    4300086: Train02aCupe_1Wheel01
+    4300088: Train02aCupe_1Wheels
+    4300090: Train02aCupe_1Wheel02
+    4300092: Train02aCupe_1Wheel04
+    4300094: Train02aCupe_1Wheel03
+    4300096: Train02aCupe_Curtain02f
+    4300098: Train02aCupe_Windows
+    6400000: Train02aCupe_1Interior
+    6400002: Train02aCupe_1Interiordetail
+    6400004: Train02aCupe_1Interiormtl
+    6400006: Train02aCupe_1Wheel01
+    6400008: Train02aCupe_1Wheel02
+    6400010: Train02aCupe_1Wheel03
+    6400012: Train02aCupe_1Wheel04
+    6400014: Train02aCupe_1Wheels
+    6400016: Train02aCupe_Bench02
+    6400018: Train02aCupe_Bench02up
+    6400020: Train02aCupe_BenchFabric01
+    6400022: Train02aCupe_Ceiling1
+    6400024: Train02aCupe_Ceiling2
+    6400026: Train02aCupe_Chrome
+    6400028: Train02aCupe_Chrome1
+    6400030: Train02aCupe_Curtain02f
+    6400032: Train02aCupe_Curtain03a
+    6400034: Train02aCupe_Curtain05k
+    6400036: Train02aCupe_Doorcupe1
+    6400038: Train02aCupe_Doorcupe10
+    6400040: Train02aCupe_Doorcupe2
+    6400042: Train02aCupe_Doorcupe3
+    6400044: Train02aCupe_Doorcupe4
+    6400046: Train02aCupe_Doorcupe5
+    6400048: Train02aCupe_Doorcupe6
+    6400050: Train02aCupe_Doorcupe7
+    6400052: Train02aCupe_Doorcupe8
+    6400054: Train02aCupe_Doorcupe9
+    6400056: Train02aCupe_Doorglass
+    6400058: Train02aCupe_Doorpart
+    6400060: Train02aCupe_Fabric02
+    6400062: Train02aCupe_Floor
+    6400064: Train02aCupe_LampCircle_3
+    6400066: Train02aCupe_LampWall05
+    6400068: Train02aCupe_Light01
+    6400070: Train02aCupe_LightCeiling09b
+    6400072: Train02aCupe_Metall01d
+    6400074: Train02aCupe_Mirror01
+    6400076: Train02aCupe_Sink09
+    6400078: Train02aCupe_Stairs
+    6400080: Train02aCupe_Table
+    6400082: Train02aCupe_Toilet03
+    6400084: Train02aCupe_ToiletPaper01c
+    6400086: Train02aCupe_Towel02a
+    6400088: Train02aCupe_Towelmtl
+    6400090: Train02aCupe_Window
+    6400092: Train02aCupe_Wood01a
+    6400094: Train02aCupe_Wood01a1
+    6400096: Train02aCupewindow
+    6400098: Train02aCupe_Windows
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 1Metall01a
+    second: {fileID: 2100000, guid: 49fbcb1392317b948a39a9541ae0139f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 1Metall01b
+    second: {fileID: 2100000, guid: 57db28326c165b848b3a0f9f445647d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 1Metall01c
+    second: {fileID: 2100000, guid: e1da0e89cef712241b73f0f9b2e545b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FabricFloor01
+    second: {fileID: 2100000, guid: 849acceb2c2231444b906133a731e834, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FabricFloor03
+    second: {fileID: 2100000, guid: e9fff5e62a1fbc64e96143bb76a80693, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floorlinoleum1
+    second: {fileID: 2100000, guid: 1aae8f6a07606e24eb48766ff71e73aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floorlinoleum2
+    second: {fileID: 2100000, guid: 53bc2a4a0fff9c949a1668a0d0398b70, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floorlinoleum3
+    second: {fileID: 2100000, guid: 2860b03fd2bca9b4b9d2b62bf1d5b6fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_1Interior
+    second: {fileID: 2100000, guid: 5091b57fb847b6046bf8703c29ec49e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_1Wheels
+    second: {fileID: 2100000, guid: ca38c708b288b3a43a2c2d5d0f761640, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Bench02
+    second: {fileID: 2100000, guid: e4ba0c8cfd54e7847850c1c24c1515d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_BenchFabric01
+    second: {fileID: 2100000, guid: 807112b629486ea4486adcf29ea32d73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Ceiling1
+    second: {fileID: 2100000, guid: 0b393fba79ce487468812a61299055dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Ceiling2
+    second: {fileID: 2100000, guid: 17eeab7ff3916f2409a711c473231b78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Chrome
+    second: {fileID: 2100000, guid: 8c9fce16c9387e940a01e5b15f243ab4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Curtain02f
+    second: {fileID: 2100000, guid: d20440d38cfe7d84da20a9559b90d5b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Curtain03a
+    second: {fileID: 2100000, guid: c93bb00fa02292e429ce35f1a9198cf7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Curtain05k
+    second: {fileID: 2100000, guid: 95eb84b23f3c40a42a944f9fac7a1fea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Detail
+    second: {fileID: 2100000, guid: 0ab4c03571a8d3c4381045d48dd2f4da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Doorcupe
+    second: {fileID: 2100000, guid: 25122e5c563a42f48809349eeaaa6aab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Doorglass
+    second: {fileID: 2100000, guid: 2a740c1b504b42449b89482a027cf03f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Doorpart
+    second: {fileID: 2100000, guid: bb321183939f67c4e8fa459bbe227db9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Fabric02
+    second: {fileID: 2100000, guid: 421d6f35dc1a90940bc9ede5630df0c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_LampCircle_3
+    second: {fileID: 2100000, guid: 37a0360dbe2b6c9449810caa4c46e6f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_LampWall05
+    second: {fileID: 2100000, guid: aa8722030daab8b4da86073f80ab1524, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Light01
+    second: {fileID: 2100000, guid: 34f197f7ae548ec4597e91a1e2d5916e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_LightCeiling09b
+    second: {fileID: 2100000, guid: 64bdda9698c002340b1ce8b63abdae3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Metall01d
+    second: {fileID: 2100000, guid: c98b5d272a257d346adf7cf9e5c3ebf7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Metall02
+    second: {fileID: 2100000, guid: 7270902ad71a0dd47bb01f008ce5e14b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Metall03a
+    second: {fileID: 2100000, guid: bba2a60ee5642d445889a22670f55cc8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Metall04
+    second: {fileID: 2100000, guid: 5596fb5e44394784e9c29c3b29fc6456, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Metall04a
+    second: {fileID: 2100000, guid: 75d8178bae682194093b0c1017b8118f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Metall05
+    second: {fileID: 2100000, guid: 37b2c46744a405445b62aeac7e314d4e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Mirror01
+    second: {fileID: 2100000, guid: e36087e419400794ca4d5e230bdc74c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Sink09
+    second: {fileID: 2100000, guid: 3c0804797c3dbf143b97325ea56c4fca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Toilet03
+    second: {fileID: 2100000, guid: b1d4e4ec125b2ab42b810d7b7faca2ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_ToiletPaper01c
+    second: {fileID: 2100000, guid: 8c8d82067d1d92e4ab8f42faf66bef03, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Towel02a
+    second: {fileID: 2100000, guid: 4f08a23a41d716844a8a72a56c36a2ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Towelmtl
+    second: {fileID: 2100000, guid: d4338ff4bc0f5924ba8248891957355e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Window
+    second: {fileID: 2100000, guid: 33b5fc536f3a5984f9a86d651579b568, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Wood01a
+    second: {fileID: 2100000, guid: a7ebcb68af3346e47bd29de10bbe1df7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Wood01a1
+    second: {fileID: 2100000, guid: d6d75f8c823758f4baccd24bdce26f4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02aCupe_Wood01a2
+    second: {fileID: 2100000, guid: a7ebcb68af3346e47bd29de10bbe1df7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train02awindow
+    second: {fileID: 2100000, guid: 49fbcb1392317b948a39a9541ae0139f, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,223 @@
+fileFormatVersion: 2
+guid: d90f59299455bd145a04893c2e7bd5ab
+timeCreated: 1578892810
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Station02Floor
+    100004: Station02FloorRailway
+    100006: Station02Railway
+    100008: Station02Roof01Light1
+    100010: Station02Roof01Mtl
+    100012: Station02RoofWindow
+    100014: Station02RoofWinds
+    100016: Station02Wall01
+    100018: Station02WallPanel
+    100020: Station02Window01
+    100022: Station02Window01Mtl
+    400000: //RootNode
+    400002: Station02Floor
+    400004: Station02FloorRailway
+    400006: Station02Railway
+    400008: Station02Roof01Light1
+    400010: Station02Roof01Mtl
+    400012: Station02RoofWindow
+    400014: Station02RoofWinds
+    400016: Station02Wall01
+    400018: Station02WallPanel
+    400020: Station02Window01
+    400022: Station02Window01Mtl
+    2300000: Station02Floor
+    2300002: Station02FloorRailway
+    2300004: Station02Railway
+    2300006: Station02Roof01Light1
+    2300008: Station02Roof01Mtl
+    2300010: Station02RoofWindow
+    2300012: Station02RoofWinds
+    2300014: Station02Wall01
+    2300016: Station02WallPanel
+    2300018: Station02Window01
+    2300020: Station02Window01Mtl
+    3300000: Station02Floor
+    3300002: Station02FloorRailway
+    3300004: Station02Railway
+    3300006: Station02Roof01Light1
+    3300008: Station02Roof01Mtl
+    3300010: Station02RoofWindow
+    3300012: Station02RoofWinds
+    3300014: Station02Wall01
+    3300016: Station02WallPanel
+    3300018: Station02Window01
+    3300020: Station02Window01Mtl
+    4300000: Station02Floor
+    4300002: Station02FloorRailway
+    4300004: Station02Wall01
+    4300006: Station02WallPanel
+    4300008: Station02Window01Mtl
+    4300010: Station02Window01
+    4300012: Station02Roof01Mtl
+    4300014: Station02Railway
+    4300016: Station02Roof01Light1
+    4300018: Station02RoofWindow
+    4300020: Station02RoofWinds
+    6400000: Station02Floor
+    6400002: Station02FloorRailway
+    6400004: Station02Railway
+    6400006: Station02Roof01Light1
+    6400008: Station02Roof01Mtl
+    6400010: Station02RoofWindow
+    6400012: Station02RoofWinds
+    6400014: Station02Wall01
+    6400016: Station02WallPanel
+    6400018: Station02Window01
+    6400020: Station02Window01Mtl
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station02Floor01
+    second: {fileID: 2100000, guid: 36b56dc29448caa46a6b31dff443c604, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station02Floor02
+    second: {fileID: 2100000, guid: 60bd2627a509768448b2cfe186353b3b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station02FloorRailway
+    second: {fileID: 2100000, guid: eed537ab6099e65459c31c5cdf274b97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station02Railway
+    second: {fileID: 2100000, guid: ac56305b41175e247882f48d421767ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station02Roof01Light
+    second: {fileID: 2100000, guid: d908052e6c76e9840a89cb222dd4a088, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station02Roof01Mtl
+    second: {fileID: 2100000, guid: ce22850da84823d40a682943641627e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station02Roof02
+    second: {fileID: 2100000, guid: 24a878e7b36651b4191e16172abe56de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station02RoofWindow
+    second: {fileID: 2100000, guid: ab8cbc877c9467c46af9dda289e4311f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station02RoofWinds
+    second: {fileID: 2100000, guid: 718acdd8635936f4997b62a2b6b7b702, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station02Wall01
+    second: {fileID: 2100000, guid: 942291fb4a7f236488adc04f0043e3eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station02Wall02
+    second: {fileID: 2100000, guid: b60cbb7579327294b91dd71e67cb2b15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station02WallPanel
+    second: {fileID: 2100000, guid: 83ece13ccc124d34ca4ae0affe0fb354, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station02Window01
+    second: {fileID: 2100000, guid: 6ba1366d6dbd6ff45be8dd0bbc946adc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station02Window01Mtl
+    second: {fileID: 2100000, guid: 76360309348d2584298a07ba76eb2144, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
