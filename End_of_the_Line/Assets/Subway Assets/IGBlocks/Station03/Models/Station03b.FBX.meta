@@ -1,0 +1,282 @@
+fileFormatVersion: 2
+guid: 8011170edc05e074a9936bcbb0fdbe17
+timeCreated: 1560765903
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Station03FloorUnder
+    100004: Station03FloorWay
+    100006: Station03Railway
+    100008: Station03Roof01
+    100010: Station03Roof02
+    100012: Station03Roof03
+    100014: Station03RoofMtl
+    100016: Station03Under
+    100018: Station03Under_Stair
+    100020: Station03Wall01
+    100022: Station03Wall03
+    100024: Station03WallCircle
+    100026: Station03WallCircle_a
+    100028: Station03WallElipse
+    100030: Station03WallEPanel
+    400000: //RootNode
+    400002: Station03FloorUnder
+    400004: Station03FloorWay
+    400006: Station03Railway
+    400008: Station03Roof01
+    400010: Station03Roof02
+    400012: Station03Roof03
+    400014: Station03RoofMtl
+    400016: Station03Under
+    400018: Station03Under_Stair
+    400020: Station03Wall01
+    400022: Station03Wall03
+    400024: Station03WallCircle
+    400026: Station03WallCircle_a
+    400028: Station03WallElipse
+    400030: Station03WallEPanel
+    2300000: Station03FloorUnder
+    2300002: Station03FloorWay
+    2300004: Station03Railway
+    2300006: Station03Roof01
+    2300008: Station03Roof02
+    2300010: Station03Roof03
+    2300012: Station03RoofMtl
+    2300014: Station03Under
+    2300016: Station03Under_Stair
+    2300018: Station03Wall01
+    2300020: Station03Wall03
+    2300022: Station03WallCircle
+    2300024: Station03WallCircle_a
+    2300026: Station03WallElipse
+    2300028: Station03WallEPanel
+    3300000: Station03FloorUnder
+    3300002: Station03FloorWay
+    3300004: Station03Railway
+    3300006: Station03Roof01
+    3300008: Station03Roof02
+    3300010: Station03Roof03
+    3300012: Station03RoofMtl
+    3300014: Station03Under
+    3300016: Station03Under_Stair
+    3300018: Station03Wall01
+    3300020: Station03Wall03
+    3300022: Station03WallCircle
+    3300024: Station03WallCircle_a
+    3300026: Station03WallElipse
+    3300028: Station03WallEPanel
+    4300000: Station03Roof03
+    4300002: Station03FloorWay
+    4300004: Station03Wall01
+    4300006: Station03Wall03
+    4300008: Station03WallCircle
+    4300010: Station03WallCircle_a
+    4300012: Station03WallElipse
+    4300014: Station03WallEPanel
+    4300016: Station03Under_Stair
+    4300018: Station03Under
+    4300020: Station03Roof02
+    4300022: Station03Roof01
+    4300024: Station03RoofMtl
+    4300026: Station03FloorUnder
+    4300028: Station03Railway
+    6400000: Station03FloorUnder
+    6400002: Station03FloorWay
+    6400004: Station03Railway
+    6400006: Station03Roof01
+    6400008: Station03Roof02
+    6400010: Station03Roof03
+    6400012: Station03RoofMtl
+    6400014: Station03Under
+    6400016: Station03Under_Stair
+    6400018: Station03Wall01
+    6400020: Station03Wall03
+    6400022: Station03WallCircle
+    6400024: Station03WallCircle_a
+    6400026: Station03WallElipse
+    6400028: Station03WallEPanel
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station03Floor01
+    second: {fileID: 2100000, guid: 2dbf1afb26c36304d901ce711b5bd33e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station03Floor02
+    second: {fileID: 2100000, guid: cbd0d318ee43e0043b5065f6b0b9830a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station03FloorUnder
+    second: {fileID: 2100000, guid: 9434b924d458195418d327a81f5fb2df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station03FloorWay
+    second: {fileID: 2100000, guid: cf5abcaff18c9e443baafd08a11a7973, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station03Railway
+    second: {fileID: 2100000, guid: 53f146432e3b66743a64ba9caa14c8c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station03Roof01
+    second: {fileID: 2100000, guid: 53ce956bb63d715479471d8929b87391, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station03Roof02
+    second: {fileID: 2100000, guid: 77b4bcf0efddf66449b41fb238745ce3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station03Roof03
+    second: {fileID: 2100000, guid: 98019041942b9df4d8a6ec461365d40d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station03RoofMtl
+    second: {fileID: 2100000, guid: 02d7c82ad700d6244971746f423137dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station03Under_Ceiling
+    second: {fileID: 2100000, guid: 0049c7a3ced9be84bb91ffed84e00283, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station03Under_Floor
+    second: {fileID: 2100000, guid: 2a89b730530af21458fed5dc66a9c408, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station03Under_Stair
+    second: {fileID: 2100000, guid: 739f82d6bb66b20439f4f56b30eaa941, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station03Under_Wall01
+    second: {fileID: 2100000, guid: 21494953389eb514dae586c96b027c13, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station03Under_Wall02
+    second: {fileID: 2100000, guid: 6e40be2fca2eb30449fd2f2d0718aff3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station03Wall01
+    second: {fileID: 2100000, guid: 00590f337d736b24ebacc0527a12fb01, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station03Wall02
+    second: {fileID: 2100000, guid: 17de3ce31e40e76428fb89974ac219e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station03Wall03
+    second: {fileID: 2100000, guid: 84bd64daad0e1e54f8577fd8c97a7b5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station03WallCircle
+    second: {fileID: 2100000, guid: c7c3ee5972bad2a4aa525aee37c8d883, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station03WallCircle_a
+    second: {fileID: 2100000, guid: e247226e8da8c9546acf32253d748661, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station03WallEPanel
+    second: {fileID: 2100000, guid: 10af1b32222fe05458a0382f29648671, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station03WallElipse
+    second: {fileID: 2100000, guid: d1a0b29957e43be499e5a076b4a44cec, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
