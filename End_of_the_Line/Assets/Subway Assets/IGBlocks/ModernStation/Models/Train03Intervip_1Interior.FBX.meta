@@ -1,0 +1,558 @@
+fileFormatVersion: 2
+guid: c7541797483e1d541938033fe28ccdf6
+timeCreated: 1560768292
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Train03Intervip_1Interior
+    100004: Train03Intervip_1Interiordetail
+    100006: Train03Intervip_1Interiormtl
+    100008: Train03Intervip_1Wheel01
+    100010: Train03Intervip_1Wheel02
+    100012: Train03Intervip_1Wheel03
+    100014: Train03Intervip_1Wheel04
+    100016: Train03Intervip_1Wheels
+    100018: Train03Intervip_Bench01
+    100020: Train03Intervip_Bench02
+    100022: Train03Intervip_Ceiling1
+    100024: Train03Intervip_Ceiling2
+    100026: Train03Intervip_Chrome
+    100028: Train03Intervip_Cond
+    100030: Train03Intervip_Conditioner01
+    100032: Train03Intervip_Curtain02a
+    100034: Train03Intervip_Curtain04a
+    100036: Train03Intervip_Doorcupe1
+    100038: Train03Intervip_Doorcupe2
+    100040: Train03Intervip_Doorglass
+    100042: Train03Intervip_Doorpart
+    100044: Train03Intervip_Fabric02
+    100046: Train03Intervip_Floor
+    100048: Train03Intervip_LampCircle_2
+    100050: Train03Intervip_LampWall01
+    100052: Train03Intervip_LightWall05
+    100054: Train03Intervip_Mirror02
+    100056: Train03Intervip_Plaid01
+    100058: Train03Intervip_Sink07
+    100060: Train03Intervip_Sink07a
+    100062: Train03Intervip_Stairs
+    100064: Train03Intervip_Table
+    100066: Train03Intervip_Toilet02
+    100068: Train03Intervip_ToiletPaper01c
+    100070: Train03Intervip_ToiletPaper02c
+    100072: Train03Intervip_Towel01
+    100074: Train03Intervip_Towelsmtl
+    100076: Train03Intervip_Window
+    100078: Train03Intervip_Windows
+    100080: Train03Intervip_Wood01a
+    100082: Train03Intervip_Wood01a1
+    400000: Train03Intervip_1Interior
+    400002: //RootNode
+    400004: Train03Intervip_1Interiordetail
+    400006: Train03Intervip_1Interiormtl
+    400008: Train03Intervip_1Wheel01
+    400010: Train03Intervip_1Wheel02
+    400012: Train03Intervip_1Wheel03
+    400014: Train03Intervip_1Wheel04
+    400016: Train03Intervip_1Wheels
+    400018: Train03Intervip_Bench01
+    400020: Train03Intervip_Bench02
+    400022: Train03Intervip_Ceiling1
+    400024: Train03Intervip_Ceiling2
+    400026: Train03Intervip_Chrome
+    400028: Train03Intervip_Cond
+    400030: Train03Intervip_Conditioner01
+    400032: Train03Intervip_Curtain02a
+    400034: Train03Intervip_Curtain04a
+    400036: Train03Intervip_Doorcupe1
+    400038: Train03Intervip_Doorcupe2
+    400040: Train03Intervip_Doorglass
+    400042: Train03Intervip_Doorpart
+    400044: Train03Intervip_Fabric02
+    400046: Train03Intervip_Floor
+    400048: Train03Intervip_LampCircle_2
+    400050: Train03Intervip_LampWall01
+    400052: Train03Intervip_LightWall05
+    400054: Train03Intervip_Mirror02
+    400056: Train03Intervip_Plaid01
+    400058: Train03Intervip_Sink07
+    400060: Train03Intervip_Sink07a
+    400062: Train03Intervip_Stairs
+    400064: Train03Intervip_Table
+    400066: Train03Intervip_Toilet02
+    400068: Train03Intervip_ToiletPaper01c
+    400070: Train03Intervip_ToiletPaper02c
+    400072: Train03Intervip_Towel01
+    400074: Train03Intervip_Towelsmtl
+    400076: Train03Intervip_Window
+    400078: Train03Intervip_Windows
+    400080: Train03Intervip_Wood01a
+    400082: Train03Intervip_Wood01a1
+    2300000: Train03Intervip_1Interior
+    2300002: Train03Intervip_1Interiordetail
+    2300004: Train03Intervip_1Interiormtl
+    2300006: Train03Intervip_1Wheel01
+    2300008: Train03Intervip_1Wheel02
+    2300010: Train03Intervip_1Wheel03
+    2300012: Train03Intervip_1Wheel04
+    2300014: Train03Intervip_1Wheels
+    2300016: Train03Intervip_Bench01
+    2300018: Train03Intervip_Bench02
+    2300020: Train03Intervip_Ceiling1
+    2300022: Train03Intervip_Ceiling2
+    2300024: Train03Intervip_Chrome
+    2300026: Train03Intervip_Cond
+    2300028: Train03Intervip_Conditioner01
+    2300030: Train03Intervip_Curtain02a
+    2300032: Train03Intervip_Curtain04a
+    2300034: Train03Intervip_Doorcupe1
+    2300036: Train03Intervip_Doorcupe2
+    2300038: Train03Intervip_Doorglass
+    2300040: Train03Intervip_Doorpart
+    2300042: Train03Intervip_Fabric02
+    2300044: Train03Intervip_Floor
+    2300046: Train03Intervip_LampCircle_2
+    2300048: Train03Intervip_LampWall01
+    2300050: Train03Intervip_LightWall05
+    2300052: Train03Intervip_Mirror02
+    2300054: Train03Intervip_Plaid01
+    2300056: Train03Intervip_Sink07
+    2300058: Train03Intervip_Sink07a
+    2300060: Train03Intervip_Stairs
+    2300062: Train03Intervip_Table
+    2300064: Train03Intervip_Toilet02
+    2300066: Train03Intervip_ToiletPaper01c
+    2300068: Train03Intervip_ToiletPaper02c
+    2300070: Train03Intervip_Towel01
+    2300072: Train03Intervip_Towelsmtl
+    2300074: Train03Intervip_Window
+    2300076: Train03Intervip_Windows
+    2300078: Train03Intervip_Wood01a
+    2300080: Train03Intervip_Wood01a1
+    3300000: Train03Intervip_1Interior
+    3300002: Train03Intervip_1Interiordetail
+    3300004: Train03Intervip_1Interiormtl
+    3300006: Train03Intervip_1Wheel01
+    3300008: Train03Intervip_1Wheel02
+    3300010: Train03Intervip_1Wheel03
+    3300012: Train03Intervip_1Wheel04
+    3300014: Train03Intervip_1Wheels
+    3300016: Train03Intervip_Bench01
+    3300018: Train03Intervip_Bench02
+    3300020: Train03Intervip_Ceiling1
+    3300022: Train03Intervip_Ceiling2
+    3300024: Train03Intervip_Chrome
+    3300026: Train03Intervip_Cond
+    3300028: Train03Intervip_Conditioner01
+    3300030: Train03Intervip_Curtain02a
+    3300032: Train03Intervip_Curtain04a
+    3300034: Train03Intervip_Doorcupe1
+    3300036: Train03Intervip_Doorcupe2
+    3300038: Train03Intervip_Doorglass
+    3300040: Train03Intervip_Doorpart
+    3300042: Train03Intervip_Fabric02
+    3300044: Train03Intervip_Floor
+    3300046: Train03Intervip_LampCircle_2
+    3300048: Train03Intervip_LampWall01
+    3300050: Train03Intervip_LightWall05
+    3300052: Train03Intervip_Mirror02
+    3300054: Train03Intervip_Plaid01
+    3300056: Train03Intervip_Sink07
+    3300058: Train03Intervip_Sink07a
+    3300060: Train03Intervip_Stairs
+    3300062: Train03Intervip_Table
+    3300064: Train03Intervip_Toilet02
+    3300066: Train03Intervip_ToiletPaper01c
+    3300068: Train03Intervip_ToiletPaper02c
+    3300070: Train03Intervip_Towel01
+    3300072: Train03Intervip_Towelsmtl
+    3300074: Train03Intervip_Window
+    3300076: Train03Intervip_Windows
+    3300078: Train03Intervip_Wood01a
+    3300080: Train03Intervip_Wood01a1
+    4300000: Train03Intervip_1Interiormtl
+    4300002: Train03Intervip_1Interiordetail
+    4300004: Train03Intervip_1Interior
+    4300006: Train03Intervip_Stairs
+    4300008: Train03Intervip_Windows
+    4300010: Train03Intervip_Window
+    4300012: Train03Intervip_Doorglass
+    4300014: Train03Intervip_Doorpart
+    4300016: Train03Intervip_Wood01a1
+    4300018: Train03Intervip_Fabric02
+    4300020: Train03Intervip_Ceiling2
+    4300022: Train03Intervip_Ceiling1
+    4300024: Train03Intervip_Doorcupe1
+    4300026: Train03Intervip_Doorcupe2
+    4300028: Train03Intervip_Floor
+    4300030: Train03Intervip_Table
+    4300032: Train03Intervip_Chrome
+    4300034: Train03Intervip_Wood01a
+    4300036: Train03Intervip_Curtain04a
+    4300038: Train03Intervip_Bench01
+    4300040: Train03Intervip_Cond
+    4300042: Train03Intervip_LightWall05
+    4300044: Train03Intervip_LampWall01
+    4300046: Train03Intervip_Conditioner01
+    4300048: Train03Intervip_Toilet02
+    4300050: Train03Intervip_Sink07a
+    4300052: Train03Intervip_ToiletPaper01c
+    4300054: Train03Intervip_Sink07
+    4300056: Train03Intervip_Plaid01
+    4300058: Train03Intervip_ToiletPaper02c
+    4300060: Train03Intervip_Towel01
+    4300062: Train03Intervip_Towelsmtl
+    4300064: Train03Intervip_Mirror02
+    4300066: Train03Intervip_LampCircle_2
+    4300068: Train03Intervip_Bench02
+    4300070: Train03Intervip_1Wheel01
+    4300072: Train03Intervip_1Wheels
+    4300074: Train03Intervip_1Wheel02
+    4300076: Train03Intervip_1Wheel04
+    4300078: Train03Intervip_1Wheel03
+    4300080: Train03Intervip_Curtain02a
+    6400000: Train03Intervip_1Interior
+    6400002: Train03Intervip_1Interiordetail
+    6400004: Train03Intervip_1Interiormtl
+    6400006: Train03Intervip_1Wheel01
+    6400008: Train03Intervip_1Wheel02
+    6400010: Train03Intervip_1Wheel03
+    6400012: Train03Intervip_1Wheel04
+    6400014: Train03Intervip_1Wheels
+    6400016: Train03Intervip_Bench01
+    6400018: Train03Intervip_Bench02
+    6400020: Train03Intervip_Ceiling1
+    6400022: Train03Intervip_Ceiling2
+    6400024: Train03Intervip_Chrome
+    6400026: Train03Intervip_Cond
+    6400028: Train03Intervip_Conditioner01
+    6400030: Train03Intervip_Curtain02a
+    6400032: Train03Intervip_Curtain04a
+    6400034: Train03Intervip_Doorcupe1
+    6400036: Train03Intervip_Doorcupe2
+    6400038: Train03Intervip_Doorglass
+    6400040: Train03Intervip_Doorpart
+    6400042: Train03Intervip_Fabric02
+    6400044: Train03Intervip_Floor
+    6400046: Train03Intervip_LampCircle_2
+    6400048: Train03Intervip_LampWall01
+    6400050: Train03Intervip_LightWall05
+    6400052: Train03Intervip_Mirror02
+    6400054: Train03Intervip_Plaid01
+    6400056: Train03Intervip_Sink07
+    6400058: Train03Intervip_Sink07a
+    6400060: Train03Intervip_Stairs
+    6400062: Train03Intervip_Table
+    6400064: Train03Intervip_Toilet02
+    6400066: Train03Intervip_ToiletPaper01c
+    6400068: Train03Intervip_ToiletPaper02c
+    6400070: Train03Intervip_Towel01
+    6400072: Train03Intervip_Towelsmtl
+    6400074: Train03Intervip_Window
+    6400076: Train03Intervip_Windows
+    6400078: Train03Intervip_Wood01a
+    6400080: Train03Intervip_Wood01a1
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_1Interior
+    second: {fileID: 2100000, guid: ad40236c48eb6a04d8567b728a2790a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_1Wheels
+    second: {fileID: 2100000, guid: 7f34dbd3ff4289448adc0c294a38cc9d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Bench01
+    second: {fileID: 2100000, guid: 6170a22ecfdb6e5468c90ab46a7ef55b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Bench02
+    second: {fileID: 2100000, guid: 7ea922f248a7e90488e1b153afc06bec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Ceiling1
+    second: {fileID: 2100000, guid: dd04bba9bfe97c141ad919734fe062de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Ceiling2
+    second: {fileID: 2100000, guid: a7d49eefe5216524fa730e2267f99ba4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Chrome
+    second: {fileID: 2100000, guid: e418f3296bfcd65459c492181c2f1ab8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Cond
+    second: {fileID: 2100000, guid: 0be8a324f2e2fbf4c82e65eadeaa2801, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Conditioner01
+    second: {fileID: 2100000, guid: e452164e27e87ed48b6dc9cb75265a47, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Curtain02a
+    second: {fileID: 2100000, guid: f336a12bc3e2d554aa088879959ca8b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Curtain04a
+    second: {fileID: 2100000, guid: 9aa179db37cf42541bd9a47661b303fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Detail
+    second: {fileID: 2100000, guid: 3ce54743d2a131d44830206c54c2cc72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Doorcupe
+    second: {fileID: 2100000, guid: a30379b9eb71b3847b5179d43862f705, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Doorglass
+    second: {fileID: 2100000, guid: 4216b02827459aa4a8fd0bdabe5ae416, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Doorpart
+    second: {fileID: 2100000, guid: 413ff79de880fb549ba9d01754e7456c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Fabric01
+    second: {fileID: 2100000, guid: 1410c326aee2fb44a883e8b88475f296, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Fabric02
+    second: {fileID: 2100000, guid: 04db2c8d4f893384fb43a70c6dbf1fb9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_LampCircle_2
+    second: {fileID: 2100000, guid: 41ded73f5bd3b52498189549a1f4b802, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_LampWall01
+    second: {fileID: 2100000, guid: 893e1c0ec2e6ed54e9c1f43975592ff3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_LightWall05
+    second: {fileID: 2100000, guid: ecf5ba0bf09f33740b4ce04d7bb5e3cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Lin01
+    second: {fileID: 2100000, guid: cce2f981b0748e640846ef40bbe8e1a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Lin02
+    second: {fileID: 2100000, guid: 7e85ec356a94cdb44a79c82b033142b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Lin03
+    second: {fileID: 2100000, guid: f75f46fb02e7d2c4eb6236555a69dfaa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Metall01aa
+    second: {fileID: 2100000, guid: b8813ff79c87a294ebb62519a83d4017, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Metall01b
+    second: {fileID: 2100000, guid: 6ccbe8d628f8c6445b160585f2bc1468, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Metall01c
+    second: {fileID: 2100000, guid: d7c36af8d68190c48b1c4dbf7ad0d5fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Metall02
+    second: {fileID: 2100000, guid: 0bae92d5fbb9bc548ac45ebff956661a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Metall03a
+    second: {fileID: 2100000, guid: 1e88f3a7dab1a4e47ae983c7693a666e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Metall04
+    second: {fileID: 2100000, guid: 8806d2ec2df467541948bb389dac2e76, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Metall04a
+    second: {fileID: 2100000, guid: cddc914fe8a205c448d5985687c52dd2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Metall05
+    second: {fileID: 2100000, guid: 33e9875c6b872bd4f9b92f97eeef96c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Mirror02
+    second: {fileID: 2100000, guid: fea3c0ab7d37484469e5331e3cf9969f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Plaid01
+    second: {fileID: 2100000, guid: 9028b97b67901b34cae08fbe92a471b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Sink07
+    second: {fileID: 2100000, guid: 24df2f0ffce41cc49a8dab9956589709, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Sink07a
+    second: {fileID: 2100000, guid: c065264325c75394f8bfc90c926f08f6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Toilet02
+    second: {fileID: 2100000, guid: f7817533c7524824b8601e6bcbf2a3a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_ToiletPaper01c
+    second: {fileID: 2100000, guid: f5754e59253ae5f4db101fe8fbb2fea2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_ToiletPaper02c
+    second: {fileID: 2100000, guid: 9277dc1f6714fa743816168613462aa4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Towel01
+    second: {fileID: 2100000, guid: f7bb6a55cee92bb4a8aa66a0eb8b87a0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Towelsmtl
+    second: {fileID: 2100000, guid: 8deeb98e2bdac3e47be58d1fb73b34a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Window
+    second: {fileID: 2100000, guid: 9cc9937b65e79704da384a11cb967fe1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Windows
+    second: {fileID: 2100000, guid: b8813ff79c87a294ebb62519a83d4017, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Wood01a
+    second: {fileID: 2100000, guid: 4b050cd4f74f4204c9bfdcd858f6047f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Wood01a1
+    second: {fileID: 2100000, guid: 5cda2cca5a094614bb74d662bb358e6c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Wood01a2
+    second: {fileID: 2100000, guid: 4b050cd4f74f4204c9bfdcd858f6047f, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

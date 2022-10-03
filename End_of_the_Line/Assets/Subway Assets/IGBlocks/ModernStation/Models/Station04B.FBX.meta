@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: 05cf54a9ebe82f345a552949530a4ffe
+timeCreated: 1560766375
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Station04Floorsb
+    100004: Station04FloorWayb
+    100006: Station04Railwayb
+    100008: Station04Roof01b
+    100010: Station04Roof02b
+    100012: Station04Roof03b
+    100014: Station04Wall01b
+    100016: Station04WallWindb
+    100018: Station04WallWindGlassb
+    400000: //RootNode
+    400002: Station04Floorsb
+    400004: Station04FloorWayb
+    400006: Station04Railwayb
+    400008: Station04Roof01b
+    400010: Station04Roof02b
+    400012: Station04Roof03b
+    400014: Station04Wall01b
+    400016: Station04WallWindb
+    400018: Station04WallWindGlassb
+    2300000: Station04Floorsb
+    2300002: Station04FloorWayb
+    2300004: Station04Railwayb
+    2300006: Station04Roof01b
+    2300008: Station04Roof02b
+    2300010: Station04Roof03b
+    2300012: Station04Wall01b
+    2300014: Station04WallWindb
+    2300016: Station04WallWindGlassb
+    3300000: Station04Floorsb
+    3300002: Station04FloorWayb
+    3300004: Station04Railwayb
+    3300006: Station04Roof01b
+    3300008: Station04Roof02b
+    3300010: Station04Roof03b
+    3300012: Station04Wall01b
+    3300014: Station04WallWindb
+    3300016: Station04WallWindGlassb
+    4300000: Station04FloorWayb
+    4300002: Station04Wall01b
+    4300004: Station04Floorsb
+    4300006: Station04WallWindb
+    4300008: Station04WallWindGlassb
+    4300010: Station04Roof02b
+    4300012: Station04Roof01b
+    4300014: Station04Roof03b
+    4300016: Station04Railwayb
+    6400000: Station04Floorsb
+    6400002: Station04FloorWayb
+    6400004: Station04Railwayb
+    6400006: Station04Roof01b
+    6400008: Station04Roof02b
+    6400010: Station04Roof03b
+    6400012: Station04Wall01b
+    6400014: Station04WallWindb
+    6400016: Station04WallWindGlassb
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station04Floor01
+    second: {fileID: 2100000, guid: 592457389a02e74409057882b46966b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station04Floor02
+    second: {fileID: 2100000, guid: 449b4a24ba440134391a459716d7d912, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station04FloorUnder
+    second: {fileID: 2100000, guid: 680d5bccfb31c604187a76c0260baaed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station04FloorWay
+    second: {fileID: 2100000, guid: 438581d22bb8e5943ab14afe2d2510b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station04Railway
+    second: {fileID: 2100000, guid: a5692685e3d3fd146909dc9fba5f606c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station04Roof01
+    second: {fileID: 2100000, guid: 3f802f23e10311f4da2ad9d5a520226b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station04Roof02
+    second: {fileID: 2100000, guid: a96c6c26d1d36154ab4bdefdf636c394, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station04Roof03
+    second: {fileID: 2100000, guid: eab5b1c69b66e3d418d12e0a347c4534, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station04Wall01
+    second: {fileID: 2100000, guid: 1b12aac81e1413941b6eb68a2d904aae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station04Wall02
+    second: {fileID: 2100000, guid: e41cd4ee05cd3654d8ea99f35406d429, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station04WallWind
+    second: {fileID: 2100000, guid: dad6eff24e5a05443b57e960d8d3482a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Station04WallWindGlass
+    second: {fileID: 2100000, guid: ded0f8c7ef5dff649a4f4b714c99740a, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

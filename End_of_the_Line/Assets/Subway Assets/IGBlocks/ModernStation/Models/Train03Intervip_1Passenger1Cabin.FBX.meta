@@ -1,0 +1,160 @@
+fileFormatVersion: 2
+guid: 9b150dadbb676514db30b919199d825c
+timeCreated: 1560768289
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Train03Intervip_1Cabin
+    100002: Train03Intervip_1Passenger
+    100004: //RootNode
+    100006: Train03Intervip_1Wheel01Pas
+    100008: Train03Intervip_1Wheel02Pas
+    100010: Train03Intervip_1Wheel03Pas
+    100012: Train03Intervip_1Wheel04Pas
+    100014: Train03Intervip_1WheelsPas
+    100016: Train03Intervip_Stairs
+    400000: Train03Intervip_1Cabin
+    400002: Train03Intervip_1Passenger
+    400004: //RootNode
+    400006: Train03Intervip_1Wheel01Pas
+    400008: Train03Intervip_1Wheel02Pas
+    400010: Train03Intervip_1Wheel03Pas
+    400012: Train03Intervip_1Wheel04Pas
+    400014: Train03Intervip_1WheelsPas
+    400016: Train03Intervip_Stairs
+    2300000: Train03Intervip_1Cabin
+    2300002: Train03Intervip_1Passenger
+    2300004: Train03Intervip_1Wheel01Pas
+    2300006: Train03Intervip_1Wheel02Pas
+    2300008: Train03Intervip_1Wheel03Pas
+    2300010: Train03Intervip_1Wheel04Pas
+    2300012: Train03Intervip_1WheelsPas
+    2300014: Train03Intervip_Stairs
+    3300000: Train03Intervip_1Cabin
+    3300002: Train03Intervip_1Passenger
+    3300004: Train03Intervip_1Wheel01Pas
+    3300006: Train03Intervip_1Wheel02Pas
+    3300008: Train03Intervip_1Wheel03Pas
+    3300010: Train03Intervip_1Wheel04Pas
+    3300012: Train03Intervip_1WheelsPas
+    3300014: Train03Intervip_Stairs
+    4300000: Train03Intervip_1Wheel03Pas
+    4300002: Train03Intervip_1Wheel04Pas
+    4300004: Train03Intervip_1Wheel01Pas
+    4300006: Train03Intervip_1WheelsPas
+    4300008: Train03Intervip_1Wheel02Pas
+    4300010: Train03Intervip_Stairs
+    4300012: Train03Intervip_1Passenger
+    4300014: Train03Intervip_1Cabin
+    6400000: Train03Intervip_1Cabin
+    6400002: Train03Intervip_1Passenger
+    6400004: Train03Intervip_1Wheel01Pas
+    6400006: Train03Intervip_1Wheel02Pas
+    6400008: Train03Intervip_1Wheel03Pas
+    6400010: Train03Intervip_1Wheel04Pas
+    6400012: Train03Intervip_1WheelsPas
+    6400014: Train03Intervip_Stairs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_1Cabin
+    second: {fileID: 2100000, guid: 8fa1d8660a65d9c4fa0c5d2cf427de14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_1Passenger
+    second: {fileID: 2100000, guid: c4383c7a32d390a4d986e847482c5d8b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_1Wheels
+    second: {fileID: 2100000, guid: 7f34dbd3ff4289448adc0c294a38cc9d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Metall03a
+    second: {fileID: 2100000, guid: 1e88f3a7dab1a4e47ae983c7693a666e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train03Intervip_Metall04a
+    second: {fileID: 2100000, guid: cddc914fe8a205c448d5985687c52dd2, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
