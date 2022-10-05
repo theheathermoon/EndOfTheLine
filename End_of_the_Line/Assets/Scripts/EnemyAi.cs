@@ -10,11 +10,19 @@ public class EnemyAi : MonoBehaviour
     public Transform player;
 
     public LayerMask whatIsground, whatIsplayer;
+    //Differing Behavior
+    public bool Wandering;
 
-    //Patrolling
+    private int index = 1;
+
+
+    ///Patrolling
+    //An array of gameobjects that act as a path of objects for the enemy to follow
+    public List<GameObject> patrolPoints;
     public Vector3 walkPoint;
     bool walkPointset;
     public float walkPointrange;
+
 
     //Attacking
     public float timeBetweenAttacks;
@@ -28,6 +36,7 @@ public class EnemyAi : MonoBehaviour
     {
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
+
     }
 
     private void Update()
@@ -43,18 +52,39 @@ public class EnemyAi : MonoBehaviour
     }
     private void Patrolling()
     {
-        if (!walkPointset) SearchWalkPoint();
+
+        //If no predetermined walkpoint is set, search for one
+        if (!walkPointset && Wandering)
+        {
+            SearchWalkPoint();
+            Debug.Log("Searching");
+        }
+
+        if (!walkPointset && !Wandering)
+        {
+            walkPointset = true;
+            walkPoint = (patrolPoints[index].transform.position);
+            Debug.Log("Found");
+        }
+
 
         if (walkPointset)
+        {
+            Debug.Log("WalkPointSet");
             agent.SetDestination(walkPoint);
+        }
+            
 
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
         //Walkpoint reached
         if (distanceToWalkPoint.magnitude < 1f)
+        {
             walkPointset = false;
+        }
+            
     }
-
+    //Find a random walkpoint within the range
     private void SearchWalkPoint()
     {
         //Calculate random point in range
@@ -64,6 +94,7 @@ public class EnemyAi : MonoBehaviour
         walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
 
         if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsground))
+            Debug.Log("WalkpointFound");
             walkPointset = true;
     }
 
