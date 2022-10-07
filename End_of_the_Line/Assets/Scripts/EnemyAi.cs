@@ -15,6 +15,9 @@ public class EnemyAi : MonoBehaviour
 
     private int index = 1;
 
+    public bool Guardian;
+    private bool InFlashLight;
+
 
     ///Patrolling
     //An array of gameobjects that act as a path of objects for the enemy to follow
@@ -44,11 +47,23 @@ public class EnemyAi : MonoBehaviour
         //Check if player is withing sight range or attack range
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsplayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsplayer);
+        
 
+
+        if (Guardian && InFlashLight) Stop();
         if (!playerInSightRange && !playerInAttackRange) Patrolling();
         if (playerInSightRange && !playerInAttackRange) Chasing();
         if (playerInSightRange && playerInAttackRange) Attacking();
 
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.collider.name == "FlashlightPoint")
+        {
+            Debug.Log("InFlashlight");
+            InFlashLight = true;
+        }
     }
     private void Patrolling()
     {
@@ -56,21 +71,22 @@ public class EnemyAi : MonoBehaviour
         //If no predetermined walkpoint is set, search for one
         if (!walkPointset && Wandering)
         {
+            //Debug.Log("Searching");
             SearchWalkPoint();
-            Debug.Log("Searching");
+            
         }
-
+        //If the enemy has predetermined patrolpoint, they will move between them contuously
         if (!walkPointset && !Wandering)
         {
             walkPointset = true;
             walkPoint = (patrolPoints[index].transform.position);
-            Debug.Log("Found");
+            //Debug.Log("Found");
         }
 
 
         if (walkPointset)
         {
-            Debug.Log("WalkPointSet");
+            //Debug.Log("WalkPointSet");
             agent.SetDestination(walkPoint);
         }
             
@@ -80,6 +96,7 @@ public class EnemyAi : MonoBehaviour
         //Walkpoint reached
         if (distanceToWalkPoint.magnitude < 1f)
         {
+            //Debug.Log("WaypointReached");
             walkPointset = false;
         }
             
@@ -87,6 +104,7 @@ public class EnemyAi : MonoBehaviour
     //Find a random walkpoint within the range
     private void SearchWalkPoint()
     {
+        //Debug.Log("SearchingForWalkPoint");
         //Calculate random point in range
         float randomZ = Random.Range(-walkPointrange, walkPointrange);
         float randomX = Random.Range(-walkPointrange, walkPointrange);
@@ -94,8 +112,10 @@ public class EnemyAi : MonoBehaviour
         walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
 
         if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsground))
-            Debug.Log("WalkpointFound");
+        {
+            //Debug.Log("WalkpointFound");
             walkPointset = true;
+        }
     }
 
     private void Chasing()
@@ -129,6 +149,12 @@ public class EnemyAi : MonoBehaviour
     private void ResetAttack()
     {
         alreadyAttacked = false;
+    }
+
+    private void Stop()
+    {
+        walkPointset = false;
+        
     }
 
     private void OnDrawGizmosSelected()
