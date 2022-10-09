@@ -13,7 +13,7 @@ public class EnemyAi : MonoBehaviour
     //Differing Behavior
     public bool Wandering;
 
-    private int index = 1;
+    private int index = 0;
 
     public bool Guardian;
     private bool InFlashLight;
@@ -88,6 +88,7 @@ public class EnemyAi : MonoBehaviour
         {
             //Debug.Log("WalkPointSet");
             agent.SetDestination(walkPoint);
+            
         }
             
 
@@ -98,6 +99,15 @@ public class EnemyAi : MonoBehaviour
         {
             //Debug.Log("WaypointReached");
             walkPointset = false;
+            
+            if(index >= patrolPoints.Count)
+            {
+                index = 0;
+            }
+            else
+            {
+                index = index + 1;
+            }
         }
             
     }
