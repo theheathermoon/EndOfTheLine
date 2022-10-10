@@ -50,21 +50,31 @@ public class EnemyAi : MonoBehaviour
         
 
 
-        if (Guardian && InFlashLight) Stop();
+
         if (!playerInSightRange && !playerInAttackRange) Patrolling();
         if (playerInSightRange && !playerInAttackRange) Chasing();
         if (playerInSightRange && playerInAttackRange) Attacking();
 
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.collider.name == "FlashlightPoint")
+        if (other.isTrigger && other.name == "FlashlightSpot")
         {
-            Debug.Log("InFlashlight");
-            InFlashLight = true;
+            ModeSwitch();
+        }
+        else
+            Patrolling();
+    }
+
+    private void ModeSwitch()
+    {
+       if (Guardian)
+        {
+
         }
     }
+
     private void Patrolling()
     {
 
@@ -161,11 +171,6 @@ public class EnemyAi : MonoBehaviour
         alreadyAttacked = false;
     }
 
-    private void Stop()
-    {
-        walkPointset = false;
-        
-    }
 
     private void OnDrawGizmosSelected()
     {
