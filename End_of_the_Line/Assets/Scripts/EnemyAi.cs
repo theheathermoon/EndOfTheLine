@@ -3,181 +3,194 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyAi : MonoBehaviour
+namespace EnemySystem
 {
-    public NavMeshAgent agent;
-
-    public Transform player;
-
-    public LayerMask whatIsground, whatIsplayer;
-    //Differing Behavior
-    public bool Wandering;
-
-    private int index = 0;
-
-    public bool Guardian;
-    private bool InFlashLight;
-
-
-    ///Patrolling
-    //An array of gameobjects that act as a path of objects for the enemy to follow
-    public List<GameObject> patrolPoints;
-    public Vector3 walkPoint;
-    bool walkPointset;
-    public float walkPointrange;
-
-
-    //Attacking
-    public float timeBetweenAttacks;
-    bool alreadyAttacked;
-
-    //States
-    public float sightRange, attackRange;
-    public bool playerInSightRange, playerInAttackRange;
-
-    private void Awake()
+    public class EnemyAi : MonoBehaviour
     {
-        player = GameObject.Find("Player").transform;
-        agent = GetComponent<NavMeshAgent>();
+        public NavMeshAgent agent;
 
-    }
+        public Transform player;
 
-    private void Update()
-    {
-        //Check if player is withing sight range or attack range
-        playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsplayer);
-        playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsplayer);
-        
+        public LayerMask whatIsground, whatIsplayer;
+        //Differing Behavior
+        public bool Wandering;
+        bool Frozen;
+        private int index = 0;
+
+        public bool Guardian;
+        private bool InFlashLight;
+        Rigidbody m_Rigidbody;
 
 
+        ///Patrolling
+        //An array of gameobjects that act as a path of objects for the enemy to follow
+        public List<GameObject> patrolPoints;
+        public Vector3 walkPoint;
+        bool walkPointset;
+        public float walkPointrange;
 
-        if (!playerInSightRange && !playerInAttackRange) Patrolling();
-        if (playerInSightRange && !playerInAttackRange) Chasing();
-        if (playerInSightRange && playerInAttackRange) Attacking();
 
-    }
+        //Attacking
+        public float timeBetweenAttacks;
+        bool alreadyAttacked;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.isTrigger && other.name == "FlashlightSpot")
+        //States
+        public float sightRange, attackRange;
+        public bool playerInSightRange, playerInAttackRange;
+
+        private void Awake()
         {
-            ModeSwitch();
-        }
-        else
-            Patrolling();
-    }
-
-    private void ModeSwitch()
-    {
-       if (Guardian)
-        {
+            player = GameObject.Find("Player").transform;
+            agent = GetComponent<NavMeshAgent>();
 
         }
-    }
 
-    private void Patrolling()
-    {
+        private void Update()
+        {
+            //Check if player is withing sight range or attack range
+            playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsplayer);
+            playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsplayer);
 
-        //If no predetermined walkpoint is set, search for one
-        if (!walkPointset && Wandering)
-        {
-            //Debug.Log("Searching");
-            SearchWalkPoint();
-            
-        }
-        //If the enemy has predetermined patrolpoint, they will move between them contuously
-        if (!walkPointset && !Wandering)
-        {
-            walkPointset = true;
-            walkPoint = (patrolPoints[index].transform.position);
-            //Debug.Log("Found");
+
+
+
+            if (!playerInSightRange && !playerInAttackRange) Patrolling();
+            if (playerInSightRange && !playerInAttackRange) Chasing();
+            if (playerInSightRange && playerInAttackRange) Attacking();
+
         }
 
-
-        if (walkPointset)
+        private void OnTriggerEnter(Collider other)
         {
-            //Debug.Log("WalkPointSet");
-            agent.SetDestination(walkPoint);
-            
-        }
-            
-
-        Vector3 distanceToWalkPoint = transform.position - walkPoint;
-
-        //Walkpoint reached
-        if (distanceToWalkPoint.magnitude < 1f)
-        {
-            //Debug.Log("WaypointReached");
-            walkPointset = false;
-            
-            if(index >= patrolPoints.Count)
+            if (other.isTrigger && other.name == "FlashlightCone")
             {
-                index = 0;
+                Debug.Log("InFlashlight");
+                ModeSwitch();
             }
             else
+                Patrolling();
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            Debug.Log("Backtopatrolling");
+            Patrolling();
+        }
+
+        private void ModeSwitch()
+        {
+            if (Guardian)
             {
-                index = index + 1;
+                Debug.Log("RestrictingMovement");
+                Frozen = true;
             }
         }
-            
-    }
-    //Find a random walkpoint within the range
-    private void SearchWalkPoint()
-    {
-        //Debug.Log("SearchingForWalkPoint");
-        //Calculate random point in range
-        float randomZ = Random.Range(-walkPointrange, walkPointrange);
-        float randomX = Random.Range(-walkPointrange, walkPointrange);
 
-        walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
-
-        if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsground))
+        private void Patrolling()
         {
-            //Debug.Log("WalkpointFound");
-            walkPointset = true;
+
+            //If no predetermined walkpoint is set, search for one
+            if (!walkPointset && Wandering)
+            {
+                //Debug.Log("Searching");
+                SearchWalkPoint();
+
+            }
+            //If the enemy has predetermined patrolpoint, they will move between them contuously
+            if (!walkPointset && !Wandering)
+            {
+                walkPointset = true;
+                walkPoint = (patrolPoints[index].transform.position);
+                //Debug.Log("Found");
+            }
+
+
+            if (walkPointset)
+            {
+                //Debug.Log("WalkPointSet");
+                agent.SetDestination(walkPoint);
+
+            }
+
+
+            Vector3 distanceToWalkPoint = transform.position - walkPoint;
+
+            //Walkpoint reached
+            if (distanceToWalkPoint.magnitude < 1f)
+            {
+                //Debug.Log("WaypointReached");
+                walkPointset = false;
+
+                if (index >= patrolPoints.Count - 1)
+                {
+                    index = 0;
+                }
+                else
+                {
+                    index = index + 1;
+                }
+            }
+
         }
-    }
-
-    private void Chasing()
-    {
-        agent.SetDestination(player.position);
-    }
-
-    private void Attacking()
-    {
-        //Makesure enemy doesnt move
-        agent.SetDestination(transform.position);
-
-        transform.LookAt(player);
-
-        if (!alreadyAttacked)
+        //Find a random walkpoint within the range
+        private void SearchWalkPoint()
         {
-            ///Attack Code here
-            
-            
-            
-            
-            
-            
-            ///
+            //Debug.Log("SearchingForWalkPoint");
+            //Calculate random point in range
+            float randomZ = Random.Range(-walkPointrange, walkPointrange);
+            float randomX = Random.Range(-walkPointrange, walkPointrange);
 
-            alreadyAttacked = true;
-            Invoke(nameof(ResetAttack), timeBetweenAttacks);
+            walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
+
+            if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsground))
+            {
+                //Debug.Log("WalkpointFound");
+                walkPointset = true;
+            }
         }
-    }
 
-    private void ResetAttack()
-    {
-        alreadyAttacked = false;
-    }
+        private void Chasing()
+        {
+            agent.SetDestination(player.position);
+        }
+
+        private void Attacking()
+        {
+            //Makesure enemy doesnt move
+            agent.SetDestination(transform.position);
+
+            transform.LookAt(player);
+
+            if (!alreadyAttacked)
+            {
+                ///Attack Code here
 
 
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, attackRange);
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, sightRange);
-        Gizmos.DrawWireCube(walkPoint, new Vector3(1,1,1));
+
+
+
+
+                ///
+
+                alreadyAttacked = true;
+                Invoke(nameof(ResetAttack), timeBetweenAttacks);
+            }
+        }
+
+        private void ResetAttack()
+        {
+            alreadyAttacked = false;
+        }
+
+
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, attackRange);
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(transform.position, sightRange);
+            Gizmos.DrawWireCube(walkPoint, new Vector3(1, 1, 1));
+
+        }
     }
 }
