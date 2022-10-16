@@ -12,17 +12,17 @@ namespace EnemySystem
         public Transform player;
 
         public LayerMask whatIsground, whatIsplayer;
-        public static EnemyAi instance;
+
 
         //Differing Behavior
+        public bool Guardian;
         public bool Wandering;
         bool Frozen;
         private int index = 0;
 
-        public bool Guardian;
-        private bool InFlashLight;
+        bool InFlashLight;
         Rigidbody m_Rigidbody;
-
+        public static EnemyAi instance;
 
         ///Patrolling
         //An array of gameobjects that act as a path of objects for the enemy to follow
@@ -42,15 +42,23 @@ namespace EnemySystem
 
         private void Awake()
         {
+            if (instance != null) { Destroy(gameObject); }
+            else { instance = this; DontDestroyOnLoad(gameObject); }
+
             player = GameObject.Find("Player").transform;
             agent = GetComponent<NavMeshAgent>();
 
-            if (instance != null) { Destroy(gameObject); }
-            else { instance = this; DontDestroyOnLoad(gameObject); }
+
         }
 
         private void Update()
         {
+            if (Frozen)
+            {
+                Debug.Log("Frozen");
+
+                walkPoint = transform.position;
+            }
             //Check if player is withing sight range or attack range
             playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsplayer);
             playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsplayer);
@@ -58,14 +66,14 @@ namespace EnemySystem
 
 
 
-            if (!playerInSightRange && !playerInAttackRange) Patrolling();
-            if (playerInSightRange && !playerInAttackRange) Chasing();
-            if (playerInSightRange && playerInAttackRange) Attacking();
+            if (!playerInSightRange && !playerInAttackRange && !InFlashLight) Patrolling();
+            if (playerInSightRange && !playerInAttackRange && !InFlashLight) Chasing();
+            if (playerInSightRange && playerInAttackRange && !InFlashLight) Attacking();
 
         }
 
 
-        private void Patrolling()
+        public void Patrolling()
         {
 
             //If no predetermined walkpoint is set, search for one
@@ -112,7 +120,7 @@ namespace EnemySystem
 
         }
         //Find a random walkpoint within the range
-        private void SearchWalkPoint()
+        public void SearchWalkPoint()
         {
             //Debug.Log("SearchingForWalkPoint");
             //Calculate random point in range
