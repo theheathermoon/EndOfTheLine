@@ -18,5 +18,22 @@ namespace EnemySystem
         {
 
         }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.isTrigger && other.name == "FlashlightCone")
+            {
+                Debug.Log("InFlashlight");
+                
+            }
+            
+
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            Debug.Log("Backtopatrolling");
+         
+        }
     }
 }

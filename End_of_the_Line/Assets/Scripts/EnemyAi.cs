@@ -12,6 +12,8 @@ namespace EnemySystem
         public Transform player;
 
         public LayerMask whatIsground, whatIsplayer;
+        public static EnemyAi instance;
+
         //Differing Behavior
         public bool Wandering;
         bool Frozen;
@@ -43,6 +45,8 @@ namespace EnemySystem
             player = GameObject.Find("Player").transform;
             agent = GetComponent<NavMeshAgent>();
 
+            if (instance != null) { Destroy(gameObject); }
+            else { instance = this; DontDestroyOnLoad(gameObject); }
         }
 
         private void Update()
@@ -60,31 +64,6 @@ namespace EnemySystem
 
         }
 
-        private void OnTriggerEnter(Collider other)
-        {
-            if (other.isTrigger && other.name == "FlashlightCone")
-            {
-                Debug.Log("InFlashlight");
-                ModeSwitch();
-            }
-            else
-                Patrolling();
-        }
-
-        private void OnTriggerExit(Collider other)
-        {
-            Debug.Log("Backtopatrolling");
-            Patrolling();
-        }
-
-        private void ModeSwitch()
-        {
-            if (Guardian)
-            {
-                Debug.Log("RestrictingMovement");
-                Frozen = true;
-            }
-        }
 
         private void Patrolling()
         {
