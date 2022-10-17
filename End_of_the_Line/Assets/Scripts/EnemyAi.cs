@@ -15,14 +15,13 @@ namespace EnemySystem
 
 
         //Differing Behavior
-        public bool Guardian;
+
         public bool Wandering;
-        bool Frozen;
+
         private int index = 0;
 
-        bool InFlashLight;
+        public bool InFlashLight;
         Rigidbody m_Rigidbody;
-        public static EnemyAi instance;
 
         ///Patrolling
         //An array of gameobjects that act as a path of objects for the enemy to follow
@@ -42,9 +41,6 @@ namespace EnemySystem
 
         private void Awake()
         {
-            if (instance != null) { Destroy(gameObject); }
-            else { instance = this; DontDestroyOnLoad(gameObject); }
-
             player = GameObject.Find("Player").transform;
             agent = GetComponent<NavMeshAgent>();
 
@@ -53,12 +49,7 @@ namespace EnemySystem
 
         private void Update()
         {
-            if (Frozen)
-            {
-                Debug.Log("Frozen");
 
-                walkPoint = transform.position;
-            }
             //Check if player is withing sight range or attack range
             playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsplayer);
             playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsplayer);
@@ -71,9 +62,29 @@ namespace EnemySystem
             if (playerInSightRange && playerInAttackRange && !InFlashLight) Attacking();
 
         }
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.isTrigger && other.name == "FlashlightCone")
+            {
+                InFlashLight = true;
+                //Debug.Log("InFlashlight");
+
+            }
 
 
-        public void Patrolling()
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            if (other.isTrigger && other.name == "FlashlightCone")
+            {
+                //Debug.Log("Outofflashlight");
+                InFlashLight = false;
+            }
+        }
+    
+
+    public void Patrolling()
         {
 
             //If no predetermined walkpoint is set, search for one

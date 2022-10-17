@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4594643457503601306}
   - component: {fileID: 8029584288839406985}
   m_Layer: 0
-  m_Name: Enemy_Child
+  m_Name: Guardian_Child
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -133,8 +133,9 @@ MonoBehaviour:
   whatIsplayer:
     serializedVersion: 2
     m_Bits: 0
-  Wandering: 0
   Guardian: 0
+  Wandering: 0
+  InFlashLight: 0
   patrolPoints:
   - {fileID: 3546375874338551169}
   walkPoint: {x: 0, y: 0, z: 0}

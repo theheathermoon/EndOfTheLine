@@ -1,16 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// This handles all behaviors unique to the Gaurdian class
+/// By using the EnemyAi attahce to the game component, it can detect when basic enemy behaviors should take place
+/// and change them according to the gaurdians necessary behaviors
+/// </summary>
 namespace EnemySystem
 {
     public class GuardianBehavior : MonoBehaviour
     {
         bool Frozen;
+        EnemyAi enemy;
         // Start is called before the first frame update
         void Start()
         {
-
+            enemy = gameObject.GetComponent(typeof(EnemyAi)) as EnemyAi;
         }
 
         // Update is called once per frame
@@ -18,9 +23,13 @@ namespace EnemySystem
         {
             if (Frozen)
             {
-                Debug.Log("Frozen");
-
-                EnemyAi.instance.walkPoint = transform.position;
+                //Debug.Log("Frozen");
+                enemy.agent.isStopped = true;
+;
+            }
+            else
+            {
+                enemy.agent.isStopped = false;
             }
         }
 
@@ -28,8 +37,8 @@ namespace EnemySystem
         {
             if (other.isTrigger && other.name == "FlashlightCone")
             {
-                EnemyAi.instance.InFlashLight = true;
-                Debug.Log("InFlashlight");
+
+                //Debug.Log("Freeze");
                 Frozen = true;
             }
             
@@ -40,8 +49,8 @@ namespace EnemySystem
         {
             if (other.isTrigger && other.name == "FlashlightCone")
             {
-                Debug.Log("Backtopatrolling");
-                EnemyAi.instance.Patrolling();
+                //Debug.Log("Backtopatrolling");
+
                 Frozen = false;
             }
         }
