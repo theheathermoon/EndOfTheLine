@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b852312f926e343a97439ba6bff2b4, type: 3}
+  m_Name: CrossPlatformSprites
+  m_EditorClassIdentifier: 
+  PS4:
+    PS4Gamepad: {fileID: 21300000, guid: 56252a791e56f0046a509d41667f5147, type: 3}
+    DpadUp: {fileID: 21300000, guid: 2a2e19ce5eea9b9419ea72dd935f9a71, type: 3}
+    DpadDown: {fileID: 21300000, guid: 45c45649a8588214b833db3d129ee460, type: 3}
+    DpadLeft: {fileID: 21300000, guid: f4f8c8ee0ec9e3e49832d7a34c01e22e, type: 3}
+    DpadRight: {fileID: 21300000, guid: 10d03ec4b383ffc498b35ef0c72e6078, type: 3}
+    Triangle: {fileID: 21300000, guid: 8bf8b3db88807d349b55325fecda1223, type: 3}
+    Circle: {fileID: 21300000, guid: 18225e10ab710a449b432ebcd68446ca, type: 3}
+    Cross: {fileID: 21300000, guid: fe2347209f0c30e4d8e642a5a35ef0fe, type: 3}
+    Square: {fileID: 21300000, guid: 1c4179cbafd5d5f498bd699fa598f694, type: 3}
+    LeftStick: {fileID: 21300000, guid: 91c499c602d95584ab6e27464ba60da4, type: 3}
+    LeftStickPress: {fileID: 21300000, guid: 4b162848f193e4547bb062638db1e417, type: 3}
+    RightStick: {fileID: 21300000, guid: fa11af1784842d14cb967e0608a68ba1, type: 3}
+    RightStickPress: {fileID: 21300000, guid: b277ece36228f34489f98afcc0a1027c, type: 3}
+    L1: {fileID: 21300000, guid: 5ebd3e9ff594e3649a9089b6acaf2e7a, type: 3}
+    R1: {fileID: 21300000, guid: df405c4cd7a36694f96084263483cca2, type: 3}
+    L2: {fileID: 21300000, guid: cf6bb614bf53cc24faef777a81d271f4, type: 3}
+    R2: {fileID: 21300000, guid: 59363a5aeaf11a345b48dcefa7cfb339, type: 3}
+    Options: {fileID: 21300000, guid: 6d078b748c756da488dc9bf5428c8b53, type: 3}
+    Share: {fileID: 21300000, guid: 9a887f0eb93f0404e93f260ed2ff6b6e, type: 3}
+    Touchpad: {fileID: 21300000, guid: 8dc92f50cd7236e4a88d856f8577ca8e, type: 3}
+  XboxOne:
+    XboxGamepad: {fileID: 21300000, guid: 17db646668954994ca3ade82a8cd2c17, type: 3}
+    DpadUp: {fileID: 21300000, guid: a3e880f903e380340a34c8acc3c1903b, type: 3}
+    DpadDown: {fileID: 21300000, guid: e8947b38f54f29442a86ddae01c6ab29, type: 3}
+    DpadLeft: {fileID: 21300000, guid: d5f3bed01a0c2964998ac6968e3cadcb, type: 3}
+    DpadRight: {fileID: 21300000, guid: 1b504989e21e03d4babe82c67ee3ee04, type: 3}
+    Y: {fileID: 21300000, guid: b548bcec472af1a4d89b64026151fbae, type: 3}
+    B: {fileID: 21300000, guid: 89a47bab1409e204998b881025c57294, type: 3}
+    A: {fileID: 21300000, guid: 9989e07aadb8f944aa734315e9554c97, type: 3}
+    X: {fileID: 21300000, guid: ddc6dada1576b2a41916d79104ccbfbc, type: 3}
+    LeftStick: {fileID: 21300000, guid: 0cc74ccf80489154fa006c1ac231c017, type: 3}
+    LeftStickPress: {fileID: 21300000, guid: 9a001df78e050e9499ac5b076b6b1e80, type: 3}
+    RightStick: {fileID: 21300000, guid: f8123d3f9e48bb04db3a10893e6e9100, type: 3}
+    RightStickPress: {fileID: 21300000, guid: 044f3f29f8a57a544ae95c9de1a2b691, type: 3}
+    LB: {fileID: 21300000, guid: 4b04684fc7838764284e48748e4687e1, type: 3}
+    RB: {fileID: 21300000, guid: 8fe486db3e533d34a83ae6a7b02b307a, type: 3}
+    LT: {fileID: 21300000, guid: 522887b96e99fb14eba12c54e208b7ae, type: 3}
+    RT: {fileID: 21300000, guid: 6c55138764149ce4ca01fead5d75722f, type: 3}
+    Menu: {fileID: 21300000, guid: 98f7b2aee064adc45b19d23c792fa061, type: 3}
+    ChangeView: {fileID: 21300000, guid: 6497bce19aeb4b147a3fc8d2a70325d1, type: 3}
+  Mouse:
+    MouseLeft: {fileID: 21300000, guid: 0841af9329c02b84b9a1a979b95db1e8, type: 3}
+    MouseMiddle: {fileID: 21300000, guid: 50b16cafa24efb441876298b3f8a4df2, type: 3}
+    MouseRight: {fileID: 21300000, guid: c51cbf97629d33448a52a2bc9da612fb, type: 3}
+    Mouse: {fileID: 21300000, guid: 27556667be5dedf448c81be249b9514b, type: 3}
+  Keyboard:
+    None: {fileID: 21300000, guid: 2a21ae22e525e2b4e94b5c0085c5da2f, type: 3}
+    Key0: {fileID: 21300000, guid: 0dc6c2975c45d6c4d8794ac689c0f875, type: 3}
+    Key1: {fileID: 21300000, guid: f7d2a01ee390f0343932185a90c87db4, type: 3}
+    Key2: {fileID: 21300000, guid: b62935e6bdb2d5141bdfac82f1e6ffe8, type: 3}
+    Key3: {fileID: 21300000, guid: af633701428fd0c4698732f1cc90d2b0, type: 3}
+    Key4: {fileID: 21300000, guid: 2edeaa324f731f049863170d0e3b0c7c, type: 3}
+    Key5: {fileID: 21300000, guid: 639d8ff9ef84f5c49b734063f26ab4f3, type: 3}
+    Key6: {fileID: 21300000, guid: c32b6f2e84d46b0488f658762e4d9c18, type: 3}
+    Key7: {fileID: 21300000, guid: 8f303058fa23af34f851068e6bbace92, type: 3}
+    Key8: {fileID: 21300000, guid: 548d88e994c9f774c95e056079b8f520, type: 3}
+    Key9: {fileID: 21300000, guid: aa5d15f3bfe21a64b8be6f54f39ec855, type: 3}
+    A: {fileID: 21300000, guid: ee742a5f58929a042b0f537057c546b2, type: 3}
+    B: {fileID: 21300000, guid: 1eb3277c88cd5964aa0d481a11223b0c, type: 3}
+    C: {fileID: 21300000, guid: 83aabaab0ae850547b053b05f93a92ea, type: 3}
+    D: {fileID: 21300000, guid: b34af784da157db439c34462013e3e81, type: 3}
+    E: {fileID: 21300000, guid: 44b31b97f5dfc3d4b91c778ad62687b3, type: 3}
+    F: {fileID: 21300000, guid: 418e17eaff38c1c4ea903780b33b0229, type: 3}
+    G: {fileID: 21300000, guid: bfe69191d5531c648a32eae6dfaee9b6, type: 3}
+    H: {fileID: 21300000, guid: 9fc5b199821f80d41942264e1684fa96, type: 3}
+    I: {fileID: 21300000, guid: abf0a96bea3c87b48bb3547a202db0ea, type: 3}
+    J: {fileID: 21300000, guid: 612d0aba42f996c42bb16e1d00c84e75, type: 3}
+    K: {fileID: 21300000, guid: 066250f4ef806404caf26dd1df4f6d62, type: 3}
+    L: {fileID: 21300000, guid: 7c257f7ca7a6e0249837dbead1e80da6, type: 3}
+    M: {fileID: 21300000, guid: 0f0f0b176b2664e4fb1af0558733df21, type: 3}
+    N: {fileID: 21300000, guid: 8a23ecc9e3680604a8a17db029d53ab7, type: 3}
+    O: {fileID: 21300000, guid: 885b57b315f75d64eb24f3904087d179, type: 3}
+    P: {fileID: 21300000, guid: e8483f3ee8ea5a649b29aeb2330db76c, type: 3}
+    Q: {fileID: 21300000, guid: 5a6cc316e269ff34897a520be2577a81, type: 3}
+    R: {fileID: 21300000, guid: 316199b49cc326c46a5611af39f22b3a, type: 3}
+    S: {fileID: 21300000, guid: 117acedb097b88049a75c69bec5bcb03, type: 3}
+    T: {fileID: 21300000, guid: e0ead12cc4b2e8a4880d9b2cacceb7ba, type: 3}
+    U: {fileID: 21300000, guid: b0f02142eddecb6458eaee82f535686a, type: 3}
+    V: {fileID: 21300000, guid: fe77110e26a14dc42a20d975a23f6ee8, type: 3}
+    W: {fileID: 21300000, guid: bbfffddaa46c6794f8a89230554a0d14, type: 3}
+    X: {fileID: 21300000, guid: e59b6158b1f3f49409c7fea20d8cbb27, type: 3}
+    Y: {fileID: 21300000, guid: e48fd05401cef044cb41cc84cbd4a47d, type: 3}
+    Z: {fileID: 21300000, guid: 2b64003e932c49d4495904ee41bcf7e6, type: 3}
+    Arrow_UP: {fileID: 21300000, guid: 45ae3c001936ef74da5ba4ebe761daf3, type: 3}
+    Arrow_DOWN: {fileID: 21300000, guid: 096856788380708449f52bf2315702d7, type: 3}
+    Arrow_LEFT: {fileID: 21300000, guid: 99da4f9e0db15ad42b6e8ec5beab0c21, type: 3}
+    Arrow_RIGHT: {fileID: 21300000, guid: a7ca2e9424b036f4aac14f904e9b64e0, type: 3}
+    F1: {fileID: 21300000, guid: b11b572f7bcb66a48baab202a7c19911, type: 3}
+    F2: {fileID: 21300000, guid: c4092e16c4fe8d6498eac68a8233ad9a, type: 3}
+    F3: {fileID: 21300000, guid: 1d25ebea41e6bd244975942f26dd6d7d, type: 3}
+    F4: {fileID: 21300000, guid: 3670b75a0be2fa846964444dd20837a9, type: 3}
+    F5: {fileID: 21300000, guid: 5e569dc300d0c8c4f96e68882c691852, type: 3}
+    F6: {fileID: 21300000, guid: 193c1ccaed669ea41985c48030159526, type: 3}
+    F7: {fileID: 21300000, guid: c60f8dd984f76f143a4685301121fa61, type: 3}
+    F8: {fileID: 21300000, guid: 3f17496ca618cca4ca65db9a64d55503, type: 3}
+    F9: {fileID: 21300000, guid: 232bc82beb643d7409f76fb0fd0c7a61, type: 3}
+    F10: {fileID: 21300000, guid: bdd5091dafbc4644b89be1fb2bd52ebf, type: 3}
+    F11: {fileID: 21300000, guid: 5cc46bec22a811844a7838d2a5898820, type: 3}
+    F12: {fileID: 21300000, guid: 70497e903e05d8748bcd5f6844aa34ea, type: 3}
+    Esc: {fileID: 21300000, guid: deda96f54062053418f12344c5d1671f, type: 3}
+    Tab: {fileID: 21300000, guid: 154c615e242ef1849afd2517924d8464, type: 3}
+    CapsLock: {fileID: 21300000, guid: ba85fa8cb7727e74289baade51fe4099, type: 3}
+    Shift: {fileID: 21300000, guid: d4ddecbf1a5d08b44aca2bb99fa94b31, type: 3}
+    Ctrl: {fileID: 21300000, guid: 81f6328e1ad25ea41949d0b65b7521e3, type: 3}
+    Alt: {fileID: 21300000, guid: 03be908713a5a8b46910d4856d6a6abe, type: 3}
+    Space: {fileID: 21300000, guid: 568849ae27d4c2d40b0d9c83092f371f, type: 3}
+    Enter: {fileID: 21300000, guid: 8669b02ff846222489bfaea3bb8c7991, type: 3}
+    Backspace: {fileID: 21300000, guid: 0e75a057d4a520240bef879a00b545fb, type: 3}
+    Insert: {fileID: 21300000, guid: 3876058b2db05ed4bb8f624022062050, type: 3}
+    Home: {fileID: 21300000, guid: a903931d7e9008c4989167cfe3f443e0, type: 3}
+    PGUP: {fileID: 21300000, guid: 6b65d31db3eb6214d8a5540d8dbd0e6c, type: 3}
+    Delete: {fileID: 21300000, guid: e6602fcb212f3a447862336fd87b218a, type: 3}
+    End: {fileID: 21300000, guid: a13874fc6e2b2774bb459cc90cec5ecd, type: 3}
+    PGDN: {fileID: 21300000, guid: abf29c683b3fd78469099708ca516aef, type: 3}
+    Asterisk: {fileID: 21300000, guid: 45aeff7ecb26ce441a4e8b7639f2fca6, type: 3}
+    Semicolon: {fileID: 21300000, guid: 7f73427d18c700f4d925524db443d847, type: 3}
+    Bracket_L: {fileID: 21300000, guid: a057b1f756e56f348909375ed471dc5e, type: 3}
+    Bracket_R: {fileID: 21300000, guid: 595d6d0644b58f542970c74e8b85a664, type: 3}
+    Quote: {fileID: 21300000, guid: 9859e163d6bf2f54ab8c1d7fbfc31b36, type: 3}
+    Comma: {fileID: 21300000, guid: 6b46eb8b9b63ebe42a12c1dcc0924f5a, type: 3}
+    Period: {fileID: 21300000, guid: 651a06b04c1f4e04cbe208aa53b0d191, type: 3}
+    Backslash: {fileID: 21300000, guid: 6e433ee68d50d844592be5e32afe1f37, type: 3}
+    EqualsKey: {fileID: 21300000, guid: b645ba30dfc3c964f8f1ea5d4758274a, type: 3}
+    Backquote: {fileID: 21300000, guid: dac9fb5bcc3a5904da074e9ce6078fe8, type: 3}
+    Context: {fileID: 21300000, guid: d050d270efecb214b8a97edf9f6741a5, type: 3}
+    NumpadSlash: {fileID: 21300000, guid: 9e958a502d089ac4dacce248dab93066, type: 3}
+    NumpadMinus: {fileID: 21300000, guid: 34e4685bcb727fd479a1427f7299e3ab, type: 3}
+    NumpadPlus: {fileID: 21300000, guid: 341d83e4d2fc683479a2ac23a14cf3f4, type: 3}
+    NumpadEnter: {fileID: 21300000, guid: c9188f0afd18e6b44b6c273c53592b9d, type: 3}
+    NumpadPeriod: {fileID: 21300000, guid: 651a06b04c1f4e04cbe208aa53b0d191, type: 3}

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de9e24370cd9041b348027f19b6140, type: 3}
+  m_Name: TheHouse Objectives
+  m_EditorClassIdentifier: 
+  Objectives:
+  - shortName: Investigate
+    eventID: 
+    objectiveText: Investigate the house
+    completeCount: 0
+    objectiveID: 0
+    localeKey: Obj.TheHouse.Investigate
+  - shortName: Electricity
+    eventID: 
+    objectiveText: Locate the electric box and turn on the power again
+    completeCount: 0
+    objectiveID: 1
+    localeKey: Obj.TheHouse.Electricity
+  - shortName: Room Way Out
+    eventID: 
+    objectiveText: Find a way out from room
+    completeCount: 0
+    objectiveID: 2
+    localeKey: Obj.TheHouse.RoomWayOut
+  - shortName: DoorKey
+    eventID: 
+    objectiveText: Find a proper key for the door
+    completeCount: 0
+    objectiveID: 3
+    localeKey: Obj.TheHouse.DoorKey
+  - shortName: Play VHS
+    eventID: 
+    objectiveText: Play a VHS Tape
+    completeCount: 0
+    objectiveID: 4
+    localeKey: Obj.TheHouse.PlayVHS
+  enableLocalization: 0

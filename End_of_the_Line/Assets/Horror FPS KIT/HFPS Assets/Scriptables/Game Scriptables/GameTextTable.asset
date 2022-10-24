@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fc67064d011ada4aac18bf0ca6b1780, type: 3}
+  m_Name: GameTextTable
+  m_EditorClassIdentifier: 
+  textTables:
+  - Key: Interact.Take
+    Text: Take
+    IsUppercase: 0
+  - Key: Interact.Use
+    Text: Use
+    IsUppercase: 0
+  - Key: Interact.Grab
+    Text: Grab
+    IsUppercase: 0
+  - Key: Interact.Drag
+    Text: Drag
+    IsUppercase: 0
+  - Key: Interact.Unlock
+    Text: Unlock
+    IsUppercase: 0
+  - Key: Interact.Examine
+    Text: Examine
+    IsUppercase: 0
+  - Key: Interact.Remove
+    Text: Remove
+    IsUppercase: 0
+  - Key: Interact.PickupHint
+    Text: You took the
+    IsUppercase: 0
+  - Key: Interact.PickupMessage
+    Text: Picked up
+    IsUppercase: 0
+  - Key: Interact.BackpacksMax
+    Text: You can't carry more backpacks!
+    IsUppercase: 0
+  - Key: Interact.CantTake
+    Text: You can't take more
+    IsUppercase: 0
+  - Key: Interact.NoInventorySpace
+    Text: No inventory space!
+    IsUppercase: 0
+  - Key: Examine.PutAway
+    Text: Put Away
+    IsUppercase: 0
+  - Key: Examine.Take
+    Text: Take
+    IsUppercase: 0
+  - Key: Examine.Rotate
+    Text: Rotate
+    IsUppercase: 0
+  - Key: Examine.Throw
+    Text: Throw
+    IsUppercase: 0
+  - Key: Examine.Read
+    Text: Read
+    IsUppercase: 0
+  - Key: Examine.ShowCursor
+    Text: Show Cursor
+    IsUppercase: 0
+  - Key: Objective.Multiple
+    Text: You have new objectives, press [Inventory] to check it.
+    IsUppercase: 0
+  - Key: Objective.PreComplete
+    Text: Objective Pre-Completed
+    IsUppercase: 0
+  - Key: Objective.Updated
+    Text: Objective Updated
+    IsUppercase: 0
+  - Key: GameUI.BagEmpty
+    Text: is empty!
+    IsUppercase: 0
+  - Key: GameUI.BagCapacity
+    Text: Capacity {0}/{1}
+    IsUppercase: 0
+  - Key: GameUI.BagItemCount
+    Text: 'Items Count: {0}'
+    IsUppercase: 0
+  - Key: GameUI.ExitLadder
+    Text: Exit Ladder
+    IsUppercase: 0
+  - Key: MenuUI.PCActionDuplicate
+    Text: The control binded to the "{action}" action will be removed!
+    IsUppercase: 0
+  - Key: MenuUI.ConActionDuplicate
+    Text: There is an action that has the same control bound. Do you want to rebind
+      the action anyway?
+    IsUppercase: 0
+  - Key: Inventory.ContainerSpace
+    Text: No Container Space!
+    IsUppercase: 0
+  - Key: Inventory.Space
+    Text: No Inventory Space!
+    IsUppercase: 0
+  - Key: Inventory.KBShortcut
+    Text: Select 1, 2, 3, 4 to bind item shortcut.
+    IsUppercase: 0
+  - Key: Inventory.GPShortcut
+    Text: Select any Dpad Button to bind item shortcut.
+    IsUppercase: 0
+  - Key: Inventory.CannotReload
+    Text: Cannot reload yet!
+    IsUppercase: 0

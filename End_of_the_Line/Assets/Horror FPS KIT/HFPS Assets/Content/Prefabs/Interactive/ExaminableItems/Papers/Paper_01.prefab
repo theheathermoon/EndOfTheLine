@@ -1,0 +1,210 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1024846367479426655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1024846366278371648}
+  - component: {fileID: 1024846367479426650}
+  - component: {fileID: 1024846367479426651}
+  - component: {fileID: 1024846367479426652}
+  - component: {fileID: 1024846367479426653}
+  - component: {fileID: 1024846367479426654}
+  m_Layer: 0
+  m_Name: Paper_01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1024846366278371648
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024846367479426655}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 70, y: 70, z: 70}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1024846367479426650
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024846367479426655}
+  m_Mesh: {fileID: 4300000, guid: 744911e886ac6b645936d2ef9089ef16, type: 3}
+--- !u!23 &1024846367479426651
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024846367479426655}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 4294967295
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 63d86b2f951345b40924ccada6aec421, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!54 &1024846367479426652
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024846367479426655}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &1024846367479426653
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024846367479426655}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0045000007, y: 0.0030000017, z: 0.00000010086842}
+  m_Center: {x: -0.00024999998, y: -7.4594775e-12, z: -0.00000005010719}
+--- !u!114 &1024846367479426654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024846367479426655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73fcb51f6d678d2498af4fb5f59a2c8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemTitle: 
+  itemType: 0
+  examineType: 3
+  examineRotate: 0
+  messageType: 0
+  disableType: 0
+  messageTips: []
+  titleOrMsg: 
+  examineTitle: 
+  paperText: 'HORROR I.VI KIT
+
+    CLASSIFIED
+
+
+    Dear Customer,
+
+    We are glad
+    that you bought the Horror FPS KIT as the base
+
+    for your horror game. It
+    is an advanced as easy-to-use
+
+    horror game template with many features essential
+    to
+
+    creating your own horror game, including gameplay
+
+    features seen
+    in AA horror games of the last decade.
+
+
+    If you have any questions about
+    the kit, you can contact us via our website or via email.
+
+
+    Website: www.twgamesdev.com
+
+    Email:
+    thunderwiregames@gmail.com
+
+
+    Kind regards,
+
+    ThunderWire Studio'
+  titleMsgKey: 
+  examineKey: Paper.Message01
+  inventoryID: 0
+  switcherID: 0
+  invExpandAmount: 5
+  itemAmount: 1
+  paperFontSize: 15
+  examineDistance:
+    min: 0.3
+    max: 0.4
+    value: 0.4
+  messageTime: 3
+  useInvTitle: 0
+  useItemTitle: 0
+  useDefaultHint: 1
+  autoShortcut: 0
+  autoSwitch: 0
+  interactShowTitle: 0
+  allowExamineTake: 1
+  floatingIcon: 1
+  faceCamera: 1
+  mouseClickPickup: 0
+  enableCursor: 0
+  pickupSound: {fileID: 0}
+  pickupVolume: 1
+  examineSound: {fileID: 8300000, guid: ecd73c20de9b50e41a5c36ec6c9968f5, type: 3}
+  examineVolume: 0.35
+  faceRotation: {x: 0, y: 0, z: 90}
+  itemCustomData: []
+  collidersDisable: []
+  collidersEnable: []
+  allowedInteracts: []
+  isExamining: 0
+  isChild: 0
+  isExamined: 0
+  floatingIconState: 1
+  lastFloorPosition: {x: 0, y: 0, z: 0}

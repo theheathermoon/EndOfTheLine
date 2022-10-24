@@ -1,0 +1,148 @@
+fileFormatVersion: 2
+guid: 4c41871bbf61ec5488b08a5c198b9112
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Apple
+    100002: Banana
+    100004: Banana_Stack
+    100006: //RootNode
+    100008: Pear01
+    100010: Pear02
+    400000: Apple
+    400002: Banana
+    400004: Banana_Stack
+    400006: //RootNode
+    400008: Pear01
+    400010: Pear02
+    2100000: FruitApple_Mat
+    2100002: FruitPear_Mat01
+    2100004: FruitPear_Mat02
+    2100006: FruitBananaStack_Mat
+    2100008: FruitBanana_Mat
+    2300000: Apple
+    2300002: Banana
+    2300004: Banana_Stack
+    2300006: Pear01
+    2300008: Pear02
+    3300000: Apple
+    3300002: Banana
+    3300004: Banana_Stack
+    3300006: Pear01
+    3300008: Pear02
+    4300000: Apple
+    4300002: Pear01
+    4300004: Pear02
+    4300006: Banana_Stack
+    4300008: Banana
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FruitApple_Mat
+    second: {fileID: 2100000, guid: 602c97b2d86233d45a4ea0a79aa9d55e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FruitBananaStack_Mat
+    second: {fileID: 2100000, guid: 178d10867af2cb249b28717b87eb930d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FruitBanana_Mat
+    second: {fileID: 2100000, guid: 0160bd542a6f60e4cbbffd45c2cb41e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FruitPear_Mat01
+    second: {fileID: 2100000, guid: 2c8495a4a0b973e4594868daabfc9bf9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FruitPear_Mat02
+    second: {fileID: 2100000, guid: 9fa0b8d08b82f4f4ca849d1b95e2d310, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.25
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

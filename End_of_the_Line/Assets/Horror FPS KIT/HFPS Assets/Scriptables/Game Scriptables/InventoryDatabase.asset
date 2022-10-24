@@ -1,0 +1,2125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae85bee85e6015a4ba92299368a38d47, type: 3}
+  m_Name: InventoryDatabase
+  m_EditorClassIdentifier: 
+  ItemDatabase:
+  - Title: Apple
+    ID: 0
+    Description: An apple is a sweet, edible fruit which can heal 5 HP, when you
+      eat it.
+    itemType: 1
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 8d996537db885d34984c88142db377d5, type: 3}
+    DropObject:
+      GUID: 88693a571146c8a4195f98a018ac3fad
+      Object: {fileID: 8802696498958587224, guid: 88693a571146c8a4195f98a018ac3fad,
+        type: 3}
+    PackDropObject:
+      GUID: 7c685cec3e65a7a41896bf4ec2872708
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
+        type: 3}
+    itemToggles:
+      isStackable: 0
+      isUsable: 1
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 1
+      canExamine: 1
+      canBindShortcut: 1
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 8300000, guid: b95863142c5e0ab4b9d6aa469568583c, type: 3}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 10
+      staminaAmount: 20
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.Apple
+      descriptionKey: IItem.Desc.Apple
+  - Title: Banana
+    ID: 1
+    Description: A banana is an edible fruit which can heal 10HP, when you eat it.
+    itemType: 1
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 81111885754f4c348a89fd1ac30168b9, type: 3}
+    DropObject:
+      GUID: 0911bc34055ce3a4ca7b15329d3350f2
+      Object: {fileID: 1405219638246174339, guid: 0911bc34055ce3a4ca7b15329d3350f2,
+        type: 3}
+    PackDropObject:
+      GUID: 7c685cec3e65a7a41896bf4ec2872708
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
+        type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 1
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 1
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 8300000, guid: 216c70bd213ecd94d8d20a922137755b, type: 3}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 10
+      staminaAmount: 20
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.Banana
+      descriptionKey: IItem.Desc.Banana
+  - Title: Pear
+    ID: 2
+    Description: A sweet fruit, usually with a green skin and a lot of juice, that
+      has a round base and is slightly pointed towards the stem. It can heal 15HP,
+      when you eat it.
+    itemType: 1
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 7482ef30a13a05d48a69fc07dd1b3c4d, type: 3}
+    DropObject:
+      GUID: e24f2821110deb042ba74c947c566c89
+      Object: {fileID: 7987036121776205876, guid: e24f2821110deb042ba74c947c566c89,
+        type: 3}
+    PackDropObject:
+      GUID: 7c685cec3e65a7a41896bf4ec2872708
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
+        type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 1
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 1
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 8300000, guid: 216c70bd213ecd94d8d20a922137755b, type: 3}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 15
+      staminaAmount: 20
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.Pear
+      descriptionKey: IItem.Desc.Pear
+  - Title: Pashtet Conserve
+    ID: 3
+    Description: Conserve filled with pashtet which can heal 15HP, when you eat it.
+    itemType: 1
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 84f4db2bf4fc75d4d9b51a48a41f851b, type: 3}
+    DropObject:
+      GUID: 1e76fe5632125904f916715d6ceafd34
+      Object: {fileID: 7711606456648169220, guid: 1e76fe5632125904f916715d6ceafd34,
+        type: 3}
+    PackDropObject:
+      GUID: 7c685cec3e65a7a41896bf4ec2872708
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
+        type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 1
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 1
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 8300000, guid: 216c70bd213ecd94d8d20a922137755b, type: 3}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 15
+      staminaAmount: 20
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings:
+    - combineWithID: 0
+      resultCombineID: 0
+      combineSwitcherID: 0
+    localizationSettings:
+      titleKey: IItem.Title.PashtetConserve
+      descriptionKey: IItem.Desc.PashtetConserve
+  - Title: Fish Conserve
+    ID: 4
+    Description: Conserve filled with fish fillets which can heal 15HP, when you
+      eat it.
+    itemType: 1
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 10f11875d736c1749ac101963156b279, type: 3}
+    DropObject:
+      GUID: fc5913149676ed24c833bdd868abf81f
+      Object: {fileID: 6226336788016599804, guid: fc5913149676ed24c833bdd868abf81f,
+        type: 3}
+    PackDropObject:
+      GUID: 7c685cec3e65a7a41896bf4ec2872708
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
+        type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 1
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 1
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 8300000, guid: 216c70bd213ecd94d8d20a922137755b, type: 3}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 15
+      staminaAmount: 20
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings:
+    - combineWithID: 0
+      resultCombineID: 0
+      combineSwitcherID: 0
+    localizationSettings:
+      titleKey: IItem.Title.FishConserve
+      descriptionKey: IItem.Desc.FishConserve
+  - Title: Fish Can
+    ID: 5
+    Description: Can filled with fish which can heal 20HP, when you eat it.
+    itemType: 1
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 50a12f29e51a41c48946f925900d9277, type: 3}
+    DropObject:
+      GUID: 9af7804dde023a54db7a1a68c64456aa
+      Object: {fileID: 2815891573619926925, guid: 9af7804dde023a54db7a1a68c64456aa,
+        type: 3}
+    PackDropObject:
+      GUID: 7c685cec3e65a7a41896bf4ec2872708
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
+        type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 1
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 1
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 8300000, guid: 216c70bd213ecd94d8d20a922137755b, type: 3}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 20
+      staminaAmount: 20
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings:
+    - combineWithID: 0
+      resultCombineID: 0
+      combineSwitcherID: 0
+    localizationSettings:
+      titleKey: IItem.Title.FishCan
+      descriptionKey: IItem.Desc.FishCan
+  - Title: Cola Drink
+    ID: 6
+    Description: Carbonated soft drink which can heal 10HP, when you drink it.
+    itemType: 1
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 4f5443fa7668c5944b4d69a0565ef1f2, type: 3}
+    DropObject:
+      GUID: a905b179853c78f4babc0b2afd0f0ee6
+      Object: {fileID: 2628981987279529428, guid: a905b179853c78f4babc0b2afd0f0ee6,
+        type: 3}
+    PackDropObject:
+      GUID: 7c685cec3e65a7a41896bf4ec2872708
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
+        type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 1
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 1
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 8300000, guid: 4d771af76f133c94b9f202df8b330247, type: 3}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 10
+      staminaAmount: 40
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings:
+    - combineWithID: 0
+      resultCombineID: 0
+      combineSwitcherID: 0
+    localizationSettings:
+      titleKey: IItem.Title.ColaDrink
+      descriptionKey: IItem.Desc.ColaDrink
+  - Title: Energy Drink
+    ID: 7
+    Description: An energy drink is a type of drink containing sugar and stimulant
+      compounds, usually caffeine which can heal 15HP, when you drink it.
+    itemType: 1
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 6e4a688ef58ede54bb38225d2f175b6d, type: 3}
+    DropObject:
+      GUID: 69dcafcd8f0dfb24ebf366aa190e6cd8
+      Object: {fileID: 1115486705138341407, guid: 69dcafcd8f0dfb24ebf366aa190e6cd8,
+        type: 3}
+    PackDropObject:
+      GUID: 7c685cec3e65a7a41896bf4ec2872708
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
+        type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 1
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 1
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 8300000, guid: 4d771af76f133c94b9f202df8b330247, type: 3}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 15
+      staminaAmount: 50
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.EnergyDrink
+      descriptionKey: IItem.Desc.EnergyDrink
+  - Title: Water
+    ID: 8
+    Description: Pure Water which heals 5HP, when you drink it.
+    itemType: 1
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: d80daf5ad504abe42b3be179e70d722a, type: 3}
+    DropObject:
+      GUID: 0c2fdc878c74cdd408053eef88944384
+      Object: {fileID: 6283688053063081428, guid: 0c2fdc878c74cdd408053eef88944384,
+        type: 3}
+    PackDropObject:
+      GUID: b0361dfa72b7f844ebc723879118657e
+      Object: {fileID: 1668290240821854, guid: b0361dfa72b7f844ebc723879118657e, type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 1
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 1
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 8300000, guid: f03a4d8bc91304942a71f6acde9776d2, type: 3}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 5
+      staminaAmount: 15
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.Water
+      descriptionKey: IItem.Desc.Water
+  - Title: Med Kit
+    ID: 9
+    Description: Med Kit is an equipment that is used to give medical treatment,
+      it heals 50HP.
+    itemType: 1
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: ebd301e7f6b3b244eb745feb23429b1b, type: 3}
+    DropObject:
+      GUID: 91b0676a0ecbc994fb45001cb389e799
+      Object: {fileID: 3883263260219317132, guid: 91b0676a0ecbc994fb45001cb389e799,
+        type: 3}
+    PackDropObject:
+      GUID: b0361dfa72b7f844ebc723879118657e
+      Object: {fileID: 1668290240821854, guid: b0361dfa72b7f844ebc723879118657e, type: 3}
+    itemToggles:
+      isStackable: 0
+      isUsable: 1
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 8300000, guid: 7c7f3909281897341bc8595a62473f4f, type: 3}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 50
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings:
+    - combineWithID: 0
+      resultCombineID: 0
+      combineSwitcherID: 0
+    localizationSettings:
+      titleKey: IItem.Title.MedKit
+      descriptionKey: IItem.Desc.MedKit
+  - Title: First AID KIT
+    ID: 10
+    Description: First AID KIT is an equipment that is used to give medical treatment,
+      it fully heals your wounds.
+    itemType: 1
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: b80b7cbd096cd3943833f3583a7e1507, type: 3}
+    DropObject:
+      GUID: 4fcc8dea751388a4cb20ad6e753632c7
+      Object: {fileID: 1600125121, guid: 4fcc8dea751388a4cb20ad6e753632c7, type: 3}
+    PackDropObject:
+      GUID: b0361dfa72b7f844ebc723879118657e
+      Object: {fileID: 1668290240821854, guid: b0361dfa72b7f844ebc723879118657e, type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 1
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 8300000, guid: 7c7f3909281897341bc8595a62473f4f, type: 3}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 100
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.FirstAIDKIT
+      descriptionKey: IItem.Desc.FirstAIDKIT
+  - Title: Blood Bag
+    ID: 11
+    Description: Plastic Blood Bag containing 0.7 liters of blood which can be used
+      for transfusion that can heal 35HP.
+    itemType: 1
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: c91189b378b9534438d21190126e8b49, type: 3}
+    DropObject:
+      GUID: 534ef8dee0da6c6479121520d34fbb7d
+      Object: {fileID: 1205774663, guid: 534ef8dee0da6c6479121520d34fbb7d, type: 3}
+    PackDropObject:
+      GUID: 7c685cec3e65a7a41896bf4ec2872708
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
+        type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 1
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 8300000, guid: 83fae0672fd00834a8998cbbf25bc615, type: 3}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 35
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.BloodBag
+      descriptionKey: IItem.Desc.BloodBag
+  - Title: Gauze
+    ID: 12
+    Description: A thin, translucent fabric with a loose open weave which can stop
+      bleeding and heal 15HP.
+    itemType: 1
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 75c9cef075941c746bce624182c06d96, type: 3}
+    DropObject:
+      GUID: 5ef9ca28976b0434592bd04cced46f57
+      Object: {fileID: 1504182863, guid: 5ef9ca28976b0434592bd04cced46f57, type: 3}
+    PackDropObject:
+      GUID: 2898479ab19b91e4bb7c0d5325e857c3
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
+        type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 1
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 8300000, guid: 97e6b45d2c680ff4e8fbb5b52d4ece78, type: 3}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 15
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.Gauze
+      descriptionKey: IItem.Desc.Gauze
+  - Title: Hydrocodone Pills
+    ID: 13
+    Description: A Hydrocodone Pills used to treat moderate to severe pain and cough,
+      it can heal 25HP.
+    itemType: 1
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 56de961232e1a924488f4b6df3d8616a, type: 3}
+    DropObject:
+      GUID: c4f455bc33c7f7b4388e4fb0da7648af
+      Object: {fileID: 9167509522851509966, guid: c4f455bc33c7f7b4388e4fb0da7648af,
+        type: 3}
+    PackDropObject:
+      GUID: 2898479ab19b91e4bb7c0d5325e857c3
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
+        type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 1
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 8300000, guid: 4a5fff9a8d132a840b5449f18522a6bc, type: 3}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 25
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.HydrocodonePills
+      descriptionKey: IItem.Desc.HydrocodonePills
+  - Title: Hydromorphone Pills
+    ID: 14
+    Description: A Hydromorphone Pills used to help relieve moderate to severe pain.
+      It heals 20HP.
+    itemType: 1
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: d948a6b830123b24887bd199e99d37b6, type: 3}
+    DropObject:
+      GUID: 6ca5d0c60a0f6c04e9e03f4923cfdca4
+      Object: {fileID: 3458657775707933746, guid: 6ca5d0c60a0f6c04e9e03f4923cfdca4,
+        type: 3}
+    PackDropObject:
+      GUID: 2898479ab19b91e4bb7c0d5325e857c3
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
+        type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 1
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 8300000, guid: 4a5fff9a8d132a840b5449f18522a6bc, type: 3}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 20
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.HydromorphonePills
+      descriptionKey: IItem.Desc.HydromorphonePills
+  - Title: Herb
+    ID: 15
+    Description: 'A plant containing phytochemicals that help heal small wounds.
+
+      It
+      heals 15HP, but you can make a herbal medicine by combining with oil.'
+    itemType: 1
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 4b3e9abb99bb4d84d8f23d1787f7fa88, type: 3}
+    DropObject:
+      GUID: 470d4e7298ec328489e3053e48ca195a
+      Object: {fileID: 5734375753707207479, guid: 470d4e7298ec328489e3053e48ca195a,
+        type: 3}
+    PackDropObject:
+      GUID: b0361dfa72b7f844ebc723879118657e
+      Object: {fileID: 1668290240821854, guid: b0361dfa72b7f844ebc723879118657e, type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 1
+      isCombinable: 1
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 1
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 8300000, guid: 216c70bd213ecd94d8d20a922137755b, type: 3}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 15
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings:
+    - combineWithID: 16
+      resultCombineID: 17
+      combineSwitcherID: 0
+    localizationSettings:
+      titleKey: IItem.Title.Herb
+      descriptionKey: IItem.Desc.Herb
+  - Title: Oil Bottle
+    ID: 16
+    Description: Oil used to combine with herb to make a Herbal Medicine.
+    itemType: 0
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: d9109142ae7c42e4a954273f40a9438f, type: 3}
+    DropObject:
+      GUID: 3f790a1927fda0b4f9b8af9565545320
+      Object: {fileID: 8517838539651564136, guid: 3f790a1927fda0b4f9b8af9565545320,
+        type: 3}
+    PackDropObject:
+      GUID: b0361dfa72b7f844ebc723879118657e
+      Object: {fileID: 1668290240821854, guid: b0361dfa72b7f844ebc723879118657e, type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 0
+      isCombinable: 1
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 0
+      combineAddItem: 1
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 0}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 0
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings:
+    - combineWithID: 15
+      resultCombineID: 17
+      combineSwitcherID: 0
+    localizationSettings:
+      titleKey: IItem.Title.OilBottle
+      descriptionKey: IItem.Desc.OilBottle
+  - Title: Herbal Medicine
+    ID: 17
+    Description: Herbal Medicine mixed with Oil which is used to heal wounds and
+      treat with pain. It heals 50HP.
+    itemType: 1
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: c922fcf0f6f42a14ebd0cc0225046ec2, type: 3}
+    DropObject:
+      GUID: 
+      Object: {fileID: 0}
+    PackDropObject:
+      GUID: b0361dfa72b7f844ebc723879118657e
+      Object: {fileID: 1668290240821854, guid: b0361dfa72b7f844ebc723879118657e, type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 1
+      isCombinable: 0
+      isDroppable: 0
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 1
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 8300000, guid: 216c70bd213ecd94d8d20a922137755b, type: 3}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 50
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.HerbalMedicine
+      descriptionKey: IItem.Desc.HerbalMedicine
+  - Title: Medicine
+    ID: 18
+    Description: Healing disinfection medicine which can be used to heal 40HP.
+    itemType: 1
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 7ddcbb01a3052614ca56022898fff29e, type: 3}
+    DropObject:
+      GUID: ce3341f833eb0aa48b3b08919d538791
+      Object: {fileID: 7618360415291896815, guid: ce3341f833eb0aa48b3b08919d538791,
+        type: 3}
+    PackDropObject:
+      GUID: b0361dfa72b7f844ebc723879118657e
+      Object: {fileID: 1668290240821854, guid: b0361dfa72b7f844ebc723879118657e, type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 1
+      isCombinable: 1
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 1
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 1
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 8300000, guid: a5469360a46d25e4c94693abfeed2a47, type: 3}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 40
+      staminaAmount: 20
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings:
+    - combineWithID: 19
+      resultCombineID: 20
+      combineSwitcherID: 0
+    localizationSettings:
+      titleKey: IItem.Title.Medicine
+      descriptionKey: IItem.Desc.Medicine
+  - Title: Empty Syringe
+    ID: 19
+    Description: Empty Syringe, which can be combined with medicine to create healing
+      syringe.
+    itemType: 0
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 0b7ae86e598278645ba619ac8e23af17, type: 3}
+    DropObject:
+      GUID: 986b423873bae5c4cbd7c39b03a39936
+      Object: {fileID: 2031259906048697751, guid: 986b423873bae5c4cbd7c39b03a39936,
+        type: 3}
+    PackDropObject:
+      GUID: 2898479ab19b91e4bb7c0d5325e857c3
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
+        type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 0
+      isCombinable: 1
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 0
+      combineAddItem: 1
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 0}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 0
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings:
+    - combineWithID: 18
+      resultCombineID: 20
+      combineSwitcherID: 0
+    localizationSettings:
+      titleKey: IItem.Title.EmptySyringe
+      descriptionKey: IItem.Desc.EmptySyringe
+  - Title: Healing Syringe
+    ID: 20
+    Description: Healing Syringe, which contains healing medicine that can be used
+      to heal 60HP.
+    itemType: 1
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 3b77db878a03fe945bd596b1a9da1615, type: 3}
+    DropObject:
+      GUID: 
+      Object: {fileID: 0}
+    PackDropObject:
+      GUID: 2898479ab19b91e4bb7c0d5325e857c3
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
+        type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 1
+      isCombinable: 0
+      isDroppable: 0
+      isRemovable: 1
+      restoreStamina: 1
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 8300000, guid: d2173bb8e5a7b734f927539073afdf2d, type: 3}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 60
+      staminaAmount: 40
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.HealingSyringe
+      descriptionKey: IItem.Desc.HealingSyringe
+  - Title: Battery
+    ID: 21
+    Description: Battery which can be used to power electric items.
+    itemType: 2
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: a028ee9891e4b254d9e090abc60c8945, type: 3}
+    DropObject:
+      GUID: 3962e1e84dede9a459aec51aa60b77e6
+      Object: {fileID: 1430661221626180, guid: 3962e1e84dede9a459aec51aa60b77e6, type: 3}
+    PackDropObject:
+      GUID: 2898479ab19b91e4bb7c0d5325e857c3
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
+        type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 0
+      isCombinable: 1
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 0
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 0}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 0
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings:
+    - combineWithID: 26
+      resultCombineID: 0
+      combineSwitcherID: 0
+    localizationSettings:
+      titleKey: IItem.Title.Battery
+      descriptionKey: IItem.Desc.Battery
+  - Title: Petrol Oil
+    ID: 22
+    Description: Petrol Oil which can be combined with Oil Lamp to Increase light
+      life.
+    itemType: 2
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 423fc31c2ec97ff4aa37dbcc4e767617, type: 3}
+    DropObject:
+      GUID: 7b4bcc8374da84d439bb4265a7dc351f
+      Object: {fileID: 1165946862094760, guid: 7b4bcc8374da84d439bb4265a7dc351f, type: 3}
+    PackDropObject:
+      GUID: b0361dfa72b7f844ebc723879118657e
+      Object: {fileID: 1668290240821854, guid: b0361dfa72b7f844ebc723879118657e, type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 0
+      isCombinable: 1
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 0
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 0}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 0
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings:
+    - combineWithID: 27
+      resultCombineID: 0
+      combineSwitcherID: 1
+    localizationSettings:
+      titleKey: IItem.Title.PetrolOil
+      descriptionKey: IItem.Desc.PetrolOil
+  - Title: Lighter
+    ID: 23
+    Description: 'A lighter that can be used to ignite objects.
+
+
+      Can be used
+      {value} times.'
+    itemType: 0
+    useActionType: 2
+    itemSprite: {fileID: 21300000, guid: 3abfb1af10f6bd142a2172ecf3aa6459, type: 3}
+    DropObject:
+      GUID: 4f8d39c1e3d346e4d9ea7a9421d99814
+      Object: {fileID: 34769618883522008, guid: 4f8d39c1e3d346e4d9ea7a9421d99814,
+        type: 3}
+    PackDropObject:
+      GUID: 2898479ab19b91e4bb7c0d5325e857c3
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
+        type: 3}
+    itemToggles:
+      isStackable: 0
+      isUsable: 0
+      isCombinable: 1
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 0
+      combineAddItem: 0
+      combineKeepItem: 1
+      combineShowItem: 1
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 1
+    itemSounds:
+      useSound: {fileID: 0}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 0
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 1
+    combineSettings:
+    - combineWithID: 28
+      resultCombineID: 0
+      combineSwitcherID: 2
+    localizationSettings:
+      titleKey: IItem.Title.ZippoLighter
+      descriptionKey: IItem.Desc.ZippoLighter
+  - Title: Red Keycard
+    ID: 24
+    Description: Keycard which can be used to grant access to a red security level.
+    itemType: 0
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 33abc85f22b787a4b9707b29b0780d30, type: 3}
+    DropObject:
+      GUID: 
+      Object: {fileID: 0}
+    PackDropObject:
+      GUID: 2898479ab19b91e4bb7c0d5325e857c3
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
+        type: 3}
+    itemToggles:
+      isStackable: 0
+      isUsable: 0
+      isCombinable: 0
+      isDroppable: 0
+      isRemovable: 1
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 0
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 0}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 0
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.RedKeycard
+      descriptionKey: IItem.Desc.RedKeycard
+  - Title: 9mm Rounds
+    ID: 25
+    Description: A 9mm rounds used for weapons with barrel of 9mm diameter.
+    itemType: 4
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 83ae4c4daf4be4c4f86efb3d1b48a54e, type: 3}
+    DropObject:
+      GUID: c8ea8cb9d029ba440b67b21312db6c38
+      Object: {fileID: 6573652275513946949, guid: c8ea8cb9d029ba440b67b21312db6c38,
+        type: 3}
+    PackDropObject:
+      GUID: 2898479ab19b91e4bb7c0d5325e857c3
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
+        type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 0
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 0
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 0}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 0
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.9mmRounds
+      descriptionKey: IItem.Desc.9mmRounds
+  - Title: Flashlight
+    ID: 26
+    Description: A flashlight is a small electric light which gets its power from
+      batteries and which you can carry in your hand.
+    itemType: 0
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: a42e1977b805c3048b35e9d0526d7a4e, type: 3}
+    DropObject:
+      GUID: be9460d91714d3c4fb1a740259e81fca
+      Object: {fileID: 1552328439722386, guid: be9460d91714d3c4fb1a740259e81fca, type: 3}
+    PackDropObject:
+      GUID: 7c685cec3e65a7a41896bf4ec2872708
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
+        type: 3}
+    itemToggles:
+      isStackable: 0
+      isUsable: 1
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 1
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 0}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: 0
+      healAmount: 0
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.Flashlight
+      descriptionKey: IItem.Desc.Flashlight
+  - Title: Oil Lamp
+    ID: 27
+    Description: Oil Lamp is a lamp in a metal frame with glass sides and with a
+      handle on top, it produce light by burning petrol oil.
+    itemType: 0
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 66732aa529bf6574e8dcbf1d7743ff2c, type: 3}
+    DropObject:
+      GUID: 9dba05ac0cfb0634eb1331823de3a6cb
+      Object: {fileID: 1603289076461798, guid: 9dba05ac0cfb0634eb1331823de3a6cb, type: 3}
+    PackDropObject:
+      GUID: b0361dfa72b7f844ebc723879118657e
+      Object: {fileID: 1668290240821854, guid: b0361dfa72b7f844ebc723879118657e, type: 3}
+    itemToggles:
+      isStackable: 0
+      isUsable: 1
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 1
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 0}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: 1
+      healAmount: 0
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.OilLamp
+      descriptionKey: IItem.Desc.OilLamp
+  - Title: Candle
+    ID: 28
+    Description: 'Candle which can be used to light dark places.
+
+
+      Candle Scale:
+      {value}%'
+    itemType: 0
+    useActionType: 3
+    itemSprite: {fileID: 21300000, guid: 20c8690141f98af4caaf6cd334ae8a81, type: 3}
+    DropObject:
+      GUID: f2a82c3d00f214347a674527a3742f83
+      Object: {fileID: 1692309065835858, guid: f2a82c3d00f214347a674527a3742f83, type: 3}
+    PackDropObject:
+      GUID: 7c685cec3e65a7a41896bf4ec2872708
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
+        type: 3}
+    itemToggles:
+      isStackable: 0
+      isUsable: 0
+      isCombinable: 1
+      isDroppable: 0
+      isRemovable: 1
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 0
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 1
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 1
+    itemSounds:
+      useSound: {fileID: 0}
+      useVolume: 1
+      combineSound: {fileID: 8300000, guid: 41c63a65d6923f74a88f6d38483ee419, type: 3}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 0
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings:
+    - combineWithID: 23
+      resultCombineID: 0
+      combineSwitcherID: 2
+    localizationSettings:
+      titleKey: IItem.Title.Candle
+      descriptionKey: IItem.Desc.Candle
+  - Title: Pistol
+    ID: 29
+    Description: Semi-automatic pistol that fires 9mm cartridges.
+    itemType: 3
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 2866caa499a3f5848a86e02ce5455b91, type: 3}
+    DropObject:
+      GUID: 33b6fd48297dee3409c95b1dc0026c6c
+      Object: {fileID: 1223104983946140, guid: 33b6fd48297dee3409c95b1dc0026c6c, type: 3}
+    PackDropObject:
+      GUID: b0361dfa72b7f844ebc723879118657e
+      Object: {fileID: 1668290240821854, guid: b0361dfa72b7f844ebc723879118657e, type: 3}
+    itemToggles:
+      isStackable: 0
+      isUsable: 1
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 0}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: 3
+      healAmount: 0
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.Glock18
+      descriptionKey: IItem.Desc.Glock18
+  - Title: Axe
+    ID: 30
+    Description: Axe which can help to defend yourself if you run out of ammo.
+    itemType: 0
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 871f4398fca315f459f9525973479987, type: 3}
+    DropObject:
+      GUID: 907999eb6d2a6dc4499a29ac676b1257
+      Object: {fileID: 5894244905215305399, guid: 907999eb6d2a6dc4499a29ac676b1257,
+        type: 3}
+    PackDropObject:
+      GUID: 7cc4433b585b00b4cba99e7564cf017a
+      Object: {fileID: 1991033329804282, guid: 7cc4433b585b00b4cba99e7564cf017a, type: 3}
+    itemToggles:
+      isStackable: 0
+      isUsable: 1
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 1
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 0}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: 4
+      healAmount: 0
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.Axe
+      descriptionKey: IItem.Desc.Axe
+  - Title: Door Key
+    ID: 31
+    Description: A key for the some door.
+    itemType: 0
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 2a78b854df94fb24ab6c20d8fa216b55, type: 3}
+    DropObject:
+      GUID: 75a05d4d6184c2944884a52334bfc3bb
+      Object: {fileID: 1597550490744132, guid: 75a05d4d6184c2944884a52334bfc3bb, type: 3}
+    PackDropObject:
+      GUID: 2898479ab19b91e4bb7c0d5325e857c3
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
+        type: 3}
+    itemToggles:
+      isStackable: 0
+      isUsable: 0
+      isCombinable: 0
+      isDroppable: 0
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 0
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 0}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 0
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.DoorKey
+      descriptionKey: IItem.Desc.DoorKey
+  - Title: Long Door Key
+    ID: 32
+    Description: A long door key which can be used to unlock some door.
+    itemType: 0
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 0388fbe6ebc20a742a727fd3447dd749, type: 3}
+    DropObject:
+      GUID: 5f49bd3e5d6e091478b455a3f556a4c4
+      Object: {fileID: 1733325901836582, guid: 5f49bd3e5d6e091478b455a3f556a4c4, type: 3}
+    PackDropObject:
+      GUID: 2898479ab19b91e4bb7c0d5325e857c3
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
+        type: 3}
+    itemToggles:
+      isStackable: 0
+      isUsable: 0
+      isCombinable: 0
+      isDroppable: 0
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 0
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 0}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 0
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.LongDoorKey
+      descriptionKey: IItem.Desc.LongDoorKey
+  - Title: Room Key
+    ID: 33
+    Description: A key which can be used to unlock some room.
+    itemType: 0
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 996740fa77c3d0c449096e5289d58601, type: 3}
+    DropObject:
+      GUID: ed84609cc39177847ae6a19d28e47331
+      Object: {fileID: 1045000472514846, guid: ed84609cc39177847ae6a19d28e47331, type: 3}
+    PackDropObject:
+      GUID: 2898479ab19b91e4bb7c0d5325e857c3
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
+        type: 3}
+    itemToggles:
+      isStackable: 0
+      isUsable: 0
+      isCombinable: 0
+      isDroppable: 0
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 0
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 0}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 0
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.RoomKey
+      descriptionKey: IItem.Desc.RoomKey
+  - Title: Old Drawer Key
+    ID: 34
+    Description: A old drawer key which can be used to unlock one of drawers.
+    itemType: 0
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: c6c8e98e982647d45a0a894e9cc8fca6, type: 3}
+    DropObject:
+      GUID: 7f0910e4bfb4eb442a80c6d599d471fd
+      Object: {fileID: 1597019828895162, guid: 7f0910e4bfb4eb442a80c6d599d471fd, type: 3}
+    PackDropObject:
+      GUID: 2898479ab19b91e4bb7c0d5325e857c3
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
+        type: 3}
+    itemToggles:
+      isStackable: 0
+      isUsable: 0
+      isCombinable: 0
+      isDroppable: 0
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 0
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 0}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 0
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.OldDrawerKey
+      descriptionKey: IItem.Desc.OldDrawerKey
+  - Title: VHS Tape
+    ID: 35
+    Description: 'VHS Tape Title: {value}
+
+
+      A High Quality VHS Tape, which
+      can be played in VCR Player.'
+    itemType: 0
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 67d062eaf10a7884696b8bd87813bd83, type: 3}
+    DropObject:
+      GUID: 2383c135bfafea94d982856a250f0c76
+      Object: {fileID: 2008708847099431128, guid: 2383c135bfafea94d982856a250f0c76,
+        type: 3}
+    PackDropObject:
+      GUID: 7c685cec3e65a7a41896bf4ec2872708
+      Object: {fileID: 4542589923716121773, guid: 7c685cec3e65a7a41896bf4ec2872708,
+        type: 3}
+    itemToggles:
+      isStackable: 0
+      isUsable: 0
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 0
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 0}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 0
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.VHSTape
+      descriptionKey: IItem.Desc.VHSTape
+  - Title: Shotgun
+    ID: 36
+    Description: A 12 Gauge pump-action shotgun.
+    itemType: 3
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 2c6f6fd85706aaf40a2e74545d978363, type: 3}
+    DropObject:
+      GUID: 2725a4ba9aacdc04aa980006570dcb02
+      Object: {fileID: 2096614195961198870, guid: 2725a4ba9aacdc04aa980006570dcb02,
+        type: 3}
+    PackDropObject:
+      GUID: 7cc4433b585b00b4cba99e7564cf017a
+      Object: {fileID: 1991033329804282, guid: 7cc4433b585b00b4cba99e7564cf017a, type: 3}
+    itemToggles:
+      isStackable: 0
+      isUsable: 1
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 1
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 0}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: 5
+      healAmount: 0
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.Shotgun
+      descriptionKey: IItem.Desc.Shotgun
+  - Title: 12 Gauge Shells
+    ID: 37
+    Description: 12 Gauge Shells for Shotgun
+    itemType: 4
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: 1d0a5193cef423544936d63d6cdaad00, type: 3}
+    DropObject:
+      GUID: 02810956a7c7cbb42a2c4e9093ff9d78
+      Object: {fileID: 2356261206992197453, guid: 02810956a7c7cbb42a2c4e9093ff9d78,
+        type: 3}
+    PackDropObject:
+      GUID: 2898479ab19b91e4bb7c0d5325e857c3
+      Object: {fileID: 1977295849456510829, guid: 2898479ab19b91e4bb7c0d5325e857c3,
+        type: 3}
+    itemToggles:
+      isStackable: 1
+      isUsable: 0
+      isCombinable: 0
+      isDroppable: 1
+      isRemovable: 0
+      restoreStamina: 0
+      canExamine: 0
+      canBindShortcut: 0
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 0}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 0
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 0}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: IItem.Title.12GaugeShells
+      descriptionKey: IItem.Desc.12GaugeShells
+  - Title: Paper
+    ID: 38
+    Description: '{value}'
+    itemType: 0
+    useActionType: 0
+    itemSprite: {fileID: 21300000, guid: b0d4d965a216b5f499456c1f201bbb08, type: 3}
+    DropObject:
+      GUID: 1139d8eedc98ecf4391e359b50ccdca3
+      Object: {fileID: 1024846367479426655, guid: 1139d8eedc98ecf4391e359b50ccdca3,
+        type: 3}
+    PackDropObject:
+      GUID: 
+      Object: {fileID: 0}
+    itemToggles:
+      isStackable: 0
+      isUsable: 0
+      isCombinable: 0
+      isDroppable: 0
+      isRemovable: 1
+      restoreStamina: 0
+      canExamine: 1
+      canBindShortcut: 0
+      combineAddItem: 0
+      combineKeepItem: 0
+      combineShowItem: 0
+      showItemOnUse: 0
+      bagDescription: 0
+      doActionUse: 0
+      doActionCombine: 0
+    itemSounds:
+      useSound: {fileID: 0}
+      useVolume: 1
+      combineSound: {fileID: 0}
+      combineVolume: 1
+    itemSettings:
+      maxStackAmount: 0
+      useSwitcherID: -1
+      healAmount: 0
+      staminaAmount: 0
+      examineRotation: {x: 0, y: 0, z: 90}
+    useActionSettings:
+      triggerValue: 0
+      triggerItemID: 0
+      triggerCustomValue: 
+      actionRemove: 0
+      actionAddItem: 0
+      actionRestrictUse: 0
+      actionRestrictCombine: 0
+    combineSettings: []
+    localizationSettings:
+      titleKey: 
+      descriptionKey: 
+  enableLocalization: 0

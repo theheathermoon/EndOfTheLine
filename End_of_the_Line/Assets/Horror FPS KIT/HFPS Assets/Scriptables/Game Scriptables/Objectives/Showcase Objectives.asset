@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9de9e24370cd9041b348027f19b6140, type: 3}
+  m_Name: Showcase Objectives
+  m_EditorClassIdentifier: 
+  Objectives:
+  - shortName: Example 01
+    eventID: 
+    objectiveText: Go to Objective Complete Trigger
+    completeCount: 0
+    objectiveID: 0
+    localeKey: Obj.Showcase.Example01
+  - shortName: Example 02
+    eventID: 
+    objectiveText: Go to second Objective Complete Trigger
+    completeCount: 0
+    objectiveID: 1
+    localeKey: Obj.Showcase.Example02
+  - shortName: Example 03
+    eventID: FenceDoorFirst
+    objectiveText: Collect three apples to open door {0}/{1}
+    completeCount: 3
+    objectiveID: 2
+    localeKey: Obj.Showcase.Example03
+  - shortName: Example 04
+    eventID: 
+    objectiveText: Go to next showcase zone
+    completeCount: 0
+    objectiveID: 3
+    localeKey: Obj.Showcase.Example04
+  - shortName: Example 05
+    eventID: FenceDoorArena
+    objectiveText: Kill the guard zombie to open the Arena
+    completeCount: 0
+    objectiveID: 4
+    localeKey: Obj.Showcase.Example05
+  - shortName: Example 06
+    eventID: 
+    objectiveText: Kill the Arena Zombie
+    completeCount: 0
+    objectiveID: 5
+    localeKey: Obj.Showcase.Example06
+  enableLocalization: 0
