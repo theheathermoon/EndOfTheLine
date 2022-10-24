@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1a975727f99e04bbef5ff4da983d6e, type: 3}
+  m_Name: Grednadier Shot
+  m_EditorClassIdentifier: 
+  AbilityName: Grenadier Shot
+  AbilityDescription: Launches a ball of energy towards a target dealing 10 pts of
+    damage.
+  AbilityDamage: 5
+  MinAbilityDamage: 5
+  MaxAbilityDamage: 10
+  AbilityDamagePerIncrement: 5
+  CriticalHitOdds: 6.25
+  CriticalHitMultiplierMin: 1.5
+  CriticalHitMultiplierMax: 2
+  AbilityImpactDamage: 5
+  AbilitySupportAmount: 5
+  AbilityDamageIncrement: 1
+  AbilityCooldown: 10
+  AbilityLength: 3
+  SummonRadius: 10
+  ProjectileSpeed: 50
+  ProjectileTimeoutSeconds: 6
+  ColliderRadius: 0.15
+  ProjectileGravity: 0.5
+  TimeoutTime: 4.5
+  CollisionTime: 0.1
+  HeatSeekingSeconds: 5
+  CastEffectTimeoutSeconds: 2
+  AbilityEffectTimeoutSeconds: 6
+  SummonEffectTimeoutSeconds: 3
+  CollisionTimeout: 1.5
+  DamageOvertimeTimeout: 3
+  GravityAmount: 1
+  AbilityIcon: {fileID: 0}
+  AbilityEffect: {fileID: 5407300729805292421, guid: 9b71c6aa054fabb4191cef3a2fe7ea14,
+    type: 3}
+  CreateEffect: {fileID: 5022461942033813024, guid: 9ca3edb2521ccdd4ebec6f75c05cc2c6,
+    type: 3}
+  SummonEffect: {fileID: 0}
+  SummonObject: {fileID: 0}
+  DamageOverTimeEffect: {fileID: 1303674608091680, guid: 383e7d46bdb1daa4391f5ef6704a7bd4,
+    type: 3}
+  DamageOverTimeSound: {fileID: 8300000, guid: ea9bc83b5650a1c449f196dbc7645090, type: 3}
+  CollisionEffect: {fileID: 5022461942033813024, guid: b91faebb38dbc6e499a8273a19149e2f,
+    type: 3}
+  CollisionSoundsList:
+  - {fileID: 8300000, guid: 407b0b57a2c044dbd976c7f17cd08f77, type: 3}
+  - {fileID: 8300000, guid: f98ed3bdb65044f0eaf7eb0938c6d1a6, type: 3}
+  - {fileID: 8300000, guid: ee2e6c24b73f74d19a3c1713f0719e9e, type: 3}
+  SummonSound: {fileID: 0}
+  CreateSoundsList: []
+  AbilityType: 0
+  DamageType: 0
+  SupportType: 0
+  HighQualityCollisions: 0
+  SoundOnCollisionRef: 1
+  HeatSeekingRef: 1
+  EffectOnCollisionRef: 1
+  CollisionEffectOnTargets: 1
+  ArrowProjectileRef: 0
+  UseGravity: 0
+  UseRandomizedDamage: 0
+  AbilityStacksRef: 0
+  UseDamageOverTimeEffectRef: 0
+  UseDamageOverTimeSoundRef: 0
+  UseCreateSound: 1
+  UseCriticalHits: 1
+  UseCustomAbilityIcon: 0
+  UseCreateEffect: 1
+  AbilityEditorTabs: 2

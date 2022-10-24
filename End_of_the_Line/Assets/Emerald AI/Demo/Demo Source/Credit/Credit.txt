@@ -1,0 +1,8 @@
+Health and Stamina UI by: MadFireOn
+https://assetstore.unity.com/packages/2d/gui/icons/simple-ui-elements-53276
+
+UI Icons by: Icons8
+https://icons8.com/
+
+Grenadier, Ellen, Chomper, Spitter, Armature, platform, grass, and plant models, as well as terrain textures, sound effects, particle effects, and shaders related to said assets are by Unity Technologies from The 3D Game Kit. 
+These are purely used for demonstration purposes. Permission to use said assets is stated here: https://support.unity.com/hc/en-us/articles/206336915-Can-I-submit-an-asset-that-uses-Unity-Standard-Assets-
