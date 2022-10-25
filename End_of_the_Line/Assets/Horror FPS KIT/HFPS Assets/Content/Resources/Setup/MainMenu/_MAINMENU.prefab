@@ -25239,7 +25239,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2923630300656585492}
   m_HandleRect: {fileID: 2923630300656585493}
   m_Direction: 2
-  m_Value: 1.0000005
+  m_Value: 0
   m_Size: 0.8291457
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -28263,6 +28263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
   m_XRTrackingOrigin: {fileID: 0}
@@ -28290,6 +28291,7 @@ MonoBehaviour:
     type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
 --- !u!1 &6278561042582666686
 GameObject:
   m_ObjectHideFlags: 0
