@@ -15,8 +15,9 @@ GameObject:
   - component: {fileID: 7657398251573157743}
   - component: {fileID: 4594643457503601306}
   - component: {fileID: 8029584288839406985}
+  - component: {fileID: 8440456435278131299}
   m_Layer: 0
-  m_Name: Enemy_Child
+  m_Name: Creeper_Child
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,16 +113,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42c38283b200a98438fb09fafa7c56ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 0}
+  agent: {fileID: 4594643457503601306}
   player: {fileID: 0}
   whatIsground:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   whatIsplayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4
   Wandering: 0
-  Guardian: 0
+  InFlashLight: 0
   patrolPoints:
   - {fileID: 3546375874338551169}
   walkPoint: {x: 0, y: 0, z: 0}
@@ -169,6 +170,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8440456435278131299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2251986179557316878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fe76fa0252574443b091530e9a176b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TeleTimer: 0
+  TeleRange: 0
+  TelePoint: {x: 0, y: 0, z: 0}
+  whatIsground:
+    serializedVersion: 2
+    m_Bits: 64
+  whatIsplayer:
+    serializedVersion: 2
+    m_Bits: 4
 --- !u!1 &8034883856681460257
 GameObject:
   m_ObjectHideFlags: 0

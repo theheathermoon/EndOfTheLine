@@ -43,8 +43,7 @@ namespace EnemySystem
         {
             player = GameObject.Find("Player").transform;
             agent = GetComponent<NavMeshAgent>();
-
-
+            InFlashLight = false;
         }
 
         private void Update()
@@ -67,7 +66,7 @@ namespace EnemySystem
             if (other.isTrigger && other.name == "FlashlightCone")
             {
                 InFlashLight = true;
-                //Debug.Log("InFlashlight");
+                Debug.Log("InFlashlight");
 
             }
 
@@ -78,7 +77,7 @@ namespace EnemySystem
         {
             if (other.isTrigger && other.name == "FlashlightCone")
             {
-                //Debug.Log("Outofflashlight");
+                Debug.Log("Outofflashlight");
                 InFlashLight = false;
             }
         }
