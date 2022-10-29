@@ -7,21 +7,21 @@ namespace EnemySystem
 {
     public class EnemyAi : MonoBehaviour
     {
+        //Reference the the NavMeshAgent component's agent (Which is this object just throguh the lens of the navmesh agent)
         public NavMeshAgent agent;
-
+        //Player Transform
         public Transform player;
-
+        //How to detect what can be walked on
         public LayerMask whatIsground, whatIsplayer;
 
 
         //Differing Behavior
-
         public bool Wandering;
-
         private int index = 0;
-
         public bool InFlashLight;
         Rigidbody m_Rigidbody;
+        public float DarknessRange;
+        public int Health;
 
         ///Patrolling
         //An array of gameobjects that act as a path of objects for the enemy to follow

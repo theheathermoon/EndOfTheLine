@@ -32,11 +32,12 @@ namespace EnemySystem
         {
             if (enemy.InFlashLight == true && TeleStart == false)
             {
-                Debug.Log("Frozen");
+                Debug.Log("TeleStart");
                 //enemy.agent.isStopped = true;
                 TeleStart = true;
-                CreateTeleport();
-                
+                StartCoroutine(Fade());
+                //CreateTeleport();
+
             }
             else if (enemy.InFlashLight == false && TeleStart == true)
             {
@@ -45,10 +46,34 @@ namespace EnemySystem
                 //enemy.agent.isStopped = false;
             }
         }
+        IEnumerator Delay()
+        {
+            Color c = GetComponent<MeshRenderer>().material.color;
+            for (float alpha = 1f; alpha >= 0; alpha -= 0.1f)
+            {
+                c.a = alpha;
+                GetComponent<MeshRenderer>().material.color = c;
+                yield return new WaitForSeconds(TeleTimer);
+
+            }
+
+        }
+
+        IEnumerator Fade()
+        {
+            Color c = this.GetComponent<MeshRenderer>().material.color;
+            for (float alpha = 1f; alpha >= 0; alpha -= 0.1f)
+            {
+                c.a = alpha;
+                this.GetComponent<MeshRenderer>().material.color = c;
+                yield return new WaitForSeconds(TeleTimer);
+
+            }
+        }
 
         public void CreateTeleport()
         {
-            Debug.Log("SearchingForWalkPoint");
+            Debug.Log("Teleporting");
             //Calculate random point in range
             float randomZ = Random.Range(-TeleRange, TeleRange);
             float randomX = Random.Range(-TeleRange, TeleRange);
@@ -60,16 +85,11 @@ namespace EnemySystem
                 //WarpPoint.position = WarpPoint.position + TelePoint;
                 Debug.Log("WalkpointFound");
                 //CheckTeleport();
+                TeleStart = false;
                 enemy.agent.Warp(TelePoint);
-
-
             }
         }
 
-        public void Teleport()
-        {
-
-        }
 
         private void OnDrawGizmosSelected()
         {

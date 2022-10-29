@@ -151,7 +151,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1
-  m_BaseOffset: 0.5
+  m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!54 &8029584288839406985
@@ -182,8 +182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fe76fa0252574443b091530e9a176b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TeleTimer: 0
-  TeleRange: 0
+  TeleTimer: 2
+  TeleRange: 15
   TelePoint: {x: 0, y: 0, z: 0}
   whatIsground:
     serializedVersion: 2

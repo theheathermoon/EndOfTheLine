@@ -121,7 +121,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   Wandering: 0
-  Guardian: 0
+  InFlashLight: 0
   patrolPoints:
   - {fileID: 3546375874338551169}
   walkPoint: {x: 0, y: 0, z: 0}
