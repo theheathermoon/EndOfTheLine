@@ -822,7 +822,7 @@ PrefabInstance:
     - target: {fileID: 3783193353869655867, guid: cc27d8384a3379b4ba9e00424df4b0a5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3783193353869655867, guid: cc27d8384a3379b4ba9e00424df4b0a5,
         type: 3}
@@ -1985,7 +1985,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1737639940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2084,7 +2084,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27558
+  m_Name: pb_Mesh32800
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9892,13 +9892,13 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 15
-  m_SpotAngle: 90
-  m_InnerSpotAngle: 71.41338
+  m_Intensity: 0.88
+  m_Range: 14.58
+  m_SpotAngle: 52.688484
+  m_InnerSpotAngle: 40.261852
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -9923,7 +9923,7 @@ Light:
       e32: 0
       e33: 1
     m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 2800000, guid: 641bb2dce818a8a499b537a1963889ac, type: 3}
+  m_Cookie: {fileID: 2800000, guid: 2c29c08dd1c0b6749b7cd0fcff7a29fd, type: 3}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
   m_RenderMode: 0
@@ -10886,7 +10886,7 @@ PrefabInstance:
     - target: {fileID: 3783193353869655867, guid: cc27d8384a3379b4ba9e00424df4b0a5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3783193353869655867, guid: cc27d8384a3379b4ba9e00424df4b0a5,
         type: 3}
