@@ -6,27 +6,42 @@ using UnityEngine;
 public class PowerSystem : MonoBehaviour
 {
     bool atControlPanel = false;
-    bool powerOn = false;
+   // bool powerOn = false;
 
     public KeyCode PowerOn;
 
     public static PowerSystem instance;
+    public GameObject trainLineLights;
 
-    [Header("Power Activation Timers")]
-    [SerializeField] private float activatePowerRadial = 1.0f;
-    private float maxActivatePowerRadial = 1.0f;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        PowerLine();
     }
+
+
+    [Header("Power Activation Timers")]
+    [SerializeField] private float activatePowerRadial = 1.0f;
+    private float maxActivatePowerRadial = 1.0f;
+
+    void ToggleRadialIndicator(bool on)
+    {
+        FLUIManager.instance.ToggleRadialIndicator(on);
+    }
+
+    void UpdateRadialIndicator(float amount)
+    {
+        FLUIManager.instance.UpdateRadialIndicatorUI(amount);
+    }
+
+
 
 
     private void OnTriggerEnter(Collider other)
@@ -38,15 +53,7 @@ public class PowerSystem : MonoBehaviour
         }
     }
 
-    void ToggleRadialIndicator(bool on)
-    {
-        FLUIManager.instance.ToggleRadialIndicator(on);
-    }
-
-    void UpdateRadialIndicator(float amount)
-    {
-        FLUIManager.instance.UpdateRadialIndicatorUI(amount);
-    }
+   
 
 
     private void OnTriggerExit(Collider other)
@@ -61,12 +68,10 @@ public class PowerSystem : MonoBehaviour
     ///
     void PowerLine () {
 
-       // if (atControlPanel != true || !Input.GetKey(powerOn))
+        if (atControlPanel == true || Input.GetKey(PowerOn))
         {
-
+            trainLineLights.SetActive(true);
         }
-
-
 
     }
 
