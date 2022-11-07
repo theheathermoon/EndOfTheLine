@@ -10,22 +10,13 @@ public class PowerSystem : MonoBehaviour
 
     public KeyCode PowerOn;
 
+    public bool powered = false;
+
     public static PowerSystem instance;
     public GameObject trainLineLights;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        PowerLine();
-    }
-
+    //this could be an array to hold all beacons
+    public GameObject emergencyBeacon;
 
     [Header("Power Activation Timers")]
     [SerializeField] private float activatePowerRadial = 1.0f;
@@ -41,9 +32,24 @@ public class PowerSystem : MonoBehaviour
         FLUIManager.instance.UpdateRadialIndicatorUI(amount);
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.name == "Player")
+        {
+            if (Input.GetKey(PowerOn))
+            {
+                if(powered == false)
+                {
+                    powered = true;
+                    PowerLights();
+                    PowerBeacons();
+                }
 
+            }
+        }
+    }
 
-
+    /*
     private void OnTriggerEnter(Collider other)
     {
         if (other.name == "Player")
@@ -64,15 +70,17 @@ public class PowerSystem : MonoBehaviour
             Debug.Log("player is NOT in the trigger area");
         }
     }
-
+    */
     ///
-    void PowerLine () {
-
-        if (atControlPanel == true || Input.GetKey(PowerOn))
-        {
-            trainLineLights.SetActive(true);
-        }
-
+    void PowerLights()
+    {
+        trainLineLights.SetActive(true);
     }
 
-}
+    void PowerBeacons()
+    {
+        Debug.Log("beacons are powered");
+        //code here can send a call for each beacon in the array to set powered = true or something like that
+    }
+
+    }
