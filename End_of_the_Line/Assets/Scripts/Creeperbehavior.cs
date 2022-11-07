@@ -14,6 +14,7 @@ namespace EnemySystem
         EnemyAi enemy;
         
         bool TeleStart = false;
+        bool Teleporting = false;
         public int TeleTimer;
         public float TeleRange;
         public Vector3 TelePoint;
@@ -33,42 +34,49 @@ namespace EnemySystem
             if (enemy.InFlashLight == true && TeleStart == false)
             {
                 Debug.Log("TeleStart");
-                //enemy.agent.isStopped = true;
+                enemy.agent.isStopped = true;
                 TeleStart = true;
-                StartCoroutine(Fade());
-                //CreateTeleport();
+                StartCoroutine(FadeOut());
 
             }
-            else if (enemy.InFlashLight == false && TeleStart == true)
+            if(Teleporting == true)
             {
-                Debug.Log("Unfrozen");
-                TeleStart = false;
-                //enemy.agent.isStopped = false;
+                CreateTeleport();
             }
         }
-        IEnumerator Delay()
+        IEnumerator FadeOut()
         {
             Color c = GetComponent<MeshRenderer>().material.color;
             for (float alpha = 1f; alpha >= 0; alpha -= 0.1f)
             {
+                Debug.Log("FadingOut");
+                Debug.Log(c.a);
                 c.a = alpha;
                 GetComponent<MeshRenderer>().material.color = c;
-                yield return new WaitForSeconds(TeleTimer);
 
+                yield return new WaitForSeconds(.5f);
             }
+            Teleporting = true;
+
 
         }
 
-        IEnumerator Fade()
+        IEnumerator FadeIn()
         {
+
             Color c = this.GetComponent<MeshRenderer>().material.color;
-            for (float alpha = 1f; alpha >= 0; alpha -= 0.1f)
+            for (float alpha = 0f; alpha <= 1; alpha += 0.1f)
             {
+                Debug.Log("FadingIn");
                 c.a = alpha;
                 this.GetComponent<MeshRenderer>().material.color = c;
-                yield return new WaitForSeconds(TeleTimer);
+                yield return new WaitForSeconds(.5f);
 
             }
+
+                enemy.agent.isStopped = false;
+                TeleStart = false;
+
         }
 
         public void CreateTeleport()
@@ -85,7 +93,8 @@ namespace EnemySystem
                 //WarpPoint.position = WarpPoint.position + TelePoint;
                 Debug.Log("WalkpointFound");
                 //CheckTeleport();
-                TeleStart = false;
+                Teleporting = false;
+                StartCoroutine(FadeIn());
                 enemy.agent.Warp(TelePoint);
             }
         }
