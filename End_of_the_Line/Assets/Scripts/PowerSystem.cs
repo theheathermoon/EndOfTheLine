@@ -16,7 +16,7 @@ public class PowerSystem : MonoBehaviour
     public GameObject trainLineLights;
 
     //this could be an array to hold all beacons
-    public GameObject emergencyBeacon;
+    public GameObject[] emergencyBeacons;
 
     [Header("Power Activation Timers")]
     [SerializeField] private float activatePowerRadial = 1.0f;
@@ -81,6 +81,10 @@ public class PowerSystem : MonoBehaviour
     {
         Debug.Log("beacons are powered");
         //code here can send a call for each beacon in the array to set powered = true or something like that
+        foreach (GameObject emergencyBeacon in emergencyBeacons)
+        {
+            Debug.Log(emergencyBeacon.name + "is powered on");
+        }
     }
 
     }
