@@ -293,7 +293,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-30176
+  m_Name: pb_Mesh27608
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -805,7 +805,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-37370
+  m_Name: pb_Mesh27662
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -968,6 +968,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4135013735270702856, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
     type: 3}
   m_PrefabInstance: {fileID: 2484767472064460109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &428129372 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3783193353869655868, guid: cc27d8384a3379b4ba9e00424df4b0a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 817151897}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &435017246 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3783193353869655868, guid: cc27d8384a3379b4ba9e00424df4b0a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 3783193353775421935}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &457888802
 PrefabInstance:
@@ -1664,7 +1676,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PowerOn: 101
+  powered: 0
   trainLineLights: {fileID: 1237263225}
+  emergencyBeacons:
+  - {fileID: 435017246}
+  - {fileID: 428129372}
   activatePowerRadial: 1
 --- !u!1 &558576555 stripped
 GameObject:
@@ -5764,7 +5780,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh39434
+  m_Name: pb_Mesh27582
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

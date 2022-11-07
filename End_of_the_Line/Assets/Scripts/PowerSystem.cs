@@ -84,6 +84,7 @@ public class PowerSystem : MonoBehaviour
         foreach (GameObject emergencyBeacon in emergencyBeacons)
         {
             Debug.Log(emergencyBeacon.name + "is powered on");
+            emergencyBeacon.GetComponent<EmergencyBeacon>().PowerOn();
         }
     }
 
