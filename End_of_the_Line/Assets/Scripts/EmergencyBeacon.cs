@@ -7,9 +7,13 @@ public class EmergencyBeacon : MonoBehaviour
 
     public bool isPowered = false;
     public bool isActive = false;
+    bool inTrigger = false;
 
     public KeyCode makeActive;
     public KeyCode makeInactive;
+    public KeyCode fastTravel;
+
+    public Transform spawnPoint;
 
     public void PowerOn()
     {
@@ -18,50 +22,79 @@ public class EmergencyBeacon : MonoBehaviour
             isPowered = true;
         }
     }
-
-    //make this emergency beacon the active beacon
-    void Activate()
+    private void Update()
     {
-        
-    }
-
-    void DeActivate()
-    {
-
-    }
-
-    private void OnTriggerStay(Collider other)
-    {
-        if(other.name == "Player")
+        //activate the current beacon
+        if (Input.GetKey(makeActive))
         {
-            if (Input.GetKey(makeActive))
+            if(inTrigger == true)
             {
-                if(isPowered == true)
+                if (isPowered == true)
                 {
-                    if(isActive == false)
+                    //check to see if there is an active beacon
+                    if (GameManager.Instance.activeBeacon != null)
                     {
-                        isActive = true;
-                        Debug.Log(gameObject.name + "is now active");
+                        Debug.Log("Another beacon is already active");
                     }
-                    if(isActive == true)
+                    else
                     {
-                        Debug.Log(gameObject.name + "is already active");
+                        //set this beacon as the active beacon
+                        if (isActive == false)
+                        {
+                            isActive = true;
+                            GameManager.Instance.SetActiveBeacon(gameObject);
+                            Debug.Log(gameObject.name + "is now active");
+                        }
                     }
+
                 }
-                if(isPowered == false)
+                if (isPowered == false)
                 {
                     Debug.Log("Emergency Beacon is not powered");
                 }
             }
 
-            if (Input.GetKey(makeInactive))
+        }
+        //deactivate the currently active beacon
+        if (Input.GetKey(makeInactive))
+        {
+            if(inTrigger == true)
             {
-                if(isActive == true)
+                if (isActive == true)
                 {
                     isActive = false;
+                    GameManager.Instance.DeactivateBeacon();
                     Debug.Log(gameObject.name + "is no longer active");
                 }
             }
+
+        }
+        if (Input.GetKey(fastTravel))
+        {
+            if(inTrigger == true)
+            {
+                if (isActive != true)
+                {
+                    GameManager.Instance.FastTravel();
+                }
+            }
+
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.name == "Player")
+        {
+            inTrigger = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.name == "Player")
+        {
+            inTrigger = false;
         }
     }
 }

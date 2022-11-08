@@ -11,6 +11,7 @@ public class PowerSystem : MonoBehaviour
     public KeyCode PowerOn;
 
     public bool powered = false;
+    bool inTrigger = false;
 
     public static PowerSystem instance;
     public GameObject trainLineLights;
@@ -32,20 +33,35 @@ public class PowerSystem : MonoBehaviour
         FLUIManager.instance.UpdateRadialIndicatorUI(amount);
     }
 
-    private void OnTriggerStay(Collider other)
+    private void Update()
     {
-        if(other.name == "Player")
+        if (Input.GetKey(PowerOn))
         {
-            if (Input.GetKey(PowerOn))
+            if(inTrigger == true)
             {
-                if(powered == false)
+                if (powered == false)
                 {
                     powered = true;
                     PowerLights();
                     PowerBeacons();
                 }
-
             }
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.name == "Player")
+        {
+            inTrigger = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.name == "Player")
+        {
+            inTrigger = false;
         }
     }
 
@@ -87,5 +103,4 @@ public class PowerSystem : MonoBehaviour
             emergencyBeacon.GetComponent<EmergencyBeacon>().PowerOn();
         }
     }
-
-    }
+ }
