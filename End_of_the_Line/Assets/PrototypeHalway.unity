@@ -10088,7 +10088,6 @@ GameObject:
   - component: {fileID: 1427721295}
   - component: {fileID: 1427721294}
   - component: {fileID: 1427721293}
-  - component: {fileID: 1427721292}
   - component: {fileID: 1427721291}
   m_Layer: 5
   m_Name: WeaponWheelButton
@@ -10138,18 +10137,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1427721292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1427721289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1445f10a844ce9942901cf04d641d023, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1427721293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13284,6 +13271,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 737278585}
     m_Modifications:
+    - target: {fileID: 5393215578589016642, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5393215578589016655, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -13298,6 +13290,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerCapsule
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
