@@ -387,6 +387,7 @@ GameObject:
   - component: {fileID: 1086682929}
   - component: {fileID: 1086682928}
   - component: {fileID: 1086682927}
+  - component: {fileID: 1086682926}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -394,6 +395,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1086682926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086682925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d49b7c1bcd2e07499844da127be038d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_ForceModuleActive: 0
 --- !u!114 &1086682927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,7 +626,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278377216
+    rgba: 4278311680
   m_fontColor: {r: 0, g: 0.8602941, b: 0.0059330147, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3

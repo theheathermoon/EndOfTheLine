@@ -45,4 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixerGroup: {fileID: 0}
-  sounds: []
+  sounds:
+  - {fileID: 11400000, guid: 03ac0a9e5271d124f9c455095976bfa4, type: 2}
+  - {fileID: 11400000, guid: 69d84196ea41c5647a8894c171299558, type: 2}
+  - {fileID: 11400000, guid: cf3bb5749d41b234c8e39196ad4b2349, type: 2}

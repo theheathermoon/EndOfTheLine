@@ -339,7 +339,9 @@ MonoBehaviour:
   PowerOn: 101
   powered: 0
   trainLineLights: {fileID: 0}
-  emergencyBeacons: []
+  emergencyBeacons:
+  - {fileID: 0}
+  - {fileID: 0}
   activatePowerRadial: 1
 --- !u!33 &6939916633536977829
 MeshFilter:

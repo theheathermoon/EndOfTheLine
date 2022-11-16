@@ -5,18 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - CinemachineTarget
-  - Wall
-  - MapGenerated_Clean
-  - ObjectSpawn
-  - LocSpawn_Standart_Corridor
-  - LocSpawn_Intersection
-  - LocSpawn_Cabinet
-  - LocSpawn_Room_B
-  - LocSpawn_Big_Room
-  - LocSpawn_Room_A
-  - LocSpawn_Short_Corridor
-  - LocSpawn_Room_C
-  - Pickup
   layers:
   - Default
   - TransparentFX
@@ -25,9 +13,9 @@ TagManager:
   - Water
   - UI
   - NavFloor
-  - Default
-  - Default
-  - This_Layer_IS_VALID_I_ AM_GOD_HERE
+  - 
+  - 
+  - 
   - 
   - 
   - 
