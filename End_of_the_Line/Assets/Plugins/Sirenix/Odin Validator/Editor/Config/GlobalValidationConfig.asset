@@ -38,10 +38,10 @@ MonoBehaviour:
     changedFromDefault: 1
   ContinuouslyValidateVisibleIssues:
     serializedValue: 0
-    changedFromDefault: 0
+    changedFromDefault: 1
   PauseValidationWhileWorkingInSceneView:
     serializedValue: 0
-    changedFromDefault: 0
+    changedFromDefault: 1
   PingOnDoubleClick:
     serializedValue: 0
     changedFromDefault: 0

@@ -1,13 +1,13 @@
 ﻿///////////////////////////////////
-/// Create and edit by QerO
-/// 09.2018
-/// lidan-357@mail.ru
-///////////////////////////////////
+//////////////
 
+using System;
 using System.Collections;
+using Unity.AI.Navigation;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
@@ -16,6 +16,10 @@ namespace MapGenerator
 {
     public class MapGenerator : MonoBehaviour
     {
+        private void OnPostRender()
+        {
+            throw new NotImplementedException();
+        }
 
         public GameObject player_prefab;
         public bool spawn_player;
@@ -113,9 +117,9 @@ namespace MapGenerator
                     Debug.Log("Trying create location " + locations_pool[loc_pos].prefab);
                     for (bool have_spawn_places = false; have_spawn_places == false;)
                     {
-                        GameObject[] loc_spawns = GameObject.FindGameObjectsWithTag(locations_pool[loc_pos].prefab.GetComponent<LocationSettings>().spawn_place_type);
-                        Debug.Log("Found the places for create location : " + loc_spawns.Length);
-                        if (loc_spawns.Length < locations_need_spawn_pool)
+                        GameObject[] locSpawns = GameObject.FindGameObjectsWithTag(locations_pool[loc_pos].prefab.GetComponent<LocationSettings>().SpawnPlaceType) ?? throw new ArgumentNullException("GameObject.FindGameObjectsWithTag(locations_pool[loc_pos].prefab.GetComponent<LocationSettings>().spawn_place_type)");
+                        Debug.Log("Found the places for create location : " + locSpawns.Length);
+                        if (locSpawns.Length < locations_need_spawn_pool)
                         {
                             Debug.Log("This few, create corridors...");
                             Corridors_Create();
@@ -123,9 +127,9 @@ namespace MapGenerator
                         }
                         else
                         {
-                            int random_spawn_loc = Random.Range(0, loc_spawns.Length);
-                            map_center += new Vector2(loc_spawns[random_spawn_loc].transform.position.x, loc_spawns[random_spawn_loc].transform.position.z);
-                            GameObject new_location = Instantiate(locations_pool[loc_pos].prefab, loc_spawns[random_spawn_loc].transform.position, loc_spawns[random_spawn_loc].transform.rotation);
+                            int random_spawn_loc = Random.Range(0, locSpawns.Length);
+                            map_center += new Vector2(locSpawns[random_spawn_loc].transform.position.x, locSpawns[random_spawn_loc].transform.position.z);
+                            GameObject new_location = Instantiate(locations_pool[loc_pos].prefab, locSpawns[random_spawn_loc].transform.position, locSpawns[random_spawn_loc].transform.rotation);
                             new_location.transform.SetParent(locations_parent);
                             Debug.Log("Create location");
                             have_spawn_places = true;
@@ -230,7 +234,7 @@ namespace MapGenerator
         {
             int scene_reload = 0;
             GameObject corridor = corridors_pool[Random.Range(0, corridors_pool.Length)];
-            GameObject[] mg_corridor_spawns = GameObject.FindGameObjectsWithTag(corridor.GetComponent<LocationSettings>().spawn_place_type);
+            GameObject[] mg_corridor_spawns = GameObject.FindGameObjectsWithTag(corridor.GetComponent<LocationSettings>().SpawnPlaceType);
             if (mg_corridor_spawns.Length != 0)
             {
                 int random_spawn_cor = Random.Range(0, mg_corridor_spawns.Length);
@@ -346,5 +350,15 @@ namespace MapGenerator
         }
 #endif
 
+    }
+
+    internal class ObjectsSpawnSettings
+    {
+        public string object_spawn_type;
+    }
+
+    internal class LocationSettings
+    {
+        public string SpawnPlaceType;
     }
 }

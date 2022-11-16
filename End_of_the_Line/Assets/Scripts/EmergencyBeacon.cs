@@ -7,7 +7,7 @@ public class EmergencyBeacon : MonoBehaviour
 
     public bool isPowered = false;
     public bool isActive = false;
-    bool inTrigger = false;
+    bool _inTrigger = false;
 
     public KeyCode makeActive;
     public KeyCode makeInactive;
@@ -27,7 +27,7 @@ public class EmergencyBeacon : MonoBehaviour
         //activate the current beacon
         if (Input.GetKey(makeActive))
         {
-            if(inTrigger == true)
+            if(_inTrigger == true)
             {
                 if (isPowered == true)
                 {
@@ -58,7 +58,7 @@ public class EmergencyBeacon : MonoBehaviour
         //deactivate the currently active beacon
         if (Input.GetKey(makeInactive))
         {
-            if(inTrigger == true)
+            if(_inTrigger == true)
             {
                 if (isActive == true)
                 {
@@ -71,7 +71,7 @@ public class EmergencyBeacon : MonoBehaviour
         }
         if (Input.GetKey(fastTravel))
         {
-            if(inTrigger == true)
+            if(_inTrigger == true)
             {
                 if (isActive != true)
                 {
@@ -86,7 +86,7 @@ public class EmergencyBeacon : MonoBehaviour
     {
         if(other.name == "Player")
         {
-            inTrigger = true;
+            _inTrigger = true;
         }
     }
 
@@ -94,7 +94,7 @@ public class EmergencyBeacon : MonoBehaviour
     {
         if(other.name == "Player")
         {
-            inTrigger = false;
+            _inTrigger = false;
         }
     }
 }
