@@ -26,6 +26,8 @@ namespace FlashlightSystem
         [Range(1, 10)] [SerializeField] private int flashlightRotationSpeed = 2;
         private bool isFlashlightOn;
 
+        public GameObject cone;
+
         [Header("Main Flashlight References")]
         [SerializeField] private Light flashlightSpot = null;
         [SerializeField] private FlashlightMovement flashlightMovement = null;
@@ -43,6 +45,7 @@ namespace FlashlightSystem
         {
             if (instance != null) { Destroy(gameObject); }
             else { instance = this; DontDestroyOnLoad(gameObject); }
+
         }
 
         void Start()
@@ -88,6 +91,7 @@ namespace FlashlightSystem
         {
             if (isFlashlightOn)
             {
+
                 if (!infiniteFlashlight)
                 {
                     if (flashlightSpot.intensity <= maxFlashlightIntensity && flashlightSpot.intensity > 0)
@@ -103,6 +107,7 @@ namespace FlashlightSystem
 
                     else if (flashlightSpot.intensity <= 0)
                     {
+
                         flashlightSpot.intensity = 0;
                     }
                 }
@@ -123,7 +128,7 @@ namespace FlashlightSystem
             if (Input.GetKeyDown(FLInputManager.instance.flashlightSwitch)) //TURNING FLASHLIGHT ON/OFF
             {
                 isFlashlightOn = !isFlashlightOn;
-
+                cone.SetActive(isFlashlightOn);
                 flashlightSpot.enabled = isFlashlightOn;
                 FLUIManager.instance.FlashlightIndicatorColor(isFlashlightOn);
                 FlashlightClickSound();
