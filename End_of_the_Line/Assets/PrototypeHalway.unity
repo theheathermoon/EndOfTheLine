@@ -7519,7 +7519,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1254620777
 Transform:
   m_ObjectHideFlags: 0
@@ -9741,7 +9741,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 127
 --- !u!114 &1467744838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10050,6 +10050,7 @@ MonoBehaviour:
   replaceBatteryTimer: 1
   maxFlashlightIntensity: 5
   flashlightRotationSpeed: 7
+  cone: {fileID: 1254620776}
   flashlightSpot: {fileID: 1218102913}
   flashlightMovement: {fileID: 1218102911}
   flashlightPickup: {fileID: 11400000, guid: 69d84196ea41c5647a8894c171299558, type: 2}
@@ -11816,7 +11817,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28186
+  m_Name: pb_Mesh28748
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
