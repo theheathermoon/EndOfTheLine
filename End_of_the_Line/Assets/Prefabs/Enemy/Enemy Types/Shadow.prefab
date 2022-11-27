@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8029584288839406985}
   - component: {fileID: 8440456435278131299}
   m_Layer: 0
-  m_Name: Creeper_Child
+  m_Name: Shadow_Child
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -203,7 +203,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1107096152270739247}
   m_Layer: 0
-  m_Name: Creeper
+  m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
