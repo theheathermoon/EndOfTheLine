@@ -13,11 +13,10 @@ public class PowerSystem : MonoBehaviour
     public bool powered = false;
     bool inTrigger = false;
 
-    public static PowerSystem instance;
-    public GameObject trainLineLights;
-
-    //this could be an array to hold all beacons
+    //array to hold all beacons this power system will activate
     public GameObject[] emergencyBeacons;
+    //array to hold all lights this power system will activate
+    public GameObject[] lights;
 
     [Header("Power Activation Timers")]
     [SerializeField] private float activatePowerRadial = 1.0f;
@@ -90,7 +89,10 @@ public class PowerSystem : MonoBehaviour
     ///
     void PowerLights()
     {
-        trainLineLights.SetActive(true);
+        foreach (GameObject light in lights)
+        {
+            light.SetActive(true);
+        }
     }
 
     void PowerBeacons()

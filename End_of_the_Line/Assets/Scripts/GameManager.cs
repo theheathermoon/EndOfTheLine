@@ -16,10 +16,16 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public GameObject activeBeacon;
 
-    public Vector3 activeSpawn;
-    public Vector3 geometrySpawn;
+    public Transform activeSpawn;
+    public Transform geometrySpawn;
 
     public bool isPaused = false;
+
+    private void Start()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 
     private void Update()
     {
@@ -35,7 +41,7 @@ public class GameManager : MonoBehaviour
         if(activeBeacon == null)
         {
             activeBeacon = newBeacon;
-            activeSpawn = activeBeacon.transform.position;
+            activeSpawn = activeBeacon.GetComponent<EmergencyBeacon>().spawnPoint.transform;
         }
     }
     public void DeactivateBeacon()
@@ -50,10 +56,6 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void FastTravel()
-    {
-        player.transform.SetPositionAndRotation(activeSpawn, Quaternion.Euler(0,0,0));
-    }
     #endregion
     #region scene management
     public void MovetoScene(string nextScene)

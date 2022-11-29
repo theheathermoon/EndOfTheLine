@@ -75,7 +75,7 @@ public class EmergencyBeacon : MonoBehaviour
             {
                 if (isActive != true)
                 {
-                    GameManager.Instance.FastTravel();
+                    Debug.Log("Fast travel doesn't work yet");
                 }
             }
 
