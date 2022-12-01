@@ -9,9 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: a24b8e9c13229d9429e09482124eae62
   - enabled: 1
+    path: Assets/Scenes/DecimaxXMobius.unity
+    guid: d06497c8024965e40b3f92b442f1f598
+  - enabled: 0
     path: Assets/Scenes/PowerPrototype.unity
     guid: a5a5cfc3a2a895b48aac8f41e96c489b
-  - enabled: 1
-    path: Assets/Prototype.unity
+  - enabled: 0
+    path: Assets/Scenes/TestScenes/Prototype.unity
     guid: 984dbc817f3b0674daf7066e3df66fd4
   m_configObjects: {}
