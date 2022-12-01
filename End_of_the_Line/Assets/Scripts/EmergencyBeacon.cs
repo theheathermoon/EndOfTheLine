@@ -9,9 +9,9 @@ public class EmergencyBeacon : MonoBehaviour
     public bool isActive = false;
     bool inTrigger = false;
 
-    public KeyCode makeActive;
-    public KeyCode makeInactive;
-    public KeyCode fastTravel;
+    public KeyCode makeActive = KeyCode.E;
+    public KeyCode makeInactive = KeyCode.R;
+    public KeyCode fastTravel = KeyCode.T;
 
     public Transform spawnPoint;
 
@@ -25,7 +25,7 @@ public class EmergencyBeacon : MonoBehaviour
     private void Update()
     {
         //activate the current beacon
-        if (Input.GetKey(makeActive))
+        if (Input.GetKeyDown(makeActive))
         {
             if(inTrigger == true)
             {
@@ -56,7 +56,7 @@ public class EmergencyBeacon : MonoBehaviour
 
         }
         //deactivate the currently active beacon
-        if (Input.GetKey(makeInactive))
+        if (Input.GetKeyDown(makeInactive))
         {
             if(inTrigger == true)
             {
@@ -69,7 +69,7 @@ public class EmergencyBeacon : MonoBehaviour
             }
 
         }
-        if (Input.GetKey(fastTravel))
+        if (Input.GetKeyDown(fastTravel))
         {
             if(inTrigger == true)
             {

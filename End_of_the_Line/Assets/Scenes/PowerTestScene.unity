@@ -579,7 +579,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27666
+  m_Name: pb_Mesh-7190
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -975,6 +975,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 521002836251226550, guid: 656d754fd70a54a43ad98270203b7bdb,
+        type: 3}
+      propertyPath: fastTravel
+      value: 116
+      objectReference: {fileID: 0}
     - target: {fileID: 667899108675005459, guid: 656d754fd70a54a43ad98270203b7bdb,
         type: 3}
       propertyPath: m_RootOrder
@@ -1061,6 +1066,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 521002836251226550, guid: 656d754fd70a54a43ad98270203b7bdb,
+        type: 3}
+      propertyPath: fastTravel
+      value: 116
+      objectReference: {fileID: 0}
     - target: {fileID: 667899108675005459, guid: 656d754fd70a54a43ad98270203b7bdb,
         type: 3}
       propertyPath: m_RootOrder

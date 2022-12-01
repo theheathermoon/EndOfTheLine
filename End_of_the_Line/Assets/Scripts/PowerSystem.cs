@@ -5,9 +5,6 @@ using UnityEngine;
 
 public class PowerSystem : MonoBehaviour
 {
-    bool atControlPanel = false;
-   // bool powerOn = false;
-
     public KeyCode PowerOn;
 
     public bool powered = false;

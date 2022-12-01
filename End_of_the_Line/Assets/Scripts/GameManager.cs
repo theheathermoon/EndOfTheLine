@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,21 +15,28 @@ public class GameManager : MonoBehaviour
     #endregion
 
     public GameObject player;
+
     public GameObject activeBeacon;
 
     public Transform activeSpawn;
     public Transform geometrySpawn;
 
+    public bool gameOver = false;
 
+    //UI setup
     public static bool isPaused = false;
     public GameObject pauseUI;
     public GameObject settingsUI;
     public GameObject audioUI;
     public GameObject brightnessUI;
-
     public GameObject curUI;
     public GameObject placeholderUI;
     public GameObject lastUI;
+
+    //DeathUI
+    public GameObject deathUI;
+    public Image deathBackground;
+
 
     private void Start()
     {
@@ -38,6 +46,7 @@ public class GameManager : MonoBehaviour
         settingsUI.SetActive(false);
         audioUI.SetActive(false);
         brightnessUI.SetActive(false);
+        deathUI.SetActive(false);
     }
 
     private void Update()
@@ -53,6 +62,16 @@ public class GameManager : MonoBehaviour
                 ResumeGame();
             }
         }
+
+        if (gameOver && Input.GetKeyDown(KeyCode.R))
+        {
+            Respawn();
+        }
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            PlayerDeath();
+        }
     }
 
     public void QuitGame()
@@ -60,6 +79,23 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
+
+    #region player death
+    private void PlayerDeath()
+    {
+        gameOver = true;
+        deathBackground.canvasRenderer.SetAlpha(0);
+        deathUI.SetActive(true);
+        deathBackground.CrossFadeAlpha(0.8f, 3f, false);
+        //StartCoroutine(DeathScreen());
+    }
+
+    //IEnumerator DeathScreen()
+    //{
+
+    //}
+
+    #endregion
     #region pause/resume
     public void PauseGame()
     {
@@ -129,7 +165,9 @@ public class GameManager : MonoBehaviour
     #region respawn and fast travel
     public void Respawn()
     {
-
+        deathBackground.canvasRenderer.SetAlpha(0);
+        deathUI.SetActive(true);
+        player.transform.position = activeSpawn.position;
     }
 
     public void FastTravel()

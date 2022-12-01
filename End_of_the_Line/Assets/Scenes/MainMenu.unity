@@ -8156,6 +8156,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 671425330802944567, guid: dabbf4e29ef61b5449041e94515fc314,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6243177842688728002, guid: dabbf4e29ef61b5449041e94515fc314,
         type: 3}
       propertyPath: m_RootOrder
@@ -8215,6 +8220,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Level Essentials
+      objectReference: {fileID: 0}
+    - target: {fileID: 6728510392681693428, guid: dabbf4e29ef61b5449041e94515fc314,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dabbf4e29ef61b5449041e94515fc314, type: 3}
