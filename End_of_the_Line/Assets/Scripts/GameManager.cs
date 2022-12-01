@@ -132,6 +132,10 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void FastTravel()
+    {
+        player.transform.position = activeSpawn.position;
+    }
     #endregion
     #region scene management
     public void MovetoScene(string nextScene)
