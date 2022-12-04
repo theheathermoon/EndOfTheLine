@@ -6,6 +6,9 @@ using TMPro;
 
 public class InventoryManager : MonoBehaviour
 {
+
+    public static InventoryManager Instance;
+
     float maxBattery = 100f;
     int maxLighters = 2;
     int maxMatchBooks = 5;
@@ -26,7 +29,7 @@ public class InventoryManager : MonoBehaviour
     public GameObject equippedLight;
     public GameObject flashlight;
     public GameObject lighter;
-    public GameObject match;
+    public GameObject matchBook;
 
     public GameObject flashlightUI;
     public GameObject lighterUI;
@@ -37,7 +40,10 @@ public class InventoryManager : MonoBehaviour
 
     private void Awake()
     {
+        Instance = this;
         EquipFlashlight();
+
+        matchCount.text = "/";
     }
     // Update is called once per frame
     void Update()
@@ -85,8 +91,9 @@ public class InventoryManager : MonoBehaviour
             lightOn = true;
             equippedLight.SetActive(true);
         }
-        if(equippedLight == match && matches > 0)
+        if(equippedLight == matchBook && matches > 0)
         {
+            matches = matches - 1;
             lightOn = true;
             equippedLight.SetActive(true);
         }
@@ -116,11 +123,35 @@ public class InventoryManager : MonoBehaviour
 
     private void EquipMatches()
     {
-        equippedLight = match;
+        equippedLight = matchBook;
         curUI.SetActive(false);
         curUI = matchUI;
         curUI.SetActive(true);
     }
 
+    public void PickUpMatches()
+    {
+        if(curMatchbooks < maxMatchBooks)
+        {
+            curMatchbooks = curMatchbooks + 1;
+            matches = matches + 1;
+        }
+    }
+
+    public void PickUpLighter()
+    {
+        if(curLighter < maxLighters)
+        {
+            curLighter = curLighter + 1;
+        }
+    }
+
+    public void PickUpBatteries()
+    {
+        if (curBattery < maxBattery)
+        {
+            curBattery = curBattery + 1;
+        }
+    }
 
 }

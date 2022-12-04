@@ -15,9 +15,9 @@ public class PowerSystem : MonoBehaviour
     //array to hold all lights this power system will activate
     public GameObject[] lights;
 
-    [Header("Power Activation Timers")]
-    [SerializeField] private float activatePowerRadial = 1.0f;
-    private float maxActivatePowerRadial = 1.0f;
+    //[Header("Power Activation Timers")]
+    //[SerializeField] private float activatePowerRadial = 1.0f;
+    //private float maxActivatePowerRadial = 1.0f;
 
     void ToggleRadialIndicator(bool on)
     {
