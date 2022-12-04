@@ -5,7 +5,10 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField]
-    private float playerSpeed = 2.0f;
+    private float walkSpeed = 3.0f;
+    private float speed;
+    [SerializeField]
+    private float sprintSpeed = 4.5f;
     [SerializeField]
     private float jumpHeight = 1.0f;
     [SerializeField]
@@ -14,6 +17,7 @@ public class PlayerController : MonoBehaviour
     private CharacterController controller;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
+    private bool isSprinting;
     private InputManager inputManager;
     public Camera cam;
     private Transform cameraTransform;
@@ -30,6 +34,23 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            isSprinting = true;
+        }
+        else
+        {
+            isSprinting = false;
+        }
+
+        if (isSprinting == true)
+        {
+            speed = sprintSpeed;
+        }
+        else
+        {
+            speed = walkSpeed;
+        }
         groundedPlayer = controller.isGrounded;
         if (groundedPlayer && playerVelocity.y < 0)
         {
@@ -40,7 +61,7 @@ public class PlayerController : MonoBehaviour
         Vector3 move = new Vector3(movement.x, 0f, movement.y);
         move = cameraTransform.forward * move.z + cameraTransform.right * move.x;
         move.y = 0f;
-        controller.Move(move * Time.deltaTime * playerSpeed);
+        controller.Move(move * Time.deltaTime * speed);
 
         // Changes the height position of the player..
         if (inputManager.PlayerJumped() && groundedPlayer)

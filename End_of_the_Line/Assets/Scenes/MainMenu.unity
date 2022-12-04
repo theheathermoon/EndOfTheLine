@@ -14,10 +14,10 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.1
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 81d942e72e8995d45b9aa6bd13c5c569,
+  m_LightingDataAsset: {fileID: 112000000, guid: 4d4b8fc0a9e3de749b6e769fd420e54e,
     type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
@@ -8203,6 +8203,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172634920357477613, guid: dabbf4e29ef61b5449041e94515fc314,
+        type: 3}
+      propertyPath: m_VerticalAxis.m_AccelTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1172634920357477613, guid: dabbf4e29ef61b5449041e94515fc314,
+        type: 3}
+      propertyPath: m_HorizontalAxis.m_AccelTime
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2508387918366909106, guid: dabbf4e29ef61b5449041e94515fc314,
         type: 3}

@@ -44,14 +44,20 @@ public class InventoryManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
+            equippedLight.SetActive(false);
+            lightOn = false;
             EquipFlashlight();
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
+            equippedLight.SetActive(false);
+            lightOn = false;
             EquipLighter();
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
+            equippedLight.SetActive(false);
+            lightOn = false;
             EquipMatches();
         }
         if (Input.GetKeyDown(KeyCode.F))
