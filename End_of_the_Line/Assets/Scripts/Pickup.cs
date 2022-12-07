@@ -45,14 +45,17 @@ public class Pickup : MonoBehaviour
                 if (isMatches)
                 {
                     inventoryManager.PickUpMatches();
+                    Destroy(gameObject);
                 }
                 if (isLighterFluid)
                 {
                     inventoryManager.PickUpLighter();
+                    Destroy(gameObject);
                 }
                 if (isBatteries)
                 {
                     inventoryManager.PickUpBatteries();
+                    Destroy(gameObject);
                 }
             }
         }

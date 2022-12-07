@@ -9,21 +9,28 @@ public class InventoryManager : MonoBehaviour
 
     public static InventoryManager Instance;
 
+    [SerializeField]
     float maxBattery = 100f;
-    int maxLighters = 2;
-    int maxMatchBooks = 5;
-    int maxMatches = 12;
-
-
-    public float curBattery;
+    float curBattery = 0f;
+    [SerializeField]
+    float batterDrain = 1f;
     public Image flashlightBar;
 
-    public int curLighter;
-    public float lighterFuel;
-    public TextMeshProUGUI lighterCount;
+    [SerializeField]
+    float maxLighterFuel = 100f;
+    [SerializeField]
+    float curLighterFuel = 0f;
+    [SerializeField]
+    float lighterDrain = 5f;
+    public Image lighterBar;
 
-    public int curMatchbooks;
-    public float matches;
+    [SerializeField]
+    float matchTime = 10f;
+    float matchTimeSave;
+    [SerializeField]
+    float matchDrain = 1f;
+    public int curMatches;
+    int maxMatches = 12;
     public TextMeshProUGUI matchCount;
 
     public GameObject equippedLight;
@@ -37,13 +44,18 @@ public class InventoryManager : MonoBehaviour
     public GameObject curUI;
 
     bool lightOn = false;
+    bool flashlightOn = false;
+    bool lighterOn = false;
+    bool matchLit = false;
 
     private void Awake()
     {
         Instance = this;
         EquipFlashlight();
-
-        matchCount.text = "/";
+        SetBatteryValue();
+        SetLighterValue();
+        SetMatchValue();
+        matchTimeSave = matchTime;
     }
     // Update is called once per frame
     void Update()
@@ -77,6 +89,19 @@ public class InventoryManager : MonoBehaviour
                 TurnOffLight();
             }
         }
+
+        if(flashlightOn == true)
+        {
+            DrainFlashlight();
+        }
+        if(lighterOn == true)
+        {
+            DrainLighter();
+        }
+        if(matchLit == true)
+        {
+            DrainMatch();
+        }
     }
 
     private void TurnOnLight()
@@ -84,17 +109,24 @@ public class InventoryManager : MonoBehaviour
         if(equippedLight == flashlight && curBattery > 0)
         {
             lightOn = true;
+            flashlightOn = true;
             equippedLight.SetActive(true);
         }
-        if(equippedLight == lighter && lighterFuel > 0)
+
+        else if(equippedLight == lighter && curLighterFuel > 0)
         {
             lightOn = true;
+            lighterOn = true;
             equippedLight.SetActive(true);
         }
-        if(equippedLight == matchBook && matches > 0)
+
+        else if(equippedLight == matchBook && curMatches > 0)
         {
-            matches = matches - 1;
+            matchTime = matchTimeSave;
+            curMatches = curMatches - 1;
+            SetMatchValue();
             lightOn = true;
+            matchLit = true;
             equippedLight.SetActive(true);
         }
     }
@@ -102,9 +134,12 @@ public class InventoryManager : MonoBehaviour
     private void TurnOffLight()
     {
         lightOn = false;
+        flashlightOn = false;
+        lighterOn = false;
+        matchLit = false;
         equippedLight.SetActive(false);
     }
-
+    #region equipping
     private void EquipFlashlight()
     {
         equippedLight = flashlight;
@@ -112,7 +147,6 @@ public class InventoryManager : MonoBehaviour
         curUI = flashlightUI;
         curUI.SetActive(true);
     }
-
     private void EquipLighter()
     {
         equippedLight = lighter;
@@ -120,7 +154,6 @@ public class InventoryManager : MonoBehaviour
         curUI = lighterUI;
         curUI.SetActive(true);
     }
-
     private void EquipMatches()
     {
         equippedLight = matchBook;
@@ -128,30 +161,77 @@ public class InventoryManager : MonoBehaviour
         curUI = matchUI;
         curUI.SetActive(true);
     }
-
+    #endregion
+    #region pickups
     public void PickUpMatches()
     {
-        if(curMatchbooks < maxMatchBooks)
+        if(curMatches < maxMatches)
         {
-            curMatchbooks = curMatchbooks + 1;
-            matches = matches + 1;
+            curMatches = 12;
+            SetMatchValue();
         }
     }
-
     public void PickUpLighter()
     {
-        if(curLighter < maxLighters)
+        if(curLighterFuel < maxLighterFuel)
         {
-            curLighter = curLighter + 1;
+            curLighterFuel = maxLighterFuel;
+            SetLighterValue();
+            
         }
     }
-
     public void PickUpBatteries()
     {
         if (curBattery < maxBattery)
         {
-            curBattery = curBattery + 1;
+            curBattery = maxBattery;
+            SetBatteryValue();
         }
     }
+    #endregion
+    #region set values in UI
+    private void SetMatchValue()
+    {
+        matchCount.text = curMatches + "/12";
+    }
 
+    private void SetLighterValue()
+    {
+        lighterBar.fillAmount = curLighterFuel / 100;
+    }
+
+    private void SetBatteryValue()
+    {
+        flashlightBar.fillAmount = curBattery / 100;
+    }
+    #endregion
+    #region drain lights
+    private void DrainFlashlight()
+    {
+        curBattery -= Time.deltaTime * batterDrain;
+        SetBatteryValue();
+        if(curBattery <= 0)
+        {
+            TurnOffLight();
+        }
+    }
+    private void DrainLighter()
+    {
+        curLighterFuel -= Time.deltaTime * lighterDrain;
+        SetLighterValue();
+        if(curLighterFuel <= 0)
+        {
+            TurnOffLight();
+        }
+    }
+    private void DrainMatch()
+    {
+        matchTime -= Time.deltaTime * matchDrain;
+        if(matchTime <= 0)
+        {
+            TurnOffLight();
+            matchTime = matchTimeSave;
+        }
+    }
+    #endregion
 }
