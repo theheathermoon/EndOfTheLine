@@ -50,6 +50,7 @@ public class InventoryManager : MonoBehaviour
 
     private void Awake()
     {
+        curBattery = 50f;
         Instance = this;
         EquipFlashlight();
         SetBatteryValue();

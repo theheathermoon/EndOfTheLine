@@ -59,10 +59,10 @@ namespace EnemySystem
             if (!playerInSightRange && !playerInAttackRange && !InFlashLight) Patrolling();
             if (playerInSightRange && !playerInAttackRange && !InFlashLight) Chasing();
             if (playerInSightRange && playerInAttackRange && !InFlashLight) Attacking();
-            if (InFlashLight == true)
-            {
-                InFlashLight = false;
-            }
+            //if (InFlashLight == true)
+            //{
+            //    InFlashLight = false;
+            //}
 
         }
         private void OnTriggerEnter(Collider other)
