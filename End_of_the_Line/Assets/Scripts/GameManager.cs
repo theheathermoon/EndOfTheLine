@@ -25,13 +25,23 @@ public class GameManager : MonoBehaviour
 
     //UI setup
     public static bool isPaused = false;
-    public GameObject pauseUI;
-    public GameObject settingsUI;
-    public GameObject audioUI;
-    public GameObject brightnessUI;
-    public GameObject curUI;
-    public GameObject placeholderUI;
-    public GameObject lastUI;
+    [SerializeField]
+    GameObject pauseUI;
+    [SerializeField]
+    GameObject settingsUI;
+    [SerializeField]
+    GameObject audioUI;
+    [SerializeField]
+    GameObject brightnessUI;
+    [SerializeField]
+    GameObject winUI;
+    [SerializeField]
+    GameObject curUI;
+    [SerializeField]
+    GameObject placeholderUI;
+    [SerializeField]
+    GameObject lastUI;
+
 
     //DeathUI
     public GameObject deathUI;
@@ -181,4 +191,17 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(nextScene);
     }
     #endregion
+    public void WonGame()
+    {
+        winUI.SetActive(true);
+        Time.timeScale = 0;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
+    }
+    public void RestartGame()
+    {
+        Time.timeScale = 1;
+        Cursor.visible = false;
+        SceneManager.LoadScene("MainMenu");
+    }
 }
