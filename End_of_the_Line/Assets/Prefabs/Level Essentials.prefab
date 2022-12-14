@@ -5301,7 +5301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10fa6899f59c22f44bc4eff7bde49561, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 2513892384498174174}
   activeBeacon: {fileID: 0}
   activeSpawn: {fileID: 0}
   geometrySpawn: {fileID: 0}
