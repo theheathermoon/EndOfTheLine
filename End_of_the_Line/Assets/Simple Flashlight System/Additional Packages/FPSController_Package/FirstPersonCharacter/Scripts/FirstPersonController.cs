@@ -42,6 +42,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
+        public int Health;
+
         // Use this for initialization
         private void Start()
         {
