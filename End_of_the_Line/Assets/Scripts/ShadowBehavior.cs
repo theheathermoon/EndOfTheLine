@@ -17,33 +17,44 @@ namespace EnemySystem
         bool Teleporting = false;
         public int TeleTimer;
         public float TeleRange;
-        public Vector3 TelePoint;
-        //public Transform WarpPoint;
+        public Vector3 TeleVector;
+
         public LayerMask whatIsground, whatIsplayer;
+
+        public bool RandomTele;
+        public Transform TelePoint;
 
         // Start is called before the first frame update
         void Start()
         {
             enemy = gameObject.GetComponent(typeof(EnemyAi)) as EnemyAi;
-            //WarpPoint = transform.Find("CreeperWarpPoint");
         }
 
         // Update is called once per frame
         void Update()
         {
+            //Checks to see if he enemy is in the light
             if (enemy.InFlashLight == true && TeleStart == false)
             {
-                Debug.Log("TeleStart");
+                
+                //Debug.Log("TeleStart");
+                //Frezzes it in place
                 enemy.agent.isStopped = true;
+                //Begins the teleport
                 TeleStart = true;
                 StartCoroutine(FadeOut());
+                enemy.InFlashLight = false;
 
             }
+
+            //After checking that the object is supposed to be teleporting, Create the teleport destination.
             if(Teleporting == true)
             {
                 CreateTeleport();
             }
         }
+
+        //fades the Opacity of the object until it is almost Transparent
         IEnumerator FadeOut()
         {
             Color c = GetComponent<MeshRenderer>().material.color;
@@ -56,11 +67,13 @@ namespace EnemySystem
 
                 yield return new WaitForSeconds(.5f);
             }
+            //Gives the code the "all clear" signal to start the teleport
             Teleporting = true;
 
 
         }
 
+        //Fades back in the Opacity
         IEnumerator FadeIn()
         {
 
@@ -73,37 +86,58 @@ namespace EnemySystem
                 yield return new WaitForSeconds(.5f);
 
             }
-
-                enemy.agent.isStopped = false;
-                TeleStart = false;
+            //Resumes motion and unlocks the object
+            enemy.agent.isStopped = false;
+            Debug.Log("Resume");
+            TeleStart = false;
 
         }
 
+        //
         public void CreateTeleport()
         {
-            Debug.Log("Teleporting");
-            //Calculate random point in range
-            float randomZ = Random.Range(-TeleRange, TeleRange);
-            float randomX = Random.Range(-TeleRange, TeleRange);
+            //Debug.Log("Teleporting");
 
-            TelePoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
-
-            if (Physics.Raycast(TelePoint, -transform.up, 2f, whatIsground))
+            ///For Random Teleporting
+            
+            if(RandomTele == true)
             {
-                //WarpPoint.position = WarpPoint.position + TelePoint;
-                Debug.Log("WalkpointFound");
-                //CheckTeleport();
-                Teleporting = false;
-                StartCoroutine(FadeIn());
-                enemy.agent.Warp(TelePoint);
+                ///Calculate random point in range
+                float randomZ = Random.Range(-TeleRange, TeleRange);
+                float randomX = Random.Range(-TeleRange, TeleRange);
+
+                TeleVector = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
+
+                if (Physics.Raycast(TeleVector, -transform.up, 2f, whatIsground))
+                {
+                    Teleporting = false;
+                    StartCoroutine(FadeIn());
+                    enemy.agent.Warp(TeleVector);
+                }
+
+
+
             }
+            ///For Non Random Teleporting
+
+            if (RandomTele == false)
+            {
+                //Set Vector to preset position
+                TeleVector = TelePoint.position;
+                Teleporting = false;
+                //Fade In
+                StartCoroutine(FadeIn());
+                //Teleport happens
+                enemy.agent.Warp(TeleVector);
+            }
+
         }
 
 
         private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.blue;
-            Gizmos.DrawWireCube(TelePoint, new Vector3(1, 1, 1));
+            Gizmos.DrawWireCube(TeleVector, new Vector3(1, 1, 1));
         }
     }
 
