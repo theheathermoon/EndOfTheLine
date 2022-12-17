@@ -219,6 +219,8 @@ namespace EnemySystem
             //Draw a cube to show the next destination, This one is only really used for bug fixing.
             Gizmos.DrawWireCube(walkPoint, new Vector3(1, 1, 1));
 
+
+
         }
     }
 }
