@@ -42,6 +42,22 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     GameObject lastUI;
 
+    //Darkness setup
+    [SerializeField]
+    Image darknessBar;
+    [SerializeField]
+    GameObject lightIndicator;
+    float maxDarkness = 1000f;
+    [SerializeField]
+    float curDarkness = 100f;
+    //the amount to decrease light by when in the dark
+    [SerializeField]
+    float inDarknessValue = 0.1f;
+    //the amount to increase light by when in the light
+    [SerializeField]
+    float inLightValue = 1f;
+    public bool lightLit;
+    public bool inLight;
 
     //DeathUI
     public GameObject deathUI;
@@ -57,6 +73,8 @@ public class GameManager : MonoBehaviour
         audioUI.SetActive(false);
         brightnessUI.SetActive(false);
         deathUI.SetActive(false);
+        inLight = false;
+        curDarkness = maxDarkness;
     }
 
     private void Update()
@@ -78,9 +96,15 @@ public class GameManager : MonoBehaviour
             Respawn();
         }
 
-        if (Input.GetKeyDown(KeyCode.K))
+        if (inLight)
         {
-            PlayerDeath();
+            lightIndicator.SetActive(true);
+            IncreaseDarkness(inLightValue);
+        }
+        if (!inLight)
+        {
+            lightIndicator.SetActive(false);
+            DecreaseDarkness(inDarknessValue);
         }
     }
 
@@ -189,6 +213,41 @@ public class GameManager : MonoBehaviour
     public void MovetoScene(string nextScene)
     {
         SceneManager.LoadScene(nextScene);
+    }
+    #endregion
+    #region darkness
+    public void IncreaseDarkness(float increaseAmount)
+    {
+        if(curDarkness < maxDarkness)
+        {
+            curDarkness = curDarkness + increaseAmount;
+            SetDarknessBar();
+        }
+    }
+    public void DecreaseDarkness(float decreaseAmount)
+    {
+        if(curDarkness > 0)
+        {
+            curDarkness = curDarkness - decreaseAmount;
+            SetDarknessBar();
+        }
+        if(curDarkness <= 0)
+        {
+            PlayerDeath();
+        }
+    }
+    public void SetDarknessBar()
+    {
+        float barFill = curDarkness / maxDarkness;
+        darknessBar.fillAmount = barFill;
+    }
+    public void SetInLight()
+    {
+        inLight = true;
+    }
+    public void SetInDark()
+    {
+        inLight = false;
     }
     #endregion
     public void WonGame()

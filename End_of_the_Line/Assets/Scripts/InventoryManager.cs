@@ -63,20 +63,23 @@ public class InventoryManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            equippedLight.SetActive(false);
-            lightOn = false;
+            //equippedLight.SetActive(false);
+            //lightOn = false;
+            TurnOffLight();
             EquipFlashlight();
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            equippedLight.SetActive(false);
-            lightOn = false;
+            //equippedLight.SetActive(false);
+            //lightOn = false;
+            TurnOffLight();
             EquipLighter();
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            equippedLight.SetActive(false);
-            lightOn = false;
+            //equippedLight.SetActive(false);
+            //lightOn = false;
+            TurnOffLight();
             EquipMatches();
         }
         if (Input.GetKeyDown(KeyCode.F))
@@ -112,6 +115,7 @@ public class InventoryManager : MonoBehaviour
             lightOn = true;
             flashlightOn = true;
             equippedLight.SetActive(true);
+            GameManager.Instance.SetInLight();
         }
 
         else if(equippedLight == lighter && curLighterFuel > 0)
@@ -119,6 +123,7 @@ public class InventoryManager : MonoBehaviour
             lightOn = true;
             lighterOn = true;
             equippedLight.SetActive(true);
+            GameManager.Instance.SetInLight();
         }
 
         else if(equippedLight == matchBook && curMatches > 0)
@@ -129,6 +134,7 @@ public class InventoryManager : MonoBehaviour
             lightOn = true;
             matchLit = true;
             equippedLight.SetActive(true);
+            GameManager.Instance.SetInLight();
         }
     }
 
@@ -139,6 +145,7 @@ public class InventoryManager : MonoBehaviour
         lighterOn = false;
         matchLit = false;
         equippedLight.SetActive(false);
+        GameManager.Instance.SetInDark();
     }
     #region equipping
     private void EquipFlashlight()

@@ -21981,6 +21981,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Essentials
       objectReference: {fileID: 0}
+    - target: {fileID: 6243177843375068817, guid: dabbf4e29ef61b5449041e94515fc314,
+        type: 3}
+      propertyPath: inLightValue
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 6243177844480938209, guid: dabbf4e29ef61b5449041e94515fc314,
         type: 3}
       propertyPath: cone
