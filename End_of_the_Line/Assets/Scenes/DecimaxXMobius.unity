@@ -21981,11 +21981,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Essentials
       objectReference: {fileID: 0}
-    - target: {fileID: 6243177843375068817, guid: dabbf4e29ef61b5449041e94515fc314,
-        type: 3}
-      propertyPath: inLightValue
-      value: 0.1
-      objectReference: {fileID: 0}
     - target: {fileID: 6243177844480938209, guid: dabbf4e29ef61b5449041e94515fc314,
         type: 3}
       propertyPath: cone
@@ -22015,6 +22010,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -83.28854
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477548451113415614, guid: dabbf4e29ef61b5449041e94515fc314,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477548451113415614, guid: dabbf4e29ef61b5449041e94515fc314,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477548451113415614, guid: dabbf4e29ef61b5449041e94515fc314,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8477548451113415614, guid: dabbf4e29ef61b5449041e94515fc314,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dabbf4e29ef61b5449041e94515fc314, type: 3}

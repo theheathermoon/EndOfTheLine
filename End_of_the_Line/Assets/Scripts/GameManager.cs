@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour
     Image darknessBar;
     [SerializeField]
     GameObject lightIndicator;
+    [SerializeField]
     float maxDarkness = 1000f;
     [SerializeField]
     float curDarkness = 100f;
@@ -220,7 +221,7 @@ public class GameManager : MonoBehaviour
     {
         if(curDarkness < maxDarkness)
         {
-            curDarkness = curDarkness + increaseAmount;
+            curDarkness = curDarkness + (increaseAmount * Time.deltaTime);
             SetDarknessBar();
         }
     }
@@ -228,7 +229,7 @@ public class GameManager : MonoBehaviour
     {
         if(curDarkness > 0)
         {
-            curDarkness = curDarkness - decreaseAmount;
+            curDarkness = curDarkness - (decreaseAmount * Time.deltaTime);
             SetDarknessBar();
         }
         if(curDarkness <= 0)

@@ -5649,9 +5649,10 @@ MonoBehaviour:
   lastUI: {fileID: 0}
   darknessBar: {fileID: 6607127163932380582}
   lightIndicator: {fileID: 6584991259562660724}
+  maxDarkness: 100
   curDarkness: 100
-  inDarknessValue: 0.1
-  inLightValue: 1
+  inDarknessValue: 5
+  inLightValue: 3
   lightLit: 0
   inLight: 0
   deathUI: {fileID: 6728510392681693428}
